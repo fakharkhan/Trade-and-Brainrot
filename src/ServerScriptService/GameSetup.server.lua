@@ -20,7 +20,7 @@ local CONFIG = {
 	BaseSpacing = 46,
 	PlaceOffsets = { Vector3.new(-120, 0, 0), Vector3.new(120, 0, 0) }, -- the 2 places
 	BasesPerPlace = 3,
-	StartCoins = 500, -- enough to buy Rare/Epic so you can place the new models right away
+	StartCoins = 2000, -- enough to buy several brainrots while testing
 
 	SpawnInterval = 5, -- seconds between brainrots on the track
 	TrackSpeed = 10, -- studs per second
@@ -74,12 +74,13 @@ local function makePart(name, size, position, color, material, parent)
 	return p
 end
 
-local function makeLabel(parent, text, size, offset)
+local function makeLabel(parent, text, size, offset, maxDistance)
 	local gui = Instance.new("BillboardGui")
-	gui.Size = size or UDim2.fromOffset(240, 80)
-	gui.StudsOffset = offset or Vector3.new(0, 4, 0)
-	gui.AlwaysOnTop = true
-	gui.MaxDistance = 90
+	gui.Size = size or UDim2.fromOffset(110, 32)
+	gui.StudsOffset = offset or Vector3.new(0, 3, 0)
+	-- Avoid AlwaysOnTop: distant labels were stacking as giant text in the middle of the screen
+	gui.AlwaysOnTop = false
+	gui.MaxDistance = maxDistance or 35
 	gui.Parent = parent
 	local label = Instance.new("TextLabel")
 	label.Size = UDim2.fromScale(1, 1)
@@ -87,9 +88,13 @@ local function makeLabel(parent, text, size, offset)
 	label.TextScaled = true
 	label.Font = Enum.Font.GothamBold
 	label.TextColor3 = Color3.new(1, 1, 1)
-	label.TextStrokeTransparency = 0
+	label.TextStrokeTransparency = 0.2
 	label.Text = text
 	label.Parent = gui
+	local cap = Instance.new("UITextSizeConstraint")
+	cap.MaxTextSize = 14
+	cap.MinTextSize = 8
+	cap.Parent = label
 	return label
 end
 
@@ -417,7 +422,7 @@ local function attachCarry(player, slot)
 	w.Part1 = primary
 	w.Parent = primary
 
-	makeLabel(primary, slot.Def.Name, UDim2.fromOffset(200, 40), Vector3.new(0, 5.5, 0))
+	makeLabel(primary, slot.Def.Name, UDim2.fromOffset(100, 28), Vector3.new(0, 4.5, 0), 40)
 	carrying[player] = { Slot = slot, Model = model }
 	return true
 end
@@ -517,7 +522,7 @@ local function buildTrader(parent, origin)
 	newPart(model, CYL, V3(0.2, 0.9, 0.9), origin * CFrame.new(-1.9, 2.3, -0.6) * CFrame.Angles(0, 0, PI / 2), GOLD, Enum.Material.Neon)
 
 	model.Parent = parent
-	makeLabel(head, "Trader", UDim2.fromOffset(160, 40), Vector3.new(0, 3.2, 0))
+	makeLabel(head, "Trader", UDim2.fromOffset(80, 24), Vector3.new(0, 2.5, 0), 40)
 	return model
 end
 
@@ -545,13 +550,13 @@ local function buildBase(index, placeIndex, pos)
 	local signAnchor = makePart("SignAnchor", Vector3.new(1, 1, 1), pos + Vector3.new(0, 14, 0), Color3.new(1, 1, 1), nil, folder)
 	signAnchor.Transparency = 1
 	signAnchor.CanCollide = false
-	base.SignLabel = makeLabel(signAnchor, "", UDim2.fromOffset(300, 60), Vector3.new(0, 0, 0))
+	base.SignLabel = makeLabel(signAnchor, "", UDim2.fromOffset(140, 28), Vector3.new(0, 0, 0), 50)
 
 	base.SpawnPos = pos + Vector3.new(frontDir * 8, 4, 8)
 
 	-- Trading shop corner (front side of the base) + Trader NPC
 	local counter = makePart("TradingShop", Vector3.new(3, 4, 10), pos + Vector3.new(frontDir * 9.5, 3, -13), Color3.fromRGB(150, 100, 60), Enum.Material.Wood, folder)
-	makeLabel(counter, "Trading Shop", UDim2.fromOffset(220, 50), Vector3.new(0, 4.5, 0))
+	makeLabel(counter, "Trading Shop", UDim2.fromOffset(110, 28), Vector3.new(0, 3.5, 0), 40)
 	buildTrader(folder, CFrame.new(pos + Vector3.new(frontDir * 14, 1, -13)) * CFrame.Angles(0, frontDir * PI / 2, 0))
 
 	local sell = Instance.new("ProximityPrompt")
@@ -583,7 +588,7 @@ local function buildBase(index, placeIndex, pos)
 			local lz = (row - 2.5) * 8
 			local pad = makePart("Pedestal", Vector3.new(6, 1, 6), pos + Vector3.new(lx, 1.5, lz), Color3.fromRGB(60, 60, 70), Enum.Material.Slate, folder)
 
-			local label = makeLabel(pad, "", UDim2.fromOffset(220, 80), Vector3.new(0, 9.5, 0))
+			local label = makeLabel(pad, "", UDim2.fromOffset(120, 36), Vector3.new(0, 7, 0), 40)
 			label.Parent.Enabled = false
 
 			local place = Instance.new("ProximityPrompt")
@@ -720,7 +725,7 @@ local function spawnRunner()
 	model:PivotTo(CFrame.new(-L, trackY, 0) * face)
 
 	local root = model.PrimaryPart
-	makeLabel(root, ("%s\n%s - %d coins - +%d/s"):format(def.Name, def.Rarity, def.Price, def.Income), UDim2.fromOffset(260, 80), Vector3.new(0, 7, 0))
+	makeLabel(root, ("%s\n%d coins | +%d/s"):format(def.Name, def.Price, def.Income), UDim2.fromOffset(120, 36), Vector3.new(0, 5, 0), 28)
 
 	local buy = Instance.new("ProximityPrompt")
 	buy.ObjectText = def.Name
@@ -774,7 +779,7 @@ local function buildShowcase()
 	folder.Parent = map
 
 	local platform = makePart("ShowcasePad", Vector3.new(28, 1, 10), Vector3.new(0, 0.5, 55), Color3.fromRGB(45, 45, 55), Enum.Material.Slate, folder)
-	makeLabel(platform, "Brainrot Showcase", UDim2.fromOffset(280, 50), Vector3.new(0, 8, 0))
+	makeLabel(platform, "Showcase", UDim2.fromOffset(100, 24), Vector3.new(0, 5, 0), 30)
 
 	for i, def in ipairs(BRAINROTS) do
 		local x = (i - 2) * 8
@@ -782,8 +787,26 @@ local function buildShowcase()
 		local m = buildBrainrotModel(def, false)
 		m.Parent = folder
 		m:PivotTo(CFrame.new(ped.Position + Vector3.new(0, 0.5 + footOf(def), 0)) * CFrame.Angles(0, PI, 0))
-		makeLabel(m.PrimaryPart, def.Name .. "\n" .. def.Rarity, UDim2.fromOffset(220, 60), Vector3.new(0, 6.5, 0))
+		makeLabel(m.PrimaryPart, def.Name .. "\n" .. def.Rarity, UDim2.fromOffset(100, 32), Vector3.new(0, 5, 0), 25)
 	end
+
+	-- Free coins pad for testing when you're broke
+	local coinPad = makePart("FreeCoins", Vector3.new(6, 1.5, 6), Vector3.new(0, 1.25, 48), GOLD, Enum.Material.Neon, folder)
+	makeLabel(coinPad, "FREE COINS\nE = +500", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
+	local freeCoins = Instance.new("ProximityPrompt")
+	freeCoins.ObjectText = "Free Coins"
+	freeCoins.ActionText = "Claim +500 coins"
+	freeCoins.KeyboardKeyCode = Enum.KeyCode.E
+	freeCoins.HoldDuration = 0
+	freeCoins.MaxActivationDistance = 12
+	freeCoins.Parent = coinPad
+	freeCoins.Triggered:Connect(function(player)
+		local coins = getStat(player, "Coins")
+		if coins then
+			coins.Value += 500
+			notify(player, "Claimed +500 coins!")
+		end
+	end)
 end
 buildShowcase()
 
@@ -815,7 +838,7 @@ end)
 
 -- Robux stand: Super Upgrade Brainrot -------------------------------------
 local stand = makePart("SuperUpgradeStand", Vector3.new(10, 5, 3), Vector3.new(0, 2.5, 60), GOLD, Enum.Material.Neon)
-makeLabel(stand, ("Super Upgrade Brainrot\nR$ %d"):format(CONFIG.SuperUpgradePriceRobux), UDim2.fromOffset(300, 90), Vector3.new(0, 5, 0))
+makeLabel(stand, ("Super Upgrade\nR$ %d"):format(CONFIG.SuperUpgradePriceRobux), UDim2.fromOffset(110, 32), Vector3.new(0, 4, 0), 30)
 
 local superPrompt = Instance.new("ProximityPrompt")
 superPrompt.ObjectText = "Super Upgrade Brainrot"
@@ -893,6 +916,11 @@ local function teleportToBase(player, char)
 end
 
 local function setupPlayer(player)
+	-- Studio can fire PlayerAdded and also already have the player in GetPlayers()
+	if player:FindFirstChild("leaderstats") then
+		return
+	end
+
 	local stats = Instance.new("Folder")
 	stats.Name = "leaderstats"
 
@@ -908,17 +936,21 @@ local function setupPlayer(player)
 
 	stats.Parent = player
 
-	-- assign the first free base
+	-- assign the first free base + free starter brainrot so Super Upgrade can be tested immediately
 	for _, base in ipairs(bases) do
 		if not base.Owner then
 			base.Owner = player
 			baseOf[player] = base
 			updateSign(base)
+			base.Slots[1] = { Def = BRAINROTS[1], Super = false }
+			refreshSlot(base, 1)
 			break
 		end
 	end
 	if not baseOf[player] then
 		notify(player, "Server is full - no free base!")
+	else
+		notify(player, ("Welcome! %d coins + a free Tung Tung in your base."):format(CONFIG.StartCoins))
 	end
 
 	player.CharacterAdded:Connect(function(char)

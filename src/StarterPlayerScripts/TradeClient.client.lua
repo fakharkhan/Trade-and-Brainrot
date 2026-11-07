@@ -32,12 +32,21 @@ local coinsBar = make("TextLabel", {
 corner(coinsBar)
 
 task.spawn(function()
-	local coins = player:WaitForChild("leaderstats"):WaitForChild("Coins")
+	local stats = player:WaitForChild("leaderstats", 30)
+	if not stats then
+		coinsBar.Text = "Coins: (waiting…)"
+		return
+	end
+	local coins = stats:WaitForChild("Coins", 10)
+	if not coins then
+		coinsBar.Text = "Coins: (missing)"
+		return
+	end
 	local function update()
 		coinsBar.Text = "Coins: " .. tostring(coins.Value)
 	end
 	update()
-	coins.Changed:Connect(update)
+	coins:GetPropertyChangedSignal("Value"):Connect(update)
 end)
 
 -- Open/close button
