@@ -121,6 +121,100 @@ STYLES.doodle = function(model, c)
 	newPart(model, BLOCK, V3(0.9, 0.15, 0.7), CFrame.new(-3.2, 1.1, 0) * CFrame.Angles(0, 0, math.rad(20)), shade)
 end
 
+-- starblast: capsule body, beak head, exploding star hair, two thick shoe legs
+STYLES.starblast = function(model, c)
+	local star = Color3.fromRGB(255, 200, 40)
+	local beak = Color3.fromRGB(40, 40, 45)
+	local shoe = Color3.fromRGB(30, 30, 35)
+	newPart(model, BALL, V3(4.2, 2.6, 2.6), CFrame.new(0.3, 0.4, 0), c, nil, "Body")
+	newPart(model, BALL, V3(1.8, 1.8, 1.8), CFrame.new(-1.8, 0.9, 0), c)
+	newPart(model, BLOCK, V3(0.9, 0.7, 0.5), CFrame.new(-2.7, 0.55, -0.2) * CFrame.Angles(math.rad(20), 0, math.rad(-15)), beak)
+	newPart(model, BALL, V3(0.55, 0.55, 0.55), CFrame.new(-2.05, 1.15, -0.75), Color3.new(1, 1, 1), nil, "Eye")
+	newPart(model, BALL, V3(0.28, 0.28, 0.28), CFrame.new(-2.15, 1.15, -0.95), Color3.new(0.05, 0.05, 0.05), nil, "Eye")
+	for a = 0, 7 do
+		local ang = math.rad(a * 45)
+		newPart(model, BLOCK, V3(0.35, 1.6, 0.25), CFrame.new(-1.8, 2.2, 0) * CFrame.Angles(0, 0, ang) * CFrame.new(0, 0.7, 0), star)
+	end
+	newPart(model, BALL, V3(0.9, 0.9, 0.9), CFrame.new(-1.8, 2.2, 0), star)
+	for _, sx in ipairs({ -0.7, 0.9 }) do
+		newPart(model, BLOCK, V3(0.9, 1.7, 0.9), CFrame.new(sx, -1.0, 0), c)
+		newPart(model, BALL, V3(1.3, 0.7, 1.5), CFrame.new(sx, -1.95, -0.15), shoe)
+	end
+end
+
+-- antenna: long capsule + round head with two antennae + fat shoe legs
+STYLES.antenna = function(model, c)
+	local dark = c:Lerp(Color3.new(0, 0, 0), 0.25)
+	local shoe = Color3.fromRGB(50, 50, 60)
+	newPart(model, BALL, V3(4.6, 2.4, 2.4), CFrame.new(0.2, 0.5, 0), c, nil, "Body")
+	newPart(model, BALL, V3(2.0, 2.0, 2.0), CFrame.new(-2.0, 0.9, 0), c)
+	newPart(model, BALL, V3(0.6, 0.6, 0.6), CFrame.new(-2.25, 1.15, -0.85), Color3.new(1, 1, 1), nil, "Eye")
+	newPart(model, BALL, V3(0.3, 0.3, 0.3), CFrame.new(-2.35, 1.15, -1.05), Color3.new(0.05, 0.05, 0.05), nil, "Eye")
+	for _, sx in ipairs({ -0.35, 0.35 }) do
+		newPart(model, CYL, V3(1.2, 0.18, 0.18), CFrame.new(-2.0 + sx * 0.2, 2.0, 0) * CFrame.Angles(0, 0, math.rad(sx * 35) + PI / 2), dark)
+		newPart(model, BALL, V3(0.45, 0.45, 0.45), CFrame.new(-2.0 + sx * 0.85, 2.55, 0), Color3.fromRGB(255, 90, 90))
+	end
+	for _, sx in ipairs({ -0.75, 0.95 }) do
+		newPart(model, CYL, V3(1.5, 1.0, 1.0), CFrame.new(sx, -0.9, 0) * CFrame.Angles(0, 0, PI / 2), c)
+		newPart(model, BALL, V3(1.5, 0.8, 1.7), CFrame.new(sx, -1.85, -0.1), shoe)
+	end
+end
+
+-- catleg: chubby cat head/body with pointy ears and four zigzag stub legs
+STYLES.catleg = function(model, c)
+	local dark = Color3.fromRGB(40, 35, 35)
+	local belly = c:Lerp(Color3.new(1, 1, 1), 0.35)
+	newPart(model, BALL, V3(3.4, 2.6, 2.8), CFrame.new(0, 0.3, 0), c, nil, "Body")
+	newPart(model, BALL, V3(2.8, 2.6, 2.6), CFrame.new(-0.2, 1.5, 0), c)
+	newPart(model, BALL, V3(2.0, 1.6, 1.2), CFrame.new(-0.2, 1.2, -0.9), belly)
+	for _, sx in ipairs({ -1, 1 }) do
+		newPart(model, BLOCK, V3(0.7, 1.1, 0.35), CFrame.new(sx * 0.85, 2.7, 0.1) * CFrame.Angles(0, 0, math.rad(-sx * 18)), c)
+	end
+	addEyes(model, 0.55, 1.7, -1.2, 0.7)
+	newPart(model, BLOCK, V3(0.6, 0.12, 0.1), CFrame.new(-0.15, 1.15, -1.35) * CFrame.Angles(0, 0, math.rad(12)), dark)
+	for _, xz in ipairs({ { -0.9, -0.7 }, { 0.9, -0.7 }, { -0.9, 0.7 }, { 0.9, 0.7 } }) do
+		newPart(model, BLOCK, V3(0.35, 0.9, 0.35), CFrame.new(xz[1], -1.0, xz[2]) * CFrame.Angles(0, 0, math.rad(xz[1] * 12)), dark)
+		newPart(model, BLOCK, V3(0.35, 0.55, 0.35), CFrame.new(xz[1] * 1.15, -1.55, xz[2]) * CFrame.Angles(0, 0, math.rad(-xz[1] * 20)), dark)
+	end
+end
+
+-- swordbox: boxy dual-sword fighter with mismatched eyes and scribbled mouth band
+STYLES.swordbox = function(model, c)
+	local dark = Color3.fromRGB(25, 25, 30)
+	local steel = Color3.fromRGB(200, 210, 230)
+	local shade = c:Lerp(Color3.new(0, 0, 0), 0.2)
+	newPart(model, BLOCK, V3(2.8, 3.4, 1.6), CFrame.new(0, 1.2, 0), c, nil, "Body")
+	newPart(model, BLOCK, V3(2.9, 0.9, 1.7), CFrame.new(0, 0.55, 0), dark) -- scribbled mouth/band
+	newPart(model, BALL, V3(1.1, 1.1, 0.2), CFrame.new(-0.55, 2.15, -0.85), Color3.new(1, 1, 1), nil, "Eye")
+	newPart(model, BALL, V3(0.85, 0.85, 0.2), CFrame.new(0.6, 2.35, -0.85), Color3.new(1, 1, 1), nil, "Eye")
+	newPart(model, BALL, V3(0.4, 0.4, 0.15), CFrame.new(-0.55, 2.15, -0.95), dark, nil, "Eye")
+	newPart(model, BALL, V3(0.3, 0.3, 0.15), CFrame.new(0.6, 2.35, -0.95), dark, nil, "Eye")
+	for _, sx in ipairs({ -1, 1 }) do
+		newPart(model, BLOCK, V3(0.45, 1.6, 0.45), CFrame.new(sx * 0.55, -0.9, 0), shade)
+		newPart(model, BALL, V3(0.8, 0.45, 1.0), CFrame.new(sx * 0.55, -1.75, -0.1), dark)
+		newPart(model, BLOCK, V3(0.35, 2.2, 0.35), CFrame.new(sx * 1.5, 2.4, 0) * CFrame.Angles(0, 0, math.rad(-sx * 25)), shade)
+		newPart(model, BLOCK, V3(0.25, 3.2, 0.45), CFrame.new(sx * 1.85, 4.0, 0) * CFrame.Angles(0, 0, math.rad(-sx * 10)), steel)
+		newPart(model, BLOCK, V3(0.55, 0.35, 0.55), CFrame.new(sx * 1.7, 2.35, 0), dark)
+	end
+end
+
+-- flybeak: oval flying bird with big wings, pointed beak, whiskers
+STYLES.flybeak = function(model, c)
+	local beak = Color3.fromRGB(255, 160, 40)
+	local wing = c:Lerp(Color3.new(1, 1, 1), 0.15)
+	newPart(model, BALL, V3(4.0, 2.2, 2.4), CFrame.new(0, 0.8, 0), c, nil, "Body")
+	newPart(model, BLOCK, V3(1.2, 0.55, 0.45), CFrame.new(-2.3, 0.85, 0) * CFrame.Angles(0, 0, math.rad(-10)), beak)
+	newPart(model, BALL, V3(0.5, 0.5, 0.5), CFrame.new(-1.5, 1.2, -0.85), Color3.new(1, 1, 1), nil, "Eye")
+	newPart(model, BALL, V3(0.25, 0.25, 0.25), CFrame.new(-1.6, 1.2, -1.0), Color3.new(0.05, 0.05, 0.05), nil, "Eye")
+	for _, y in ipairs({ 0.5, 0.85, 1.2 }) do
+		newPart(model, BLOCK, V3(0.7, 0.08, 0.08), CFrame.new(-2.5, y, 0.35) * CFrame.Angles(0, math.rad(20), math.rad((y - 0.85) * 40)), Color3.fromRGB(40, 40, 40))
+	end
+	for _, sx in ipairs({ -1, 1 }) do
+		newPart(model, BALL, V3(2.6, 0.5, 1.8), CFrame.new(sx * 0.2, 1.1, sx * 1.4) * CFrame.Angles(math.rad(sx * 12), 0, math.rad(sx * 8)), wing)
+	end
+	newPart(model, BLOCK, V3(0.9, 0.35, 0.5), CFrame.new(2.0, 0.6, 0) * CFrame.Angles(0, 0, math.rad(15)), c)
+end
+
 local BrainrotModels = {}
 
 function BrainrotModels.build(def, super)

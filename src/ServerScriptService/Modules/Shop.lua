@@ -19,10 +19,11 @@ function Shop.buildShowcase(map)
 	local platform = Util.makePart("ShowcasePad", Vector3.new(36, 1, 10), Vector3.new(0, 0.5, 55), Color3.fromRGB(45, 45, 55), Enum.Material.Slate, folder)
 	Util.makeLabel(platform, "Showcase", UDim2.fromOffset(100, 24), Vector3.new(0, 5, 0), 30)
 
-	-- Show first 6 brainrots so the pad isn't overcrowded
+	-- Showcase a mix including the newest sketch-based brainrots
 	local BrainrotModels = require(script.Parent.BrainrotModels)
-	for i = 1, math.min(6, #BrainrotDefs) do
-		local def = BrainrotDefs[i]
+	local showcaseIds = { "gattini", "antennini", "volanti", "stellina", "spadino", "tralalero" }
+	for i, id in ipairs(showcaseIds) do
+		local def = BrainrotDefs.GetById(id) or BrainrotDefs[i]
 		local x = (i - 3.5) * 5.5
 		local ped = Util.makePart("Showcase_" .. def.Id, Vector3.new(4, 1, 4), Vector3.new(x, 1.5, 55), Color3.fromRGB(70, 70, 80), Enum.Material.Slate, folder)
 		local m = BrainrotModels.build(def, false)

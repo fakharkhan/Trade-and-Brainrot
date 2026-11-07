@@ -18,8 +18,8 @@ local Config = {
 	StudioFreeCoinsPad = IS_STUDIO,
 	StudioFreeSuperUpgrade = IS_STUDIO,
 
-	SpawnInterval = 5,
-	TrackSpeed = 10,
+	SpawnInterval = 8, -- seconds between brainrots on the track
+	TrackSpeed = 4, -- studs per second (was 10; slower so players can catch them)
 	TrackHalfLength = 80,
 
 	PickupHold = 0.7,

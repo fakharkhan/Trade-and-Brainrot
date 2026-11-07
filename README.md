@@ -33,3 +33,6 @@ Roblox trading / collection game. Brainrots ride a track — buy them, carry the
 - [`assets/roblox-game-thumbnail.jpg`](assets/roblox-game-thumbnail.jpg)
 - [`assets/brainrot-capsule-creature.jpg`](assets/brainrot-capsule-creature.jpg) — Tralalero-style concept
 - [`assets/brainrot-blocky-dude.jpg`](assets/brainrot-blocky-dude.jpg) — Patapim-style concept
+- [`assets/brainrot-starburst.jpg`](assets/brainrot-starburst.jpg) — Boom Boom Stellina
+- [`assets/brainrot-trio-sheet.jpg`](assets/brainrot-trio-sheet.jpg) — Antennini / Gattini / Spadino sheet
+- [`assets/brainrot-flybeak.jpg`](assets/brainrot-flybeak.jpg) — Volanti Beccini
