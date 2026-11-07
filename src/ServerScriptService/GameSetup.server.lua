@@ -875,7 +875,17 @@ superPrompt.Triggered:Connect(function(player)
 	MarketplaceService:PromptProductPurchase(player, CONFIG.SuperUpgradeProductId)
 end)
 
-local receipts = DataStoreService:GetDataStore("SuperUpgradeReceipts")
+-- GetDataStore throws on an unpublished place; never let that stop the rest of the script
+local okStore, receipts = pcall(function()
+	return DataStoreService:GetDataStore("SuperUpgradeReceipts")
+end)
+if not okStore then
+	warn("[GameSetup] DataStore unavailable (publish the place to enable receipts): " .. tostring(receipts))
+	receipts = {
+		GetAsync = function() error("DataStore unavailable") end,
+		SetAsync = function() error("DataStore unavailable") end,
+	}
+end
 
 MarketplaceService.ProcessReceipt = function(info)
 	if info.ProductId ~= CONFIG.SuperUpgradeProductId then
