@@ -2189,11 +2189,6 @@ superPrompt.MaxActivationDistance = 12
 superPrompt.Parent = stand
 
 superPrompt.Triggered:Connect(function(player)
-	if CONFIG.SuperUpgradeProductId == 0 then
-		notify(player, "Robux shop not set up yet (owner: add the Developer Product ID).")
-		warn("[GameSetup] Set CONFIG.SuperUpgradeProductId to your Developer Product ID.")
-		return
-	end
 	local base = baseOf[player]
 	local hasOne = false
 	if base then
@@ -2205,6 +2200,18 @@ superPrompt.Triggered:Connect(function(player)
 		notify(player, "Place a brainrot in your base first - the upgrade applies to your best one!")
 		return
 	end
+
+	-- No Developer Product yet: grant free in Studio / local play so testing works.
+	-- For a live game, set CONFIG.SuperUpgradeProductId to your Creator Hub product ID.
+	if CONFIG.SuperUpgradeProductId == 0 then
+		if upgradeBest(player) then
+			notify(player, ("Super Upgrade! Your best brainrot now earns x%d! (Studio free test)"):format(CONFIG.SuperMultiplier))
+		else
+			notify(player, "No brainrot to upgrade yet.")
+		end
+		return
+	end
+
 	MarketplaceService:PromptProductPurchase(player, CONFIG.SuperUpgradeProductId)
 end)
 

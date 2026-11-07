@@ -1,0 +1,6 @@
+# Roblox Studio lock (local only)
+*.rbxlx.lock
+*.rbxl.lock
+
+.DS_Store
+.studio-check.png
