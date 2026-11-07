@@ -4,3 +4,7 @@
 
 .DS_Store
 .studio-check.png
+
+# Local sync / tooling
+*.rbxl
+sourcemap.json

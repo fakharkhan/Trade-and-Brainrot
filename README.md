@@ -1,27 +1,35 @@
 # Trade and Brainrot
 
-Roblox trading / collection game. Brainrots ride a track — buy them, carry them to your base, earn coins.
+Roblox trading / collection game. Brainrots ride a track — buy them, carry them to your base, earn coins, trade, steal, rebirth, and upgrade.
+
+**Public repo:** https://github.com/fakharkhan/Trade-and-Brainrot
 
 ## Play locally
 
-1. Open [`TradeAndBrainrot.rbxlx`](TradeAndBrainrot.rbxlx) in Roblox Studio
-2. Press **Play** (F5)
-3. Look near the Super Upgrade stand for the **Brainrot Showcase** (Tralalero + Patapim + Sahur standing models)
-4. Watch the center track — the new models also spawn as buyable runners
+1. Prefer [Rojo](docs/workflow.md): `rojo serve` + Studio plugin  
+   **or** run `python3 tools/sync_place.py` then open `TradeAndBrainrot.rbxlx`
+2. Press **Play**
+3. You spawn at your base with coins (and a starter brainrot in Studio)
+4. Buy from the track, place on pedestals, claim Daily Bonus / Rebirth near the showcase
 
-If Studio already had the place open when scripts changed, close the place and reopen the `.rbxlx` so it reloads from disk.
+## Features
+
+- 12 brainrots across Common → Mythic (weighted track spawns)
+- Auto income, carry/steal/place, Trader sell
+- Player trading with offer expiry and optional slot selection
+- Super Upgrade (Robux Developer Product; free in Studio when product ID unset)
+- Daily bonus + Rebirth progression
+- DataStore persistence (after the place is published)
+- Studio-only test helpers gated by `Config.IsStudio`
+
+## Docs
+
+- [Development workflow](docs/workflow.md)
+- [Launch checklist](docs/launch-checklist.md)
 
 ## Assets
 
-- [`assets/roblox-game-icon.jpg`](assets/roblox-game-icon.jpg) — 1:1 square icon
-- [`assets/roblox-game-thumbnail.jpg`](assets/roblox-game-thumbnail.jpg) — 16:9 game thumbnail
-- [`assets/brainrot-capsule-creature.jpg`](assets/brainrot-capsule-creature.jpg) — sketch → Tralalero-style brainrot (capsule body, blue sneakers)
-- [`assets/brainrot-blocky-dude.jpg`](assets/brainrot-blocky-dude.jpg) — sketch → Patapim-style brainrot (moss + wood limbs)
-
-### Icon
-
-Cute blocky character with a tall square head, big square eyes with eyelashes, happy smile, tan wooden-colored body, dark club, and a small cape flap. Gold coins float around the character on a vibrant glowing background. No text or logos.
-
-### Thumbnail
-
-Conveyor track with cute collectible creatures, a colorful player base with pedestals and a top-hat trader shop, flying gold coins, and a sparkling golden super creature under a sunny blue sky. No text or logos.
+- [`assets/roblox-game-icon.jpg`](assets/roblox-game-icon.jpg)
+- [`assets/roblox-game-thumbnail.jpg`](assets/roblox-game-thumbnail.jpg)
+- [`assets/brainrot-capsule-creature.jpg`](assets/brainrot-capsule-creature.jpg) — Tralalero-style concept
+- [`assets/brainrot-blocky-dude.jpg`](assets/brainrot-blocky-dude.jpg) — Patapim-style concept

@@ -1,1492 +1,945 @@
+<?xml version="1.0" encoding="utf-8"?>
 <roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
-	<External>null</External>
-	<External>nil</External>
-	<Item class="Workspace" referent="RBX3">
+	<Item class="Workspace" referent="RBX20">
 		<Properties>
-			<float name="AirDensity">0.00120000006</float>
-			<float name="AirTurbulenceIntensity">0</float>
-			<bool name="AllowThirdPartySales">false</bool>
-			<token name="AuthorityMode">1</token>
-			<token name="AvatarUnificationMode">0</token>
-			<token name="ClientAnimatorThrottling">0</token>
-			<Ref name="CurrentCamera">RBX711cb9d75d024003a505e4cf5e04b4a7</Ref>
-			<double name="DistributedGameTime">0</double>
-			<token name="EnableSLIMAvatars">0</token>
-			<token name="ExpandedTerrain">0</token>
-			<bool name="ExplicitAutoJoints">true</bool>
-			<bool name="FallHeightEnabled">true</bool>
-			<float name="FallenPartsDestroyHeight">-500</float>
-			<token name="FluidForces">0</token>
-			<Vector3 name="GlobalWind">
-				<X>0</X>
-				<Y>0</Y>
-				<Z>0</Z>
-			</Vector3>
-			<float name="Gravity">196.199997</float>
-			<token name="IKControlConstraintSupport">0</token>
-			<token name="ImprovedAnimationConstraint">0</token>
-			<token name="ImprovedPhysicsReplication">0</token>
-			<token name="InputSinkEnabled">0</token>
-			<token name="LayeredClothingCacheOptimizations">0</token>
-			<token name="LuauTypeCheckMode">0</token>
-			<token name="MapTVRemoteToGamepadKeycodes">0</token>
-			<token name="MeshPartHeadsAndAccessories">0</token>
-			<token name="MeshStreamingAndImprovedLods">0</token>
-			<token name="ModelStreamingBehavior">0</token>
-			<token name="NextGenerationPhysicsSolver">0</token>
-			<token name="NextGenerationReplication">0</token>
-			<token name="ParticlesUseDynamicWind">0</token>
-			<token name="PathfindingUseImprovedSearch">0</token>
-			<token name="PhysicsSteppingMethod">0</token>
-			<token name="PlayerCharacterDestroyBehavior">0</token>
-			<token name="PlayerScriptsUseInputActionSystem">0</token>
-			<token name="PredictiveStreamingMode">0</token>
-			<token name="RejectCharacterDeletions">0</token>
-			<token name="RenderingCacheOptimizations">0</token>
-			<token name="ReplicateInstanceDestroySetting">0</token>
-			<token name="ReplicationFrequency">0</token>
-			<token name="ReplicationThroughput">0</token>
-			<token name="Retargeting">0</token>
-			<token name="SandboxedInstanceMode">0</token>
-			<token name="SignalBehavior2">0</token>
-			<token name="StreamOutBehavior">0</token>
-			<bool name="StreamingAdaptiveRadius">false</bool>
-			<bool name="StreamingEnabled">false</bool>
-			<token name="StreamingIntegrityMode">0</token>
-			<int name="StreamingMinRadius">64</int>
-			<int name="StreamingTargetRadius">1024</int>
-			<bool name="TerrainWeldsFixed">true</bool>
-			<token name="TouchEventsUseCollisionGroups">0</token>
-			<bool name="TouchesUseCollisionGroups">false</bool>
-			<token name="UseFixedSimulation">0</token>
-			<token name="UseNewLuauTypeSolver">2</token>
-			<token name="ValidateEnabledProximityPrompt">0</token>
-			<bool name="AutoSimulate">true</bool>
-			<BinaryString name="CollisionGroupData">AQEABP////8HRGVmYXVsdA==</BinaryString>
-			<Vector3 name="GravityDirection">
-				<X>0</X>
-				<Y>-1</Y>
-				<Z>0</Z>
-			</Vector3>
-			<float name="SimulationRate">1</float>
-			<float name="Wind">0</float>
-			<Vector3 name="WindDirection">
-				<X>0</X>
-				<Y>0</Y>
-				<Z>0</Z>
-			</Vector3>
-			<token name="LevelOfDetail">0</token>
-			<CoordinateFrame name="ModelMeshCFrame">
-				<X>0</X>
-				<Y>0</Y>
-				<Z>0</Z>
-				<R00>1</R00>
-				<R01>0</R01>
-				<R02>0</R02>
-				<R10>0</R10>
-				<R11>1</R11>
-				<R12>0</R12>
-				<R20>0</R20>
-				<R21>0</R21>
-				<R22>1</R22>
-			</CoordinateFrame>
-			<SharedString name="ModelMeshData">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<Vector3 name="ModelMeshSize">
-				<X>0</X>
-				<Y>0</Y>
-				<Z>0</Z>
-			</Vector3>
-			<token name="ModelStreamingMode">0</token>
-			<bool name="NeedsPivotMigration">false</bool>
-			<Ref name="PrimaryPart">null</Ref>
-			<float name="ScaleFactor">1</float>
-			<SharedString name="SlimHash">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<OptionalCoordinateFrame name="WorldPivotData">
-				<CFrame>
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>0</R02>
-					<R10>0</R10>
-					<R11>1</R11>
-					<R12>0</R12>
-					<R20>0</R20>
-					<R21>0</R21>
-					<R22>1</R22>
-				</CFrame>
-			</OptionalCoordinateFrame>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
 			<string name="Name">Workspace</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000002</UniqueId>
-		</Properties>
-		<Item class="Terrain" referent="RBXe9e54b83153449a1a295e09d6e395b9a">
-			<Properties>
-				<token name="AcquisitionMethod">0</token>
-				<bool name="Decoration">false</bool>
-				<float name="GrassLength">0.699999988</float>
-				<BinaryString name="MaterialColors"><![CDATA[AAAAAAAAan8/P39rf2Y/ilY+j35fi21PZmxvZbDqw8faiVpHOi4kHh4lZlw76JxKc3trhHta
-gcLgc4RKxr21zq2UlJSM]]></BinaryString>
-				<SharedString name="Materials">leDEa27wHRPaBssaK0OoqQ==</SharedString>
-				<BinaryString name="PhysicsGrid">AgMAAAAAAAAAAAAAAAA=</BinaryString>
-				<BinaryString name="SmoothGrid">AQU=</BinaryString>
-				<bool name="SmoothVoxelsUpgraded">false</bool>
-				<AssetContentMap name="VoxelGridAssetContentMap">[]</AssetContentMap>
-				<Color3 name="WaterColor">
-					<R>0.0500000007</R>
-					<G>0.330000013</G>
-					<B>0.360000014</B>
-				</Color3>
-				<float name="WaterReflectance">1</float>
-				<float name="WaterTransparency">0.300000012</float>
-				<float name="WaterWaveSize">0.150000006</float>
-				<float name="WaterWaveSpeed">10</float>
-				<bool name="Anchored">true</bool>
-				<bool name="AudioCanCollide">true</bool>
-				<float name="BackParamA">-0.5</float>
-				<float name="BackParamB">0.5</float>
-				<token name="BackSurface">0</token>
-				<token name="BackSurfaceInput">0</token>
-				<float name="BottomParamA">-0.5</float>
-				<float name="BottomParamB">0.5</float>
-				<token name="BottomSurface">4</token>
-				<token name="BottomSurfaceInput">0</token>
-				<CoordinateFrame name="CFrame">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>0</R02>
-					<R10>0</R10>
-					<R11>1</R11>
-					<R12>0</R12>
-					<R20>0</R20>
-					<R21>0</R21>
-					<R22>1</R22>
-				</CoordinateFrame>
-				<bool name="CanCollide">true</bool>
-				<bool name="CanQuery">true</bool>
-				<bool name="CanTouch">true</bool>
-				<bool name="CastShadow">true</bool>
-				<string name="CollisionGroup">Default</string>
-				<int name="CollisionGroupId">0</int>
-				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
-				<PhysicalProperties name="CustomPhysicalProperties">
-					<CustomPhysics>false</CustomPhysics>
-				</PhysicalProperties>
-				<bool name="EnableFluidForces">true</bool>
-				<float name="FrontParamA">-0.5</float>
-				<float name="FrontParamB">0.5</float>
-				<token name="FrontSurface">0</token>
-				<token name="FrontSurfaceInput">0</token>
-				<float name="LeftParamA">-0.5</float>
-				<float name="LeftParamB">0.5</float>
-				<token name="LeftSurface">0</token>
-				<token name="LeftSurfaceInput">0</token>
-				<bool name="Locked">true</bool>
-				<bool name="Massless">false</bool>
-				<token name="Material">256</token>
-				<string name="MaterialVariantSerialized"></string>
-				<CoordinateFrame name="PivotOffset">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>0</R02>
-					<R10>0</R10>
-					<R11>1</R11>
-					<R12>0</R12>
-					<R20>0</R20>
-					<R21>0</R21>
-					<R22>1</R22>
-				</CoordinateFrame>
-				<float name="Reflectance">0</float>
-				<float name="RightParamA">-0.5</float>
-				<float name="RightParamB">0.5</float>
-				<token name="RightSurface">0</token>
-				<token name="RightSurfaceInput">0</token>
-				<int name="RootPriority">0</int>
-				<Vector3 name="RotVelocity">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<float name="TopParamA">-0.5</float>
-				<float name="TopParamB">0.5</float>
-				<token name="TopSurface">3</token>
-				<token name="TopSurfaceInput">0</token>
-				<float name="Transparency">0</float>
-				<Vector3 name="Velocity">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<Vector3 name="size">
-					<X>2044</X>
-					<Y>252</Y>
-					<Z>2044</Z>
-				</Vector3>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">Terrain</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e4</UniqueId>
-			</Properties>
-		</Item>
-		<Item class="Camera" referent="RBX711cb9d75d024003a505e4cf5e04b4a7">
-			<Properties>
-				<CoordinateFrame name="CFrame">
-					<X>0</X>
-					<Y>20</Y>
-					<Z>20</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>-0</R02>
-					<R10>-0</R10>
-					<R11>0.780868828</R11>
-					<R12>0.624695063</R12>
-					<R20>0</R20>
-					<R21>-0.624695063</R21>
-					<R22>0.780868828</R22>
-				</CoordinateFrame>
-				<Ref name="CameraSubject">null</Ref>
-				<token name="CameraType">0</token>
-				<float name="FieldOfView">70</float>
-				<token name="FieldOfViewMode">0</token>
-				<CoordinateFrame name="Focus">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>-5</Z>
-					<R00>1</R00>
-					<R01>0</R01>
-					<R02>0</R02>
-					<R10>0</R10>
-					<R11>1</R11>
-					<R12>0</R12>
-					<R20>0</R20>
-					<R21>0</R21>
-					<R22>1</R22>
-				</CoordinateFrame>
-				<bool name="HeadLocked">true</bool>
-				<float name="HeadScale">1</float>
-				<token name="OrthographicMode">0</token>
-				<float name="OrthographicSize">35</float>
-				<token name="ProjectionType">0</token>
-				<bool name="VRTiltAndRollEnabled">false</bool>
-				<float name="ViewStretch">1</float>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">Camera</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003f4</UniqueId>
-			</Properties>
-		</Item>
-	</Item>
-	<Item class="TimerService" referent="RBXdb2d7d3d0668401ea326c3ecbd117b61">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">TimerService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000036a</UniqueId>
 		</Properties>
 	</Item>
-	<Item class="CollectionService" referent="RBX8e40d56e7330499c914754510bba14fc">
+	<Item class="ReplicatedStorage" referent="RBX21">
 		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">CollectionService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000036b</UniqueId>
+			<string name="Name">ReplicatedStorage</string>
 		</Properties>
-	</Item>
-	<Item class="SoundService" referent="RBX44d67ea06d1e4dcdb75c46bee81ec949">
-		<Properties>
-			<bool name="AcousticSimulationEnabled">false</bool>
-			<token name="AmbientReverb">0</token>
-			<token name="AudioApiByDefault">0</token>
-			<token name="CharacterSoundsUseNewApi">0</token>
-			<token name="DefaultListenerLocation">0</token>
-			<bool name="DiffractionEnabled">true</bool>
-			<float name="DistanceFactor">3.32999992</float>
-			<float name="DopplerScale">1</float>
-			<bool name="IsNewExpForAudioApiByDefault">false</bool>
-			<CoordinateFrame name="ListenerCFrame">
-				<X>0</X>
-				<Y>0</Y>
-				<Z>0</Z>
-				<R00>1</R00>
-				<R01>0</R01>
-				<R02>0</R02>
-				<R10>0</R10>
-				<R11>1</R11>
-				<R12>0</R12>
-				<R20>0</R20>
-				<R21>0</R21>
-				<R22>1</R22>
-			</CoordinateFrame>
-			<Ref name="ListenerObject">null</Ref>
-			<token name="ListenerType">0</token>
-			<bool name="OcclusionEnabled">true</bool>
-			<bool name="RespectFilteringEnabled">false</bool>
-			<bool name="ReverbEnabled">true</bool>
-			<float name="RolloffScale">1</float>
-			<token name="VolumetricAudio">1</token>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">SoundService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000036c</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="VideoCaptureService" referent="RBX4b5cfefe86d64e0598c2bdcd82005091">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">VideoCaptureService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000378</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="NonReplicatedCSGDictionaryService" referent="RBXdfeb4000309c4c6d81d1ff709eeb76a2">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">NonReplicatedCSGDictionaryService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000379</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="CSGDictionaryService" referent="RBXd98d2656df0b4f8c86eb2e77a475447c">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">CSGDictionaryService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000037a</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="Chat" referent="RBX25db9efbae4d4479846c869b842b0b22">
-		<Properties>
-			<bool name="BubbleChatEnabled">false</bool>
-			<bool name="IsAutoMigrated">false</bool>
-			<bool name="LoadDefaultChat">true</bool>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">Chat</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000380</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="Players" referent="RBXf89787213e8041c78033fbe495652c5f">
-		<Properties>
-			<bool name="BanningEnabled">true</bool>
-			<bool name="CharacterAutoLoads">true</bool>
-			<int name="MaxPlayersInternal">12</int>
-			<int name="PreferredPlayersInternal">1</int>
-			<float name="RespawnTime">5</float>
-			<bool name="UseStrafingAnimations">false</bool>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">Players</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000382</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="ReplicatedFirst" referent="RBXf5586f297fd5431f9a373598a93c4e9d">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">ReplicatedFirst</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000385</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="TweenService" referent="RBXd149a3bffd40498ea29acf245f225111">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">TweenService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000387</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="MaterialService" referent="RBXdeeaeb6ece1542efa558d6936c9828bc">
-		<Properties>
-			<string name="AsphaltName">Asphalt</string>
-			<string name="BasaltName">Basalt</string>
-			<string name="BrickName">Brick</string>
-			<string name="CardboardName">Cardboard</string>
-			<string name="CarpetName">Carpet</string>
-			<string name="CeramicTilesName">CeramicTiles</string>
-			<string name="ClayRoofTilesName">ClayRoofTiles</string>
-			<string name="CobblestoneName">Cobblestone</string>
-			<string name="ConcreteName">Concrete</string>
-			<string name="CorrodedMetalName">CorrodedMetal</string>
-			<string name="CrackedLavaName">CrackedLava</string>
-			<string name="DiamondPlateName">DiamondPlate</string>
-			<string name="FabricName">Fabric</string>
-			<string name="FoilName">Foil</string>
-			<string name="GlacierName">Glacier</string>
-			<string name="GraniteName">Granite</string>
-			<string name="GrassName">Grass</string>
-			<string name="GroundName">Ground</string>
-			<string name="IceName">Ice</string>
-			<string name="LeafyGrassName">LeafyGrass</string>
-			<string name="LeatherName">Leather</string>
-			<string name="LimestoneName">Limestone</string>
-			<string name="MarbleName">Marble</string>
-			<string name="MetalName">Metal</string>
-			<string name="MudName">Mud</string>
-			<string name="PavementName">Pavement</string>
-			<string name="PebbleName">Pebble</string>
-			<string name="PlasterName">Plaster</string>
-			<string name="PlasticName">Plastic</string>
-			<string name="RockName">Rock</string>
-			<string name="RoofShinglesName">RoofShingles</string>
-			<string name="RubberName">Rubber</string>
-			<string name="SaltName">Salt</string>
-			<string name="SandName">Sand</string>
-			<string name="SandstoneName">Sandstone</string>
-			<string name="SlateName">Slate</string>
-			<string name="SmoothPlasticName">SmoothPlastic</string>
-			<string name="SnowName">Snow</string>
-			<bool name="Use2022MaterialsXml">false</bool>
-			<string name="WoodName">Wood</string>
-			<string name="WoodPlanksName">WoodPlanks</string>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">MaterialService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000388</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="TextChatService" referent="RBX1ea4fcd45e5147b49b5e352507bd0057">
-		<Properties>
-			<bool name="ChatTranslationFTUXShown">true</bool>
-			<bool name="ChatTranslationToggleEnabled">false</bool>
-			<token name="ChatVersion">0</token>
-			<bool name="CreateDefaultCommands">true</bool>
-			<bool name="CreateDefaultTextChannels">true</bool>
-			<bool name="HasSeenDeprecationDialog">false</bool>
-			<bool name="IsLegacyChatDisabled">false</bool>
-			<token name="PlatformIntegratedChat">0</token>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">TextChatService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000389</UniqueId>
-		</Properties>
-		<Item class="ChatWindowConfiguration" referent="RBX67f07b961ae64055bd4d76cf9838ada2">
-			<Properties>
-				<Color3 name="BackgroundColor3">
-					<R>0.0980392173</R>
-					<G>0.105882354</G>
-					<B>0.113725491</B>
-				</Color3>
-				<double name="BackgroundTransparency">0.2999999999999999889</double>
-				<bool name="Enabled">true</bool>
-				<Font name="FontFace">
-					<Family><url>rbxasset://fonts/families/GothamSSm.json</url></Family>
-					<Weight>500</Weight>
-					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/Montserrat-Medium.ttf</url></CachedFaceId>
-				</Font>
-				<float name="HeightScale">1</float>
-				<token name="HorizontalAlignment">1</token>
-				<token name="TextChannelDisplayMode">0</token>
-				<Color3 name="TextColor3">
-					<R>1</R>
-					<G>1</G>
-					<B>1</B>
-				</Color3>
-				<int64 name="TextSize">14</int64>
-				<Color3 name="TextStrokeColor3">
-					<R>0</R>
-					<G>0</G>
-					<B>0</B>
-				</Color3>
-				<double name="TextStrokeTransparency">0.5</double>
-				<token name="VerticalAlignment">1</token>
-				<float name="WidthScale">1</float>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">ChatWindowConfiguration</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e6</UniqueId>
-			</Properties>
-		</Item>
-		<Item class="ChatInputBarConfiguration" referent="RBX7184922d3d2f429d95096728cd104406">
-			<Properties>
-				<bool name="AutocompleteEnabled">true</bool>
-				<Color3 name="BackgroundColor3">
-					<R>0.0980392173</R>
-					<G>0.105882354</G>
-					<B>0.113725491</B>
-				</Color3>
-				<double name="BackgroundTransparency">0.2000000000000000111</double>
-				<bool name="Enabled">true</bool>
-				<Font name="FontFace">
-					<Family><url>rbxasset://fonts/families/GothamSSm.json</url></Family>
-					<Weight>500</Weight>
-					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/Montserrat-Medium.ttf</url></CachedFaceId>
-				</Font>
-				<token name="KeyboardKeyCode">47</token>
-				<Color3 name="PlaceholderColor3">
-					<R>0.698039234</R>
-					<G>0.698039234</G>
-					<B>0.698039234</B>
-				</Color3>
-				<Ref name="TargetTextChannel">null</Ref>
-				<Color3 name="TextColor3">
-					<R>1</R>
-					<G>1</G>
-					<B>1</B>
-				</Color3>
-				<int64 name="TextSize">14</int64>
-				<Color3 name="TextStrokeColor3">
-					<R>0</R>
-					<G>0</G>
-					<B>0</B>
-				</Color3>
-				<double name="TextStrokeTransparency">0.5</double>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">ChatInputBarConfiguration</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e7</UniqueId>
-			</Properties>
-		</Item>
-		<Item class="BubbleChatConfiguration" referent="RBXe7838794f11946ee99bd4795bbbe64dd">
-			<Properties>
-				<string name="AdorneeName">HumanoidRootPart</string>
-				<Color3 name="BackgroundColor3">
-					<R>0.980392158</R>
-					<G>0.980392158</G>
-					<B>0.980392158</B>
-				</Color3>
-				<double name="BackgroundTransparency">0.10000000000000000555</double>
-				<float name="BubbleDuration">15</float>
-				<float name="BubblesSpacing">6</float>
-				<bool name="Enabled">true</bool>
-				<token name="Font">18</token>
-				<Font name="FontFace">
-					<Family><url>rbxasset://fonts/families/GothamSSm.json</url></Family>
-					<Weight>500</Weight>
-					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/Montserrat-Medium.ttf</url></CachedFaceId>
-				</Font>
-				<Vector3 name="LocalPlayerStudsOffset">
-					<X>0</X>
-					<Y>0</Y>
-					<Z>0</Z>
-				</Vector3>
-				<float name="MaxBubbles">3</float>
-				<float name="MaxDistance">100</float>
-				<float name="MinimizeDistance">40</float>
-				<bool name="TailVisible">true</bool>
-				<Color3 name="TextColor3">
-					<R>0.223529413</R>
-					<G>0.23137255</G>
-					<B>0.239215687</B>
-				</Color3>
-				<int64 name="TextSize">16</int64>
-				<float name="VerticalStudsOffset">0</float>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">BubbleChatConfiguration</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e8</UniqueId>
-			</Properties>
-		</Item>
-		<Item class="ChannelTabsConfiguration" referent="RBX48af8eac578f423d80fb6b8947ff1ce9">
-			<Properties>
-				<Color3 name="BackgroundColor3">
-					<R>0.0980392173</R>
-					<G>0.105882354</G>
-					<B>0.113725491</B>
-				</Color3>
-				<double name="BackgroundTransparency">0</double>
-				<bool name="Enabled">false</bool>
-				<Font name="FontFace">
-					<Family><url>rbxasset://fonts/families/BuilderSans.json</url></Family>
-					<Weight>700</Weight>
-					<Style>Normal</Style>
-					<CachedFaceId><url>rbxasset://fonts/BuilderSans-Bold.otf</url></CachedFaceId>
-				</Font>
-				<Color3 name="HoverBackgroundColor3">
-					<R>0.490196079</R>
-					<G>0.490196079</G>
-					<B>0.490196079</B>
-				</Color3>
-				<Color3 name="SelectedTabTextColor3">
-					<R>1</R>
-					<G>1</G>
-					<B>1</B>
-				</Color3>
-				<Color3 name="TextColor3">
-					<R>0.686274529</R>
-					<G>0.686274529</G>
-					<B>0.686274529</B>
-				</Color3>
-				<int64 name="TextSize">18</int64>
-				<Color3 name="TextStrokeColor3">
-					<R>0</R>
-					<G>0</G>
-					<B>0</B>
-				</Color3>
-				<double name="TextStrokeTransparency">1</double>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">ChannelTabsConfiguration</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e9</UniqueId>
-			</Properties>
-		</Item>
-	</Item>
-	<Item class="PermissionsService" referent="RBXe0d1357c1a2b4247ba25c9588e5187d0">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">PermissionsService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000038b</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="PlayerEmulatorService" referent="RBX0b1b9d0711c5418194f771fc70a32f52">
-		<Properties>
-			<bool name="CustomPoliciesEnabled">false</bool>
-			<string name="EmulatedCountryCode"></string>
-			<string name="EmulatedGameLocale"></string>
-			<bool name="PlayerEmulationEnabled">false</bool>
-			<bool name="PseudolocalizationEnabled">false</bool>
-			<BinaryString name="SerializedEmulatedPolicyInfo"></BinaryString>
-			<int name="TextElongationFactor">0</int>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">PlayerEmulatorService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000038c</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="StudioData" referent="RBXbf9fd0cb03f04d7db628f9821eeb2511">
-		<Properties>
-			<bool name="EnableScriptCollabByDefaultOnLoad">false</bool>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">StudioData</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000038f</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="StarterPlayer" referent="RBX6">
-		<Properties>
-			<bool name="AllowCustomAnimations">true</bool>
-			<bool name="AutoJumpEnabled">true</bool>
-			<token name="AvatarJointUpgrade_SerializedRollout">0</token>
-			<float name="CameraMaxZoomDistance">400</float>
-			<float name="CameraMinZoomDistance">0.5</float>
-			<token name="CameraMode">0</token>
-			<bool name="CharacterBreakJointsOnDeath">true</bool>
-			<float name="CharacterJumpHeight">7.19999981</float>
-			<float name="CharacterJumpPower">50</float>
-			<float name="CharacterMaxSlopeAngle">89</float>
-			<bool name="CharacterUseJumpPower">true</bool>
-			<float name="CharacterWalkSpeed">16</float>
-			<bool name="ClassicDeath">true</bool>
-			<bool name="CreateDefaultPlayerModule">true</bool>
-			<token name="DevCameraOcclusionMode">0</token>
-			<token name="DevComputerCameraMovementMode">0</token>
-			<token name="DevComputerMovementMode">0</token>
-			<token name="DevTouchCameraMovementMode">0</token>
-			<token name="DevTouchMovementMode">0</token>
-			<token name="EnableDynamicHeads">0</token>
-			<bool name="EnableMouseLockOption">true</bool>
-			<token name="GameSettingsAvatar">1</token>
-			<token name="GameSettingsR15Collision">0</token>
-			<float name="HealthDisplayDistance">100</float>
-			<bool name="LoadCharacterAppearance">true</bool>
-			<token name="LoadCharacterLayeredClothing">0</token>
-			<token name="LuaCharacterController">0</token>
-			<float name="NameDisplayDistance">100</float>
-			<Ref name="PlaceAvatarRules">null</Ref>
-			<int name="PlayerModuleStatus">0</int>
-			<token name="UseImprovedCharacterEvents">0</token>
-			<bool name="UserEmotesEnabled">true</bool>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">StarterPlayer</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000391</UniqueId>
-		</Properties>
-		<Item class="StarterPlayerScripts" referent="RBX5">
-			<Properties>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">StarterPlayerScripts</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e1</UniqueId>
-			</Properties>
-			<Item class="LocalScript" referent="RBX2">
+			<Item class="Folder" referent="RBX18">
 				<Properties>
-					<ProtectedString name="Source"><![CDATA[-- TradeClient (LocalScript) -> put in StarterPlayer > StarterPlayerScripts
--- Simple trading screen. Press the "Trade" button to open it.
+					<string name="Name">Shared</string>
+				</Properties>
+			<Item class="ModuleScript" referent="RBX1">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[-- Brainrot catalog. Price/income scale by rarity. Weight controls track spawn chance.
+local BrainrotDefs = {
+	{ Id = "tung", Name = "Tung Tung Tung Sahur", Rarity = "Common", Price = 25, Income = 1, Weight = 40, Style = "doodle", Color = Color3.fromRGB(205, 160, 100), Foot = 1.9 },
+	{ Id = "lirili", Name = "Lirili Larila", Rarity = "Common", Price = 40, Income = 2, Weight = 32, Style = "round", Color = Color3.fromRGB(240, 180, 90), Foot = 1.9 },
+	{ Id = "bombini", Name = "Bombini Gusini", Rarity = "Common", Price = 55, Income = 3, Weight = 28, Style = "round", Color = Color3.fromRGB(220, 90, 70), Foot = 1.9 },
 
-local Players = game:GetService("Players")
+	{ Id = "tralalero", Name = "Tralalero Tralala", Rarity = "Rare", Price = 150, Income = 6, Weight = 18, Style = "tall", Color = Color3.fromRGB(120, 145, 155), Foot = 2.15 },
+	{ Id = "cappuccino", Name = "Cappuccino Assassino", Rarity = "Rare", Price = 220, Income = 9, Weight = 14, Style = "round", Color = Color3.fromRGB(140, 90, 50), Foot = 1.9 },
+	{ Id = "tripi", Name = "Trippi Troppi", Rarity = "Rare", Price = 280, Income = 11, Weight = 12, Style = "doodle", Color = Color3.fromRGB(90, 200, 160), Foot = 1.9 },
+
+	{ Id = "patapim", Name = "Brr Brr Patapim", Rarity = "Epic", Price = 450, Income = 18, Weight = 8, Style = "leafy", Color = Color3.fromRGB(110, 170, 80), Foot = 2.8 },
+	{ Id = "ballerina", Name = "Ballerina Cappuccina", Rarity = "Epic", Price = 600, Income = 24, Weight = 6, Style = "doodle", Color = Color3.fromRGB(255, 160, 200), Foot = 1.9 },
+	{ Id = "frigo", Name = "Frigo Camelo", Rarity = "Epic", Price = 750, Income = 30, Weight = 5, Style = "tall", Color = Color3.fromRGB(100, 180, 220), Foot = 2.15 },
+
+	{ Id = "udindin", Name = "Udindindun", Rarity = "Legendary", Price = 1500, Income = 55, Weight = 3, Style = "leafy", Color = Color3.fromRGB(255, 200, 60), Foot = 2.8 },
+	{ Id = "chimpanzini", Name = "Chimpanzini Bananini", Rarity = "Legendary", Price = 2200, Income = 75, Weight = 2, Style = "doodle", Color = Color3.fromRGB(255, 220, 80), Foot = 1.9 },
+
+	{ Id = "saturno", Name = "Saturno Saturnita", Rarity = "Mythic", Price = 5000, Income = 150, Weight = 1, Style = "round", Color = Color3.fromRGB(255, 80, 160), Foot = 1.9 },
+}
+
+local byId = {}
+local byName = {}
+for _, def in ipairs(BrainrotDefs) do
+	byId[def.Id] = def
+	byName[def.Name] = def
+end
+
+function BrainrotDefs.GetById(id)
+	return byId[id]
+end
+
+function BrainrotDefs.GetByName(name)
+	return byName[name]
+end
+
+function BrainrotDefs.PickWeighted(luckBonus)
+	luckBonus = luckBonus or 0
+	local total = 0
+	local weights = {}
+	for i, d in ipairs(BrainrotDefs) do
+		-- luckBonus slightly boosts rare+ weights
+		local w = d.Weight
+		if luckBonus > 0 and d.Rarity ~= "Common" then
+			w = w * (1 + luckBonus)
+		end
+		weights[i] = w
+		total += w
+	end
+	local r = math.random() * total
+	for i, d in ipairs(BrainrotDefs) do
+		r -= weights[i]
+		if r <= 0 then return d end
+	end
+	return BrainrotDefs[1]
+end
+
+return BrainrotDefs
+]]></ProtectedString>
+					<string name="Name">BrainrotDefs</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX2">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[-- Shared game config. Studio helpers never run on a live server.
+local RunService = game:GetService("RunService")
+
+local IS_STUDIO = RunService:IsStudio()
+
+local Config = {
+	IsStudio = IS_STUDIO,
+
+	BaseSize = 40,
+	BaseSpacing = 46,
+	PlaceOffsets = { Vector3.new(-120, 0, 0), Vector3.new(120, 0, 0) },
+	BasesPerPlace = 3,
+	PedestalsPerBase = 8,
+
+	-- Live start coins; Studio gets a higher amount for testing
+	StartCoins = IS_STUDIO and 2000 or 100,
+	StudioGiveStarterBrainrot = IS_STUDIO,
+	StudioFreeCoinsPad = IS_STUDIO,
+	StudioFreeSuperUpgrade = IS_STUDIO,
+
+	SpawnInterval = 5,
+	TrackSpeed = 10,
+	TrackHalfLength = 80,
+
+	PickupHold = 0.7,
+	StealCooldown = 30,
+	StealProtectSeconds = 15,
+	SellFraction = 0.5,
+
+	SuperMultiplier = 5,
+	-- Set after creating the Developer Product in Creator Hub
+	SuperUpgradeProductId = 0,
+	SuperUpgradePriceRobux = 100,
+
+	AutosaveSeconds = 60,
+	DataStoreName = "TradeBrainrot_v1",
+	ReceiptStoreName = "SuperUpgradeReceipts_v1",
+
+	TradeOfferExpireSeconds = 30,
+	RemoteRateLimitSeconds = 0.35,
+
+	RebirthMinIncome = 50, -- total income/s required to rebirth
+	RebirthIncomeBonus = 0.25, -- +25% income per rebirth
+	DailyBonusCoins = 250,
+
+	RarityColors = {
+		Common = Color3.fromRGB(200, 200, 200),
+		Rare = Color3.fromRGB(80, 160, 255),
+		Epic = Color3.fromRGB(180, 90, 255),
+		Legendary = Color3.fromRGB(255, 180, 40),
+		Mythic = Color3.fromRGB(255, 70, 120),
+	},
+}
+
+return Config
+]]></ProtectedString>
+					<string name="Name">Config</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX3">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[-- Creates remotes once (server) or waits for them (client).
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local RunService = game:GetService("RunService")
+
+local folder = ReplicatedStorage:FindFirstChild("GameRemotes")
+if not folder then
+	if RunService:IsServer() then
+		folder = Instance.new("Folder")
+		folder.Name = "GameRemotes"
+		folder.Parent = ReplicatedStorage
+	else
+		folder = ReplicatedStorage:WaitForChild("GameRemotes", 30)
+	end
+end
+
+local function getRemote(name, className)
+	className = className or "RemoteEvent"
+	local existing = folder and folder:FindFirstChild(name)
+	if existing then return existing end
+	if RunService:IsServer() and folder then
+		local r = Instance.new(className)
+		r.Name = name
+		r.Parent = folder
+		return r
+	end
+	return folder and folder:WaitForChild(name, 30)
+end
+
+-- TradeEvent kept at ReplicatedStorage root for backward compatibility with TradeServer
+local tradeEvent = ReplicatedStorage:FindFirstChild("TradeEvent")
+if not tradeEvent and RunService:IsServer() then
+	tradeEvent = Instance.new("RemoteEvent")
+	tradeEvent.Name = "TradeEvent"
+	tradeEvent.Parent = ReplicatedStorage
+elseif not tradeEvent then
+	tradeEvent = ReplicatedStorage:WaitForChild("TradeEvent", 30)
+end
+
+return {
+	Folder = folder,
+	TradeEvent = tradeEvent,
+	GameEvent = getRemote("GameEvent"),
+	IncomeUpdate = getRemote("IncomeUpdate"),
+}
+]]></ProtectedString>
+					<string name="Name">Remotes</string>
+				</Properties>
+			</Item>
+			</Item>
+	</Item>
+	<Item class="ServerScriptService" referent="RBX22">
+		<Properties>
+			<string name="Name">ServerScriptService</string>
+		</Properties>
+			<Item class="Script" referent="RBX15">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[--[[
+	Trade and Brainrot — main server entry.
+	Loads modules with pcall isolation so one failure cannot stop the game.
+]]
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local player = Players.LocalPlayer
-local event = ReplicatedStorage:WaitForChild("TradeEvent")
+-- Ensure Shared modules are require-able (Rojo maps ReplicatedStorage.Shared)
+local function boot()
+	local Util = require(script.Parent.Modules.Util)
+	local Remotes = require(ReplicatedStorage.Shared.Remotes)
+	local DataService = require(script.Parent.Modules.DataService)
+	local Bases = require(script.Parent.Modules.Bases)
+	local Track = require(script.Parent.Modules.Track)
+	local Shop = require(script.Parent.Modules.Shop)
+	local Economy = require(script.Parent.Modules.Economy)
+	local PlayersService = require(script.Parent.Modules.PlayersService)
 
-local gui = Instance.new("ScreenGui")
-gui.Name = "TradeGui"
-gui.ResetOnSpawn = false
-gui.Parent = player:WaitForChild("PlayerGui")
+	Util.safe("DataService.init", function()
+		DataService.init()
+		DataService.startAutosave()
+		DataService.bindToClose()
+	end)
 
-local function make(class, props, parent)
-	local obj = Instance.new(class)
-	for k, v in pairs(props) do obj[k] = v end
-	obj.Parent = parent
-	return obj
+	local map = Instance.new("Folder")
+	map.Name = "Map"
+	map.Parent = workspace
+
+	Util.safe("world", function()
+		Util.makePart("Ground", Vector3.new(400, 1, 220), Vector3.new(0, -0.5, 0), Color3.fromRGB(90, 140, 80), Enum.Material.Grass, map)
+
+		local spawn = Instance.new("SpawnLocation")
+		spawn.Position = Vector3.new(0, 1, 75)
+		spawn.Size = Vector3.new(12, 1, 12)
+		spawn.Anchored = true
+		spawn.Neutral = true
+		spawn.Parent = map
+
+		local wallColor = Color3.fromRGB(110, 110, 120)
+		local H, T = 20, 2
+		local halfX, halfZ = 190, 110
+		Util.makePart("Wall_N", Vector3.new(halfX * 2, H, T), Vector3.new(0, H / 2, -halfZ), wallColor, Enum.Material.Concrete, map)
+		Util.makePart("Wall_S", Vector3.new(halfX * 2, H, T), Vector3.new(0, H / 2, halfZ), wallColor, Enum.Material.Concrete, map)
+		Util.makePart("Wall_W", Vector3.new(T, H, halfZ * 2), Vector3.new(-halfX, H / 2, 0), wallColor, Enum.Material.Concrete, map)
+		Util.makePart("Wall_E", Vector3.new(T, H, halfZ * 2), Vector3.new(halfX, H / 2, 0), wallColor, Enum.Material.Concrete, map)
+
+		Bases.buildAll(map)
+		Bases.installApi()
+	end)
+
+	Util.safe("Track.start", function() Track.start(map) end)
+	Util.safe("Shop.showcase", function() Shop.buildShowcase(map) end)
+	Util.safe("Shop.super", function() Shop.buildSuperStand(map) end)
+	Util.safe("Shop.daily", function() Shop.buildDailyPad(map) end)
+	Util.safe("Shop.rebirth", function() Shop.buildRebirthPad(map) end)
+	Util.safe("Economy", function() Economy.startIncomeLoop() end)
+	Util.safe("PlayersService", function() PlayersService.start() end)
+
+	-- Touch remotes so they exist
+	local _ = Remotes.GameEvent
+	local _2 = Remotes.IncomeUpdate
+
+	print("[TradeBrainrot] World ready. Modules loaded.")
 end
 
-local function corner(obj)
-	make("UICorner", { CornerRadius = UDim.new(0, 8) }, obj)
+local ok, err = pcall(boot)
+if not ok then
+	warn("[TradeBrainrot] FATAL boot failure: " .. tostring(err))
+end
+]]></ProtectedString>
+					<bool name="Disabled">false</bool>
+					<string name="Name">Main</string>
+				</Properties>
+			</Item>
+			<Item class="Script" referent="RBX16">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[-- TradeServer: player-to-player trades with expiry, validation, and optional slot indices.
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local ServerStorage = game:GetService("ServerStorage")
+
+local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
+local RateLimit = require(script.Parent.Modules.RateLimit)
+
+local event = ReplicatedStorage:FindFirstChild("TradeEvent")
+if not event then
+	event = Instance.new("RemoteEvent")
+	event.Name = "TradeEvent"
+	event.Parent = ReplicatedStorage
 end
 
--- Coins display (bottom of the screen)
-local coinsBar = make("TextLabel", {
-	Size = UDim2.fromOffset(220, 44), Position = UDim2.new(0.5, -110, 1, -60),
-	BackgroundColor3 = Color3.fromRGB(35, 35, 45), TextColor3 = Color3.fromRGB(255, 215, 70),
-	Font = Enum.Font.GothamBold, TextSize = 24, Text = "Coins: 0",
-}, gui)
-corner(coinsBar)
+local api = ServerStorage:WaitForChild("BaseApi", 60)
 
-task.spawn(function()
-	local stats = player:WaitForChild("leaderstats", 30)
-	if not stats then
-		coinsBar.Text = "Coins: (waiting…)"
-		return
+local pending = {} -- [targetUserId] = { from, give, want, indices?, expires }
+
+local function coinsOf(player)
+	local stats = player:FindFirstChild("leaderstats")
+	return stats and stats:FindFirstChild("Coins")
+end
+
+local function notify(player, message)
+	if player and player.Parent == Players then
+		event:FireClient(player, "Message", message)
 	end
-	local coins = stats:WaitForChild("Coins", 10)
-	if not coins then
-		coinsBar.Text = "Coins: (missing)"
-		return
-	end
-	local function update()
-		coinsBar.Text = "Coins: " .. tostring(coins.Value)
-	end
-	update()
-	coins:GetPropertyChangedSignal("Value"):Connect(update)
-end)
+end
 
--- Open/close button
-local openBtn = make("TextButton", {
-	Size = UDim2.fromOffset(100, 40), Position = UDim2.new(0, 10, 0.5, 0),
-	Text = "Trade", Font = Enum.Font.GothamBold, TextSize = 18,
-	BackgroundColor3 = Color3.fromRGB(60, 120, 220), TextColor3 = Color3.new(1, 1, 1),
-}, gui)
-corner(openBtn)
-
--- Trade window
-local frame = make("Frame", {
-	Size = UDim2.fromOffset(280, 340), Position = UDim2.new(0, 120, 0.5, -100),
-	BackgroundColor3 = Color3.fromRGB(35, 35, 45), Visible = false,
-}, gui)
-corner(frame)
-
-make("TextLabel", {
-	Size = UDim2.new(1, 0, 0, 30), BackgroundTransparency = 1, Text = "Trade with a player",
-	Font = Enum.Font.GothamBold, TextSize = 16, TextColor3 = Color3.new(1, 1, 1),
-}, frame)
-
-local giveBox = make("TextBox", {
-	Size = UDim2.fromOffset(120, 30), Position = UDim2.fromOffset(10, 35),
-	PlaceholderText = "Brainrots to give", Text = "1", Font = Enum.Font.Gotham, TextSize = 14,
-	BackgroundColor3 = Color3.fromRGB(60, 60, 75), TextColor3 = Color3.new(1, 1, 1),
-}, frame)
-corner(giveBox)
-
-local wantBox = make("TextBox", {
-	Size = UDim2.fromOffset(120, 30), Position = UDim2.fromOffset(150, 35),
-	PlaceholderText = "Coins you want", Text = "10", Font = Enum.Font.Gotham, TextSize = 14,
-	BackgroundColor3 = Color3.fromRGB(60, 60, 75), TextColor3 = Color3.new(1, 1, 1),
-}, frame)
-corner(wantBox)
-
-local list = make("ScrollingFrame", {
-	Size = UDim2.new(1, -20, 1, -85), Position = UDim2.fromOffset(10, 75),
-	BackgroundColor3 = Color3.fromRGB(45, 45, 58), BorderSizePixel = 0,
-	CanvasSize = UDim2.new(), AutomaticCanvasSize = Enum.AutomaticSize.Y, ScrollBarThickness = 6,
-}, frame)
-corner(list)
-make("UIListLayout", { Padding = UDim.new(0, 4) }, list)
-
-local function refreshList()
-	for _, child in ipairs(list:GetChildren()) do
-		if child:IsA("TextButton") then child:Destroy() end
-	end
-	for _, other in ipairs(Players:GetPlayers()) do
-		if other ~= player then
-			local btn = make("TextButton", {
-				Size = UDim2.new(1, -6, 0, 30), Text = "Offer to " .. other.Name,
-				Font = Enum.Font.Gotham, TextSize = 14,
-				BackgroundColor3 = Color3.fromRGB(80, 160, 90), TextColor3 = Color3.new(1, 1, 1),
-			}, list)
-			corner(btn)
-			btn.MouseButton1Click:Connect(function()
-				event:FireServer("Offer", other.UserId, tonumber(giveBox.Text), tonumber(wantBox.Text))
-			end)
+local function clearExpired()
+	local now = os.clock()
+	for id, offer in pairs(pending) do
+		if offer.expires and now > offer.expires then
+			pending[id] = nil
+			if offer.from and offer.from.Parent == Players then
+				notify(offer.from, "Your trade offer expired.")
+			end
+			local target = Players:GetPlayerByUserId(id)
+			if target then
+				event:FireClient(target, "TradeExpired")
+			end
 		end
 	end
 end
 
-openBtn.MouseButton1Click:Connect(function()
-	frame.Visible = not frame.Visible
-	if frame.Visible then refreshList() end
-end)
-Players.PlayerAdded:Connect(function() if frame.Visible then refreshList() end end)
-Players.PlayerRemoving:Connect(function() task.defer(function() if frame.Visible then refreshList() end end) end)
-
--- Incoming offer popup
-local popup = make("Frame", {
-	Size = UDim2.fromOffset(300, 130), Position = UDim2.new(0.5, -150, 0, 20),
-	BackgroundColor3 = Color3.fromRGB(35, 35, 45), Visible = false,
-}, gui)
-corner(popup)
-
-local popupText = make("TextLabel", {
-	Size = UDim2.new(1, -20, 0, 70), Position = UDim2.fromOffset(10, 5), BackgroundTransparency = 1,
-	Font = Enum.Font.Gotham, TextSize = 16, TextWrapped = true, TextColor3 = Color3.new(1, 1, 1), Text = "",
-}, popup)
-
-local acceptBtn = make("TextButton", {
-	Size = UDim2.fromOffset(130, 36), Position = UDim2.fromOffset(10, 85), Text = "Accept",
-	Font = Enum.Font.GothamBold, TextSize = 16,
-	BackgroundColor3 = Color3.fromRGB(80, 170, 90), TextColor3 = Color3.new(1, 1, 1),
-}, popup)
-corner(acceptBtn)
-
-local declineBtn = make("TextButton", {
-	Size = UDim2.fromOffset(130, 36), Position = UDim2.fromOffset(160, 85), Text = "Decline",
-	Font = Enum.Font.GothamBold, TextSize = 16,
-	BackgroundColor3 = Color3.fromRGB(190, 70, 70), TextColor3 = Color3.new(1, 1, 1),
-}, popup)
-corner(declineBtn)
-
-acceptBtn.MouseButton1Click:Connect(function()
-	popup.Visible = false
-	event:FireServer("Respond", true)
-end)
-declineBtn.MouseButton1Click:Connect(function()
-	popup.Visible = false
-	event:FireServer("Respond", false)
+task.spawn(function()
+	while true do
+		task.wait(5)
+		pcall(clearExpired)
+	end
 end)
 
--- Message toast
-local toast = make("TextLabel", {
-	Size = UDim2.fromOffset(360, 36), Position = UDim2.new(0.5, -180, 1, -120),
-	BackgroundColor3 = Color3.fromRGB(35, 35, 45), Font = Enum.Font.Gotham, TextSize = 16,
-	TextColor3 = Color3.new(1, 1, 1), Text = "", Visible = false,
-}, gui)
-corner(toast)
+event.OnServerEvent:Connect(function(player, action, a, b, c, d)
+	if typeof(action) ~= "string" then return end
+	if not RateLimit.allow(player, "trade_" .. action, Config.RemoteRateLimitSeconds) then
+		return
+	end
 
-local toastId = 0
-local function showToast(msg)
-	toastId += 1
-	local id = toastId
-	toast.Text = msg
-	toast.Visible = true
-	task.delay(4, function()
-		if id == toastId then toast.Visible = false end
-	end)
-end
+	if action == "ListMySlots" then
+		if not api then return end
+		local list = api:Invoke("ListSlots", player)
+		event:FireClient(player, "MySlots", list)
+		return
+	end
 
-event.OnClientEvent:Connect(function(action, a, b, c, d)
-	if action == "Incoming" then
-		-- a = fromUserId, b = fromName, c = give (Brains), d = want (Coins)
-		popupText.Text = ("%s wants to give you %d brainrots for %d Coins."):format(b, c, d)
-		popup.Visible = true
-	elseif action == "OpenTrade" then
-		frame.Visible = true
-		refreshList()
-	elseif action == "Message" then
-		showToast(a)
+	if action == "Offer" then
+		if api and api:Invoke("IsCarrying", player) then
+			notify(player, "Place your carried brainrot before trading.")
+			return
+		end
+		local target = Players:GetPlayerByUserId(tonumber(a) or 0)
+		local give, want = math.floor(tonumber(b) or 0), math.floor(tonumber(c) or 0)
+		local indices = typeof(d) == "table" and d or nil
+
+		if not target or target == player then return end
+		if give < 1 or want < 0 or give > 8 or want > 1000000 then
+			notify(player, "Invalid offer.")
+			return
+		end
+		if not api then
+			notify(player, "Trade system not ready.")
+			return
+		end
+		if api:Invoke("Count", player) < give then
+			notify(player, "You don't have that many brainrots.")
+			return
+		end
+		if indices then
+			if #indices ~= give then
+				notify(player, "Selected brainrots don't match offer count.")
+				return
+			end
+			for _, idx in ipairs(indices) do
+				if typeof(idx) ~= "number" then
+					notify(player, "Invalid slot selection.")
+					return
+				end
+			end
+		end
+
+		pending[target.UserId] = {
+			from = player,
+			give = give,
+			want = want,
+			indices = indices,
+			expires = os.clock() + Config.TradeOfferExpireSeconds,
+		}
+		notify(player, "Offer sent to " .. target.DisplayName .. " (expires in " .. Config.TradeOfferExpireSeconds .. "s)")
+		event:FireClient(target, "Incoming", player.UserId, player.DisplayName, give, want, indices)
+
+	elseif action == "Respond" then
+		local offer = pending[player.UserId]
+		pending[player.UserId] = nil
+		if not offer then return end
+		if offer.expires and os.clock() > offer.expires then
+			notify(player, "That offer already expired.")
+			return
+		end
+
+		local from = offer.from
+		if not from or from.Parent ~= Players then return end
+
+		if not a then
+			notify(from, player.DisplayName .. " declined your trade.")
+			return
+		end
+
+		if api and (api:Invoke("IsCarrying", player) or api:Invoke("IsCarrying", from)) then
+			notify(player, "Trade failed: someone is carrying a brainrot.")
+			notify(from, "Trade failed: someone is carrying a brainrot.")
+			return
+		end
+
+		local fromCoins, toCoins = coinsOf(from), coinsOf(player)
+		if not (fromCoins and toCoins) then return end
+
+		if api:Invoke("Count", from) < offer.give then
+			notify(player, "Trade failed: they no longer have the brainrots.")
+			notify(from, "Trade failed: not enough brainrots.")
+			return
+		end
+		if api:Invoke("Free", player) < offer.give then
+			notify(player, "Trade failed: your base doesn't have enough free pedestals.")
+			notify(from, "Trade failed: " .. player.DisplayName .. "'s base is full.")
+			return
+		end
+		if toCoins.Value < offer.want then
+			notify(player, "Trade failed: you don't have enough Coins.")
+			notify(from, "Trade failed: " .. player.DisplayName .. " doesn't have enough Coins.")
+			return
+		end
+
+		local ok
+		if offer.indices then
+			ok = api:Invoke("TransferSlots", from, player, offer.indices)
+		else
+			ok = api:Invoke("Transfer", from, player, offer.give)
+		end
+		if not ok then
+			notify(from, "Trade failed.")
+			notify(player, "Trade failed.")
+			return
+		end
+		toCoins.Value -= offer.want
+		fromCoins.Value += offer.want
+
+		notify(from, ("Trade done! You gave %d brainrots and got %d Coins."):format(offer.give, offer.want))
+		notify(player, ("Trade done! You got %d brainrots and paid %d Coins."):format(offer.give, offer.want))
+	end
+end)
+
+Players.PlayerRemoving:Connect(function(p)
+	pending[p.UserId] = nil
+	for id, offer in pairs(pending) do
+		if offer.from == p then pending[id] = nil end
 	end
 end)
 ]]></ProtectedString>
 					<bool name="Disabled">false</bool>
-					<Content name="LinkedSource"><null></null></Content>
-					<token name="RunContext">0</token>
-					<string name="ScriptGuid">{bad574db-4925-4e74-a9df-b3022649b664}</string>
-					<BinaryString name="AttributesSerialize"></BinaryString>
-					<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-					<bool name="DefinesCapabilities">false</bool>
-					<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-					<string name="Name">TradeClient</string>
-					<BinaryString name="SerializedOverrides"></BinaryString>
-					<int64 name="SourceAssetId">-1</int64>
-					<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-					<UniqueId name="UniqueId">6dc8a060727499360b010392000003e2</UniqueId>
+					<string name="Name">TradeServer</string>
 				</Properties>
 			</Item>
-		</Item>
-		<Item class="StarterCharacterScripts" referent="RBXa090242dc0c345c688af128cfe5895a9">
-			<Properties>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">StarterCharacterScripts</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e5</UniqueId>
-			</Properties>
-		</Item>
-	</Item>
-	<Item class="StarterPack" referent="RBXae4121503a1f492d9189a41f7c5735a3">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">StarterPack</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000392</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="StarterGui" referent="RBXc2ee0bc2bf5842fe88873c68e8c70796">
-		<Properties>
-			<token name="ClipsDescendantsSupportsRotation">0</token>
-			<bool name="ResetPlayerGuiOnSpawn">true</bool>
-			<token name="RtlTextSupport">0</token>
-			<token name="ScreenOrientation">2</token>
-			<bool name="ShowDevelopmentGui">true</bool>
-			<Ref name="StudioDefaultStyleSheet">null</Ref>
-			<Ref name="StudioInsertWidgetLayerCollectorAutoLinkStyleSheet">null</Ref>
-			<token name="VirtualCursorMode">0</token>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">StarterGui</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000393</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="LocalizationService" referent="RBX6572fd18046f4d3c86424c4ea6684cf4">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">LocalizationService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000395</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="TeleportService" referent="RBX601e9d0fdc8a48f7860335e9ef82890c">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">Teleport Service</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000399</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="PhysicsService" referent="RBX6b4c01dbdb7446a586e3cb8531d06721">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">PhysicsService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000039b</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="InsertService" referent="RBX6fcb9e5321b94a82935b094f72f5ef72">
-		<Properties>
-			<bool name="AllowInsertFreeModels">false</bool>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">InsertService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000039e</UniqueId>
-		</Properties>
-		<Item class="StringValue" referent="RBX93a46cae45844efdb8f327072037690c">
-			<Properties>
-				<string name="Value">{bf507a3b-0aa9-45d9-841a-eea228e74ded}</string>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">InsertionHash</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b0103920000130d</UniqueId>
-			</Properties>
-		</Item>
-	</Item>
-	<Item class="GamePassService" referent="RBX1844a15323184ffaa1ffcab23555bfa2">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">GamePassService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b0103920000039f</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="Debris" referent="RBXee673f8035d44d438971da591b9c4f09">
-		<Properties>
-			<int name="MaxItems">1000</int>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">Debris</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003a0</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="CookiesService" referent="RBX399f752e85ee4abea672e0aff4965a81">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">CookiesService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003a1</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="Selection" referent="RBXb1c8e4b0066242c38301bb581aaa308f">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">Selection</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003a2</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="VRService" referent="RBX4645aa874d32471ab9db142cad85ce30">
-		<Properties>
-			<token name="AutomaticScaling">0</token>
-			<bool name="AvatarGestures">false</bool>
-			<token name="ControllerModels">1</token>
-			<bool name="FadeOutViewOnCollision">true</bool>
-			<token name="LaserPointer">1</token>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">VRService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003a6</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="ContextActionService" referent="RBX69d6308f07df42a19ad6e53e947fe2b8">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">ContextActionService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003a7</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="ScriptService" referent="RBX46543dd4adc2462297becbef3f709b74">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">ScriptService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003a8</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="AssetService" referent="RBX0ea04775a0b2409fb9ea1b1298dee470">
-		<Properties>
-			<bool name="AllowInsertFreeAssets">false</bool>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">AssetService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003a9</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="TouchInputService" referent="RBX82fd137ce5944ba188be5599637df2c4">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">TouchInputService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003ab</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="AvatarSettings" referent="RBX7999bc5670b9403b8cc3e00c8d82c6f1">
-		<Properties>
-			<int name="RulesSchemaVersion">0</int>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">AvatarSettings</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003b1</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="Packages" referent="RBX8b8151f3dde042c68b237a30b52fd9f5">
-		<Properties>
-			<bool name="IsDehydrated">false</bool>
-			<bool name="OverridesRecalculated">false</bool>
-			<int name="ShellPackagesCount">0</int>
-			<int name="SkippedInstancesCount">0</int>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">Packages</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003b5</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="GuidRegistryService" referent="RBXb4b8f308b7654637a047c53564c94f86">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">GuidRegistryService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003b6</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="LuaWebService" referent="RBX3778d3cc27c743309167d7775bbeed35">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">LuaWebService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003bd</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="ProcessInstancePhysicsService" referent="RBXc5517d0fa07141c1988a3194ed94e9ad">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">ProcessInstancePhysicsService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003be</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="ReplicatedStorage" referent="RBX9">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">ReplicatedStorage</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003bf</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="ServerScriptService" referent="RBX4">
-		<Properties>
-			<bool name="LoadStringEnabled">false</bool>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">ServerScriptService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003c0</UniqueId>
-		</Properties>
-		<Item class="Script" referent="RBX0">
-			<Properties>
-				<ProtectedString name="Source"><![CDATA[-- GameSetup (Script) -> put in ServerScriptService   (REPLACES the old GameSetup)
---
---  * 6 bases (2 places x 3). Each player is auto-assigned one and spawns there.
---  * Each base has 8 pedestals AND its own Trading Shop corner with a Trader NPC.
---  * Brainrots earn coins automatically (no collecting needed).
---  * Brainrots ride the track. Press E on one to buy it, then CARRY it to your base and place it.
---  * You can also pick up your own brainrots, or steal other players' brainrots (then carry them home).
---  * Trader NPC: sell the brainrot you're carrying, or open the player-to-player trade window.
---  * "Super Upgrade Brainrot" Robux stand (needs a Developer Product ID, see CONFIG).
-
-local Players = game:GetService("Players")
+			<Item class="Folder" referent="RBX17">
+				<Properties>
+					<string name="Name">Modules</string>
+				</Properties>
+			<Item class="ModuleScript" referent="RBX4">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local ServerStorage = game:GetService("ServerStorage")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local ServerStorage = game:GetService("ServerStorage")
-local RunService = game:GetService("RunService")
-local MarketplaceService = game:GetService("MarketplaceService")
-local DataStoreService = game:GetService("DataStoreService")
+local Config = require(ReplicatedStorage.Shared.Config)
+local BrainrotDefs = require(ReplicatedStorage.Shared.BrainrotDefs)
+local Util = require(script.Parent.Util)
+local BrainrotModels = require(script.Parent.BrainrotModels)
+local Carry = require(script.Parent.Carry)
+local RateLimit = require(script.Parent.RateLimit)
 
-local CONFIG = {
-	BaseSize = 40,
-	BaseSpacing = 46,
-	PlaceOffsets = { Vector3.new(-120, 0, 0), Vector3.new(120, 0, 0) }, -- the 2 places
-	BasesPerPlace = 3,
-	StartCoins = 2000, -- enough to buy several brainrots while testing
-
-	SpawnInterval = 5, -- seconds between brainrots on the track
-	TrackSpeed = 10, -- studs per second
-	TrackHalfLength = 80,
-
-	PickupHold = 0.7, -- seconds to hold E to pick up / steal
-	StealCooldown = 30, -- seconds between steals per player
-	SellFraction = 0.5, -- trader pays this share of the brainrot's price
-
-	SuperMultiplier = 5, -- income multiplier for a Super brainrot
-
-	-- !!! IMPORTANT !!!
-	-- Create a Developer Product (Creator Hub > your experience > Monetization > Developer Products)
-	-- named "Super Upgrade Brainrot", priced at 100 Robux, then paste its ID here.
-	SuperUpgradeProductId = 0,
-	SuperUpgradePriceRobux = 100,
+local Bases = {
+	list = {},
+	baseOf = {},
+	stealCooldown = {},
+	stealProtectUntil = {}, -- [player] = clock
+	map = nil,
+	onChanged = nil, -- optional callback(player) after slot change
 }
 
--- Style: "doodle", "tall" (Tralalero), "leafy" (Patapim). Foot = pivot-to-ground offset.
--- To use your own models, put Models named EXACTLY like these inside ServerStorage > BrainrotModels.
-local BRAINROTS = {
-	{ Name = "Tung Tung Tung Sahur", Rarity = "Common", Price = 25, Income = 1, Weight = 40, Style = "doodle", Color = Color3.fromRGB(205, 160, 100), Foot = 1.9 },
-	{ Name = "Tralalero Tralala", Rarity = "Rare", Price = 150, Income = 6, Weight = 35, Style = "tall", Color = Color3.fromRGB(120, 145, 155), Foot = 2.15 },
-	{ Name = "Brr Brr Patapim", Rarity = "Epic", Price = 400, Income = 15, Weight = 25, Style = "leafy", Color = Color3.fromRGB(110, 170, 80), Foot = 2.8 },
-}
-
-local DEFAULT_FOOT = 1.9
-local GOLD = Color3.fromRGB(255, 200, 40)
-local PI = math.pi
-
-local function footOf(def)
-	return (def and def.Foot) or DEFAULT_FOOT
+local function incomeOf(slot, player)
+	local data = nil
+	local ok, DataService = pcall(function() return require(script.Parent.DataService) end)
+	if ok and DataService then
+		data = DataService.get(player)
+	end
+	return Util.incomeOf(slot, data and data.Rebirths or 0)
 end
 
-local map = Instance.new("Folder")
-map.Name = "Map"
-map.Parent = workspace
-
--- Helpers ---------------------------------------------------------------
-local function makePart(name, size, position, color, material, parent)
-	local p = Instance.new("Part")
-	p.Name = name
-	p.Size = size
-	p.Position = position
-	p.Anchored = true
-	p.Color = color
-	p.Material = material or Enum.Material.SmoothPlastic
-	p.TopSurface = Enum.SurfaceType.Smooth
-	p.BottomSurface = Enum.SurfaceType.Smooth
-	p.Parent = parent or map
-	return p
+function Bases.slotText(slot, player)
+	if not slot then return "" end
+	local name = slot.Super and ("SUPER " .. slot.Def.Name) or slot.Def.Name
+	return ("%s\n+%d/s"):format(name, incomeOf(slot, player))
 end
 
-local function makeLabel(parent, text, size, offset, maxDistance)
-	local gui = Instance.new("BillboardGui")
-	gui.Size = size or UDim2.fromOffset(110, 32)
-	gui.StudsOffset = offset or Vector3.new(0, 3, 0)
-	-- Avoid AlwaysOnTop: distant labels were stacking as giant text in the middle of the screen
-	gui.AlwaysOnTop = false
-	gui.MaxDistance = maxDistance or 35
-	gui.Parent = parent
-	local label = Instance.new("TextLabel")
-	label.Size = UDim2.fromScale(1, 1)
-	label.BackgroundTransparency = 1
-	label.TextScaled = true
-	label.Font = Enum.Font.GothamBold
-	label.TextColor3 = Color3.new(1, 1, 1)
-	label.TextStrokeTransparency = 0.2
-	label.Text = text
-	label.Parent = gui
-	local cap = Instance.new("UITextSizeConstraint")
-	cap.MaxTextSize = 14
-	cap.MinTextSize = 8
-	cap.Parent = label
-	return label
+function Bases.updateSign(base)
+	base.SignLabel.Text = base.Owner and (base.Owner.DisplayName .. "'s Base") or ("Base " .. base.Index .. " (free)")
 end
 
-local function getStat(player, name)
-	local stats = player:FindFirstChild("leaderstats")
-	return stats and stats:FindFirstChild(name)
+function Bases.countOwned(player)
+	local base = Bases.baseOf[player]
+	if not base then return 0 end
+	local n = 0
+	for i = 1, #base.Pedestals do
+		if base.Slots[i] then n += 1 end
+	end
+	return n
 end
 
-local function notify(player, message)
-	local ev = ReplicatedStorage:FindFirstChild("TradeEvent")
-	if ev and player and player.Parent == Players then
-		ev:FireClient(player, "Message", message)
+function Bases.freeSlots(player)
+	local base = Bases.baseOf[player]
+	if not base then return 0 end
+	return #base.Pedestals - Bases.countOwned(player)
+end
+
+function Bases.firstFreeSlot(base)
+	for i = 1, #base.Pedestals do
+		if not base.Slots[i] then return i end
 	end
 end
 
-local function incomeOf(slot)
-	return slot.Def.Income * (slot.Super and CONFIG.SuperMultiplier or 1)
+function Bases.totalIncome(player)
+	local base = Bases.baseOf[player]
+	if not base then return 0 end
+	local total = 0
+	for i = 1, #base.Pedestals do
+		local slot = base.Slots[i]
+		if slot then total += incomeOf(slot, player) end
+	end
+	return total
 end
 
--- Brainrot graphics -------------------------------------------------------
+function Bases.refreshSlot(base, i)
+	local ped = base.Pedestals[i]
+	local slot = base.Slots[i]
+	if ped.Model then
+		ped.Model:Destroy()
+		ped.Model = nil
+	end
+	if slot then
+		local m = BrainrotModels.build(slot.Def, slot.Super)
+		m.Parent = base.Folder
+		m:PivotTo(CFrame.new(ped.Pad.Position + Vector3.new(0, 0.5 + Util.footOf(slot.Def), 0)) * CFrame.Angles(0, -base.FrontDir * Util.PI / 2, 0))
+		ped.Model = m
+		ped.Pick.ObjectText = slot.Def.Name
+		BrainrotModels.playSpawnPop(m)
+		BrainrotModels.startIdleBob(m)
+		local color = Util.rarityColor(slot.Def.Rarity)
+		ped.Label.TextColor3 = color
+	end
+	ped.Pick.Enabled = slot ~= nil
+	ped.Place.Enabled = slot == nil
+	ped.Label.Text = Bases.slotText(slot, base.Owner)
+	ped.Label.Parent.Enabled = slot ~= nil
+	if base.Owner then
+		local stat = Util.getStat(base.Owner, "Brainrots")
+		if stat then stat.Value = Bases.countOwned(base.Owner) end
+		local incomeStat = Util.getStat(base.Owner, "Income")
+		if incomeStat then incomeStat.Value = Bases.totalIncome(base.Owner) end
+		if Bases.onChanged then
+			Bases.onChanged(base.Owner)
+		end
+	end
+end
+
+function Bases.returnCarry(player)
+	local c = Carry.get(player)
+	if not c then return end
+	local base = Bases.baseOf[player]
+	local i = base and Bases.firstFreeSlot(base)
+	if i then
+		base.Slots[i] = c.Slot
+		Bases.refreshSlot(base, i)
+	end
+	Carry.drop(player)
+end
+
+function Bases.pickUp(player, base, i)
+	if not RateLimit.allow(player, "pick", 0.2) then return end
+	local slot = base.Slots[i]
+	if not slot then return end
+	if Carry.isCarrying(player) then
+		Util.notify(player, "You're already carrying a brainrot. Place it first!")
+		return
+	end
+	local stealing = base.Owner ~= player
+	if stealing then
+		local protectUntil = Bases.stealProtectUntil[base.Owner]
+		if protectUntil and os.clock() < protectUntil then
+			Util.notify(player, "That base is protected after a recent steal.")
+			return
+		end
+		local left = Config.StealCooldown - (os.clock() - (Bases.stealCooldown[player] or -999))
+		if left > 0 then
+			Util.notify(player, ("Steal is on cooldown (%ds)."):format(math.ceil(left)))
+			return
+		end
+	end
+	if not Carry.attach(player, slot) then return end
+	base.Slots[i] = nil
+	Bases.refreshSlot(base, i)
+	if stealing then
+		Bases.stealCooldown[player] = os.clock()
+		if base.Owner then
+			Bases.stealProtectUntil[base.Owner] = os.clock() + Config.StealProtectSeconds
+			Util.notify(base.Owner, player.DisplayName .. " stole your " .. slot.Def.Name .. "!")
+		end
+		Util.notify(player, "You stole " .. slot.Def.Name .. "! Carry it to your base.")
+	end
+end
+
+function Bases.place(player, base, i)
+	if not RateLimit.allow(player, "place", 0.15) then return end
+	if base.Owner ~= player then
+		Util.notify(player, "That's not your base.")
+		return
+	end
+	local c = Carry.get(player)
+	if not c then
+		Util.notify(player, "Pick up a brainrot first.")
+		return
+	end
+	if base.Slots[i] then return end
+	base.Slots[i] = c.Slot
+	Carry.drop(player)
+	Bases.refreshSlot(base, i)
+	Util.notify(player, "Placed " .. base.Slots[i].Def.Name .. "!")
+end
+
+function Bases.sellCarried(player)
+	if not RateLimit.allow(player, "sell", 0.3) then return end
+	local c = Carry.get(player)
+	if not c then
+		Util.notify(player, "Carry a brainrot to the Trader to sell it.")
+		return
+	end
+	local value = math.floor(c.Slot.Def.Price * (c.Slot.Super and Config.SuperMultiplier or 1) * Config.SellFraction)
+	local coins = Util.getStat(player, "Coins")
+	if coins then coins.Value += value end
+	Util.notify(player, ("Trader bought %s for %d coins."):format(c.Slot.Def.Name, value))
+	Carry.drop(player)
+	if Bases.onChanged then Bases.onChanged(player) end
+end
+
+local function buildTrader(parent, origin)
+	local model = Instance.new("Model")
+	model.Name = "Trader"
+	local skin = Color3.fromRGB(240, 200, 160)
+	local coat = Color3.fromRGB(120, 50, 60)
+	local pants = Color3.fromRGB(50, 50, 70)
+	local hat = Color3.fromRGB(30, 30, 35)
+	local BALL, BLOCK, CYL = Enum.PartType.Ball, Enum.PartType.Block, Enum.PartType.Cylinder
+	local V3 = Vector3.new
+	local function np(shape, size, cf, color, material)
+		local p = Instance.new("Part")
+		p.Shape = shape
+		p.Size = size
+		p.CFrame = cf
+		p.Color = color
+		p.Material = material or Enum.Material.SmoothPlastic
+		p.Anchored = true
+		p.CanCollide = false
+		p.Parent = model
+		return p
+	end
+	for _, sx in ipairs({ -1, 1 }) do
+		np(BLOCK, V3(0.9, 2, 0.9), origin * CFrame.new(sx * 0.55, 1, 0), pants)
+		np(BLOCK, V3(0.8, 2.2, 0.8), origin * CFrame.new(sx * 1.55, 3.2, 0), coat)
+		np(BALL, V3(0.9, 0.9, 0.9), origin * CFrame.new(sx * 1.55, 2.0, 0), skin)
+	end
+	np(BLOCK, V3(2.3, 2.4, 1.3), origin * CFrame.new(0, 3.2, 0), coat)
+	local head = np(BALL, V3(1.8, 1.8, 1.8), origin * CFrame.new(0, 5.2, 0), skin)
+	for _, sx in ipairs({ -1, 1 }) do
+		np(BALL, V3(0.3, 0.3, 0.3), origin * CFrame.new(sx * 0.4, 5.4, -0.8), Color3.new(0.05, 0.05, 0.05))
+	end
+	np(BLOCK, V3(0.9, 0.25, 0.3), origin * CFrame.new(0, 4.9, -0.85), Color3.fromRGB(80, 50, 30))
+	np(CYL, V3(0.25, 2.8, 2.8), origin * CFrame.new(0, 6.1, 0) * CFrame.Angles(0, 0, Util.PI / 2), hat)
+	np(CYL, V3(1.5, 1.8, 1.8), origin * CFrame.new(0, 6.9, 0) * CFrame.Angles(0, 0, Util.PI / 2), hat)
+	np(BALL, V3(1.4, 1.4, 1.4), origin * CFrame.new(-1.9, 1.5, -0.6), Color3.fromRGB(140, 100, 50))
+	np(CYL, V3(0.2, 0.9, 0.9), origin * CFrame.new(-1.9, 2.3, -0.6) * CFrame.Angles(0, 0, Util.PI / 2), Util.GOLD, Enum.Material.Neon)
+	model.Parent = parent
+	Util.makeLabel(head, "Trader", UDim2.fromOffset(80, 24), Vector3.new(0, 2.5, 0), 40)
+	return model
+end
+
+function Bases.buildOne(index, placeIndex, pos, map)
+	local frontDir = (placeIndex == 1) and 1 or -1
+	local base = { Index = index, Pos = pos, Owner = nil, Slots = {}, Pedestals = {}, FrontDir = frontDir }
+	local folder = Instance.new("Folder")
+	folder.Name = "Base_" .. index
+	folder.Parent = map
+	base.Folder = folder
+
+	local color = (placeIndex == 1) and Color3.fromRGB(255, 120, 120) or Color3.fromRGB(120, 180, 255)
+	Util.makePart("Floor", Vector3.new(Config.BaseSize, 1, Config.BaseSize), pos + Vector3.new(0, 0.5, 0), color, nil, folder)
+
+	local fence = Color3.fromRGB(90, 90, 100)
+	local half = Config.BaseSize / 2
+	Util.makePart("FenceBack", Vector3.new(1, 6, Config.BaseSize), pos + Vector3.new(-frontDir * half, 4, 0), fence, Enum.Material.Metal, folder)
+	Util.makePart("FenceSideA", Vector3.new(Config.BaseSize, 6, 1), pos + Vector3.new(0, 4, half), fence, Enum.Material.Metal, folder)
+	Util.makePart("FenceSideB", Vector3.new(Config.BaseSize, 6, 1), pos + Vector3.new(0, 4, -half), fence, Enum.Material.Metal, folder)
+
+	local signAnchor = Util.makePart("SignAnchor", Vector3.new(1, 1, 1), pos + Vector3.new(0, 14, 0), Color3.new(1, 1, 1), nil, folder)
+	signAnchor.Transparency = 1
+	signAnchor.CanCollide = false
+	base.SignLabel = Util.makeLabel(signAnchor, "", UDim2.fromOffset(140, 28), Vector3.new(0, 0, 0), 50)
+
+	base.SpawnPos = pos + Vector3.new(frontDir * 8, 4, 8)
+
+	local counter = Util.makePart("TradingShop", Vector3.new(3, 4, 10), pos + Vector3.new(frontDir * 9.5, 3, -13), Color3.fromRGB(150, 100, 60), Enum.Material.Wood, folder)
+	Util.makeLabel(counter, "Trading Shop", UDim2.fromOffset(110, 28), Vector3.new(0, 3.5, 0), 40)
+	buildTrader(folder, CFrame.new(pos + Vector3.new(frontDir * 14, 1, -13)) * CFrame.Angles(0, frontDir * Util.PI / 2, 0))
+
+	local sell = Instance.new("ProximityPrompt")
+	sell.ObjectText = "Trader"
+	sell.ActionText = "Sell carried brainrot"
+	sell.KeyboardKeyCode = Enum.KeyCode.E
+	sell.HoldDuration = 0
+	sell.MaxActivationDistance = 10
+	sell.Parent = counter
+	sell.Triggered:Connect(function(player) Bases.sellCarried(player) end)
+
+	local tradeWith = Instance.new("ProximityPrompt")
+	tradeWith.ObjectText = "Trader"
+	tradeWith.ActionText = "Trade with players"
+	tradeWith.KeyboardKeyCode = Enum.KeyCode.F
+	tradeWith.HoldDuration = 0
+	tradeWith.MaxActivationDistance = 10
+	tradeWith.UIOffset = Vector2.new(0, 80)
+	tradeWith.Parent = counter
+	tradeWith.Triggered:Connect(function(player)
+		local ev = ReplicatedStorage:FindFirstChild("TradeEvent")
+		if ev then ev:FireClient(player, "OpenTrade") end
+	end)
+
+	for col = 1, 2 do
+		for row = 1, 4 do
+			local lx = frontDir * (col == 1 and -8 or -16)
+			local lz = (row - 2.5) * 8
+			local pad = Util.makePart("Pedestal", Vector3.new(6, 1, 6), pos + Vector3.new(lx, 1.5, lz), Color3.fromRGB(60, 60, 70), Enum.Material.Slate, folder)
+			local label = Util.makeLabel(pad, "", UDim2.fromOffset(120, 36), Vector3.new(0, 7, 0), 40)
+			label.Parent.Enabled = false
+
+			local place = Instance.new("ProximityPrompt")
+			place.ObjectText = "Pedestal"
+			place.ActionText = "Place brainrot"
+			place.KeyboardKeyCode = Enum.KeyCode.E
+			place.HoldDuration = 0
+			place.MaxActivationDistance = 7
+			place.Parent = pad
+
+			local pick = Instance.new("ProximityPrompt")
+			pick.ActionText = "Pick up"
+			pick.KeyboardKeyCode = Enum.KeyCode.E
+			pick.HoldDuration = Config.PickupHold
+			pick.MaxActivationDistance = 7
+			pick.Enabled = false
+			pick.Parent = pad
+
+			local i = #base.Pedestals + 1
+			base.Pedestals[i] = { Pad = pad, Label = label, Place = place, Pick = pick }
+			place.Triggered:Connect(function(player) Bases.place(player, base, i) end)
+			pick.Triggered:Connect(function(player) Bases.pickUp(player, base, i) end)
+		end
+	end
+
+	Bases.updateSign(base)
+	Bases.list[index] = base
+	return base
+end
+
+function Bases.buildAll(map)
+	Bases.map = map
+	local count = 0
+	for placeIndex, offset in ipairs(Config.PlaceOffsets) do
+		for i = 1, Config.BasesPerPlace do
+			count += 1
+			Bases.buildOne(count, placeIndex, offset + Vector3.new(0, 0, (i - 2) * Config.BaseSpacing), map)
+		end
+	end
+end
+
+function Bases.assign(player)
+	for _, base in ipairs(Bases.list) do
+		if not base.Owner then
+			base.Owner = player
+			Bases.baseOf[player] = base
+			Bases.updateSign(base)
+			return base
+		end
+	end
+	return nil
+end
+
+function Bases.release(player)
+	Carry.drop(player)
+	local base = Bases.baseOf[player]
+	if base then
+		for i = 1, #base.Pedestals do
+			base.Slots[i] = nil
+			Bases.refreshSlot(base, i)
+		end
+		base.Owner = nil
+		Bases.baseOf[player] = nil
+		Bases.updateSign(base)
+	end
+	Bases.stealCooldown[player] = nil
+	Bases.stealProtectUntil[player] = nil
+end
+
+function Bases.applySavedSlots(player, savedSlots)
+	local base = Bases.baseOf[player]
+	if not base or typeof(savedSlots) ~= "table" then return end
+	for i = 1, #base.Pedestals do
+		local s = savedSlots[tostring(i)] or savedSlots[i]
+		if typeof(s) == "table" and s.Id then
+			local def = BrainrotDefs.GetById(s.Id)
+			if def then
+				base.Slots[i] = { Def = def, Super = s.Super == true }
+				Bases.refreshSlot(base, i)
+			end
+		end
+	end
+end
+
+function Bases.serializeSlots(player)
+	local base = Bases.baseOf[player]
+	local out = {}
+	if not base then return out end
+	for i = 1, #base.Pedestals do
+		local slot = base.Slots[i]
+		if slot then
+			out[tostring(i)] = { Id = slot.Def.Id, Super = slot.Super == true }
+		end
+	end
+	return out
+end
+
+function Bases.transferSlots(from, to, indices)
+	local fromBase, toBase = Bases.baseOf[from], Bases.baseOf[to]
+	if not (fromBase and toBase) then return false end
+	if #indices < 1 then return false end
+	if Bases.freeSlots(to) < #indices then return false end
+	for _, i in ipairs(indices) do
+		local slot = fromBase.Slots[i]
+		if not slot then return false end
+		local freeIndex = Bases.firstFreeSlot(toBase)
+		if not freeIndex then return false end
+		fromBase.Slots[i] = nil
+		toBase.Slots[freeIndex] = slot
+		Bases.refreshSlot(fromBase, i)
+		Bases.refreshSlot(toBase, freeIndex)
+	end
+	return true
+end
+
+-- Legacy cheapest-N transfer for simple offers
+function Bases.transferCheapest(from, to, n)
+	local fromBase = Bases.baseOf[from]
+	if not fromBase then return false end
+	local owned = {}
+	for i = 1, #fromBase.Pedestals do
+		if fromBase.Slots[i] then table.insert(owned, i) end
+	end
+	table.sort(owned, function(a, b)
+		return incomeOf(fromBase.Slots[a], from) < incomeOf(fromBase.Slots[b], from)
+	end)
+	if #owned < n then return false end
+	local indices = {}
+	for k = 1, n do table.insert(indices, owned[k]) end
+	return Bases.transferSlots(from, to, indices)
+end
+
+function Bases.upgradeBest(player)
+	local base = Bases.baseOf[player]
+	if not base then return false end
+	local best, bestIncome
+	for i = 1, #base.Pedestals do
+		local slot = base.Slots[i]
+		if slot and not slot.Super and (not bestIncome or slot.Def.Income > bestIncome) then
+			best, bestIncome = i, slot.Def.Income
+		end
+	end
+	if not best then return false end
+	base.Slots[best].Super = true
+	Bases.refreshSlot(base, best)
+	return true
+end
+
+function Bases.clearAllSlots(player)
+	local base = Bases.baseOf[player]
+	if not base then return end
+	for i = 1, #base.Pedestals do
+		base.Slots[i] = nil
+		Bases.refreshSlot(base, i)
+	end
+end
+
+function Bases.installApi()
+	local api = Instance.new("BindableFunction")
+	api.Name = "BaseApi"
+	api.OnInvoke = function(action, a, b, c)
+		if action == "Count" then return Bases.countOwned(a) end
+		if action == "Free" then return Bases.freeSlots(a) end
+		if action == "Transfer" then return Bases.transferCheapest(a, b, c) end
+		if action == "TransferSlots" then return Bases.transferSlots(a, b, c) end
+		if action == "IsCarrying" then return Carry.isCarrying(a) end
+		if action == "ListSlots" then
+			local base = Bases.baseOf[a]
+			if not base then return {} end
+			local list = {}
+			for i = 1, #base.Pedestals do
+				local slot = base.Slots[i]
+				if slot then
+					table.insert(list, { Index = i, Id = slot.Def.Id, Name = slot.Def.Name, Super = slot.Super, Income = incomeOf(slot, a) })
+				end
+			end
+			return list
+		end
+	end
+	api.Parent = ServerStorage
+	return api
+end
+
+return Bases
+]]></ProtectedString>
+					<string name="Name">Bases</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX5">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local ServerStorage = game:GetService("ServerStorage")
+local TweenService = game:GetService("TweenService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Config = require(ReplicatedStorage.Shared.Config)
+local Util = require(script.Parent.Util)
+
+local BALL, BLOCK, CYL = Enum.PartType.Ball, Enum.PartType.Block, Enum.PartType.Cylinder
+local V3 = Vector3.new
+local PI = Util.PI
+local GOLD = Util.GOLD
+
 local function newPart(model, shape, size, cf, color, material, name)
 	local p = Instance.new("Part")
 	p.Name = name or "Piece"
@@ -1503,9 +956,6 @@ local function newPart(model, shape, size, cf, color, material, name)
 	return p
 end
 
-local BALL, BLOCK, CYL = Enum.PartType.Ball, Enum.PartType.Block, Enum.PartType.Cylinder
-local V3 = Vector3.new
-
 local function addEyes(model, x, y, z, size)
 	for _, sx in ipairs({ -1, 1 }) do
 		newPart(model, BALL, V3(size, size, size), CFrame.new(sx * x, y, z), Color3.new(1, 1, 1), nil, "Eye")
@@ -1515,7 +965,6 @@ end
 
 local STYLES = {}
 
--- round: a fluffy ball critter with ears and an antenna
 STYLES.round = function(model, c)
 	local light = c:Lerp(Color3.new(1, 1, 1), 0.45)
 	local dark = c:Lerp(Color3.new(0, 0, 0), 0.3)
@@ -1530,73 +979,45 @@ STYLES.round = function(model, c)
 	newPart(model, BALL, V3(0.6, 0.6, 0.6), CFrame.new(0, 3.3, 0), Color3.fromRGB(255, 70, 70))
 end
 
--- tall: Tralalero-style — horizontal capsule shark-body, one googly eye, jagged fin, 4 legs in blue sneakers
 STYLES.tall = function(model, c)
 	local belly = Color3.fromRGB(235, 225, 205)
 	local shoe = Color3.fromRGB(40, 120, 230)
 	local sole = Color3.new(1, 1, 1)
 	local dark = c:Lerp(Color3.new(0, 0, 0), 0.25)
-
-	-- horizontal sausage body (facing +Z travel in world via model pivot)
 	newPart(model, BALL, V3(3.2, 3.0, 5.2), CFrame.new(0, 0.4, 0), c, nil, "Body")
 	newPart(model, BALL, V3(2.6, 2.2, 4.4), CFrame.new(0, -0.35, 0.1), belly)
-
-	-- single side googly eye (sketch silhouette)
 	newPart(model, BALL, V3(1.15, 1.15, 1.15), CFrame.new(-1.35, 0.85, -1.4), Color3.new(1, 1, 1), nil, "Eye")
 	newPart(model, BALL, V3(0.55, 0.55, 0.55), CFrame.new(-1.55, 0.85, -1.65), Color3.new(0.05, 0.05, 0.05), nil, "Eye")
-
-	-- jagged rear fin / tail
 	newPart(model, BLOCK, V3(0.35, 2.2, 1.4), CFrame.new(0, 1.6, 2.3) * CFrame.Angles(math.rad(-18), 0, 0), dark)
 	newPart(model, BLOCK, V3(0.3, 1.4, 1.0), CFrame.new(0, 0.2, 2.9) * CFrame.Angles(math.rad(25), 0, 0), dark)
 	newPart(model, BLOCK, V3(0.3, 1.1, 0.9), CFrame.new(0, -0.7, 2.55) * CFrame.Angles(math.rad(-30), 0, 0), dark)
-
-	-- four short legs + blue sneakers
-	for _, xz in ipairs({
-		{ -0.85, -1.1 }, { 0.85, -1.1 },
-		{ -0.85, 1.15 }, { 0.85, 1.15 },
-	}) do
+	for _, xz in ipairs({ { -0.85, -1.1 }, { 0.85, -1.1 }, { -0.85, 1.15 }, { 0.85, 1.15 } }) do
 		newPart(model, CYL, V3(1.1, 0.85, 0.85), CFrame.new(xz[1], -1.0, xz[2]) * CFrame.Angles(0, 0, PI / 2), c)
 		newPart(model, BLOCK, V3(1.15, 0.55, 1.55), CFrame.new(xz[1], -1.75, xz[2] - 0.15), shoe)
 		newPart(model, BLOCK, V3(1.2, 0.18, 1.65), CFrame.new(xz[1], -2.05, xz[2] - 0.15), sole)
-		newPart(model, BLOCK, V3(0.35, 0.35, 0.7), CFrame.new(xz[1] + 0.35, -1.6, xz[2] - 0.15), sole) -- swoosh hint
+		newPart(model, BLOCK, V3(0.35, 0.35, 0.7), CFrame.new(xz[1] + 0.35, -1.6, xz[2] - 0.15), sole)
 	end
 end
 
--- leafy: Patapim-style — mossy green torso/head, wooden bark limbs, power stance
 STYLES.leafy = function(model, c)
-	local moss = c
 	local bark = Color3.fromRGB(150, 105, 60)
 	local barkDark = Color3.fromRGB(100, 65, 35)
 	local face = Color3.fromRGB(230, 195, 150)
 	local beard = Color3.fromRGB(230, 230, 220)
-
-	-- mossy torso + head
-	newPart(model, BALL, V3(3.4, 3.6, 2.8), CFrame.new(0, 0.9, 0), moss, nil, "Body")
-	newPart(model, BALL, V3(3.0, 2.8, 2.8), CFrame.new(0, 3.2, 0), moss)
+	newPart(model, BALL, V3(3.4, 3.6, 2.8), CFrame.new(0, 0.9, 0), c, nil, "Body")
+	newPart(model, BALL, V3(3.0, 2.8, 2.8), CFrame.new(0, 3.2, 0), c)
 	newPart(model, BALL, V3(2.2, 2.0, 2.0), CFrame.new(0, 3.0, -0.55), face)
 	newPart(model, BALL, V3(1.8, 1.0, 1.4), CFrame.new(0, 2.15, -0.5), beard)
-
-	-- moss ear flaps (from the blocky sketch hat/ears)
 	for _, sx in ipairs({ -1, 1 }) do
-		newPart(model, BALL, V3(1.0, 1.0, 0.7), CFrame.new(sx * 1.55, 3.7, 0.1), moss)
+		newPart(model, BALL, V3(1.0, 1.0, 0.7), CFrame.new(sx * 1.55, 3.7, 0.1), c)
 	end
-
 	addEyes(model, 0.55, 3.25, -1.35, 0.85)
-	-- smile
 	newPart(model, BLOCK, V3(0.7, 0.12, 0.1), CFrame.new(0, 2.55, -1.45), barkDark)
-
-	-- wooden vine wrap on chest
 	newPart(model, CYL, V3(0.35, 2.4, 0.35), CFrame.new(-0.4, 1.0, -1.1) * CFrame.Angles(math.rad(15), 0, math.rad(20)), bark, Enum.Material.Wood)
 	newPart(model, CYL, V3(0.3, 2.0, 0.3), CFrame.new(0.5, 0.7, -1.0) * CFrame.Angles(math.rad(-10), 0, math.rad(-25)), barkDark, Enum.Material.Wood)
-
-	-- wooden arms on hips
 	for _, sx in ipairs({ -1, 1 }) do
 		newPart(model, CYL, V3(2.4, 0.85, 0.85), CFrame.new(sx * 1.9, 1.1, 0) * CFrame.Angles(0, 0, math.rad(sx * 55)), bark, Enum.Material.Wood)
-		newPart(model, BALL, V3(1.1, 1.1, 1.1), CFrame.new(sx * 1.5, 0.15, 0.4), bark, Enum.Material.Wood) -- fists
-	end
-
-	-- wooden legs + flat toed feet
-	for _, sx in ipairs({ -1, 1 }) do
+		newPart(model, BALL, V3(1.1, 1.1, 1.1), CFrame.new(sx * 1.5, 0.15, 0.4), bark, Enum.Material.Wood)
 		newPart(model, CYL, V3(2.6, 1.0, 1.0), CFrame.new(sx * 0.75, -1.35, 0) * CFrame.Angles(0, 0, PI / 2), bark, Enum.Material.Wood)
 		newPart(model, BLOCK, V3(1.3, 0.45, 1.9), CFrame.new(sx * 0.75, -2.55, -0.25), barkDark, Enum.Material.Wood)
 		for t = -1, 1 do
@@ -1605,48 +1026,36 @@ STYLES.leafy = function(model, c)
 	end
 end
 
--- doodle: built from the player's own hand-drawn sketch
 STYLES.doodle = function(model, c)
 	local dark = Color3.fromRGB(35, 30, 28)
 	local shade = c:Lerp(Color3.new(0, 0, 0), 0.25)
-
-	-- legs
 	for _, sx in ipairs({ -1, 1 }) do
 		newPart(model, BLOCK, V3(0.9, 1.8, 0.9), CFrame.new(sx * 0.65, -1.0, 0), c, nil, "Leg")
 	end
-	-- body
 	newPart(model, BLOCK, V3(2.4, 2.2, 1.4), CFrame.new(0, 1.0, 0), c, nil, "Body")
-	-- tall square head
 	newPart(model, BLOCK, V3(2.4, 3.2, 2.0), CFrame.new(0, 3.7, 0), c)
-	newPart(model, BLOCK, V3(2.2, 0.2, 1.8), CFrame.new(0, 5.4, 0), shade) -- slightly rounded top edge
-
-	-- square eyes with eyelashes
+	newPart(model, BLOCK, V3(2.2, 0.2, 1.8), CFrame.new(0, 5.4, 0), shade)
 	for _, sx in ipairs({ -1, 1 }) do
 		newPart(model, BLOCK, V3(0.95, 0.95, 0.08), CFrame.new(sx * 0.6, 4.3, -1.01), dark, nil, "Eye")
 		newPart(model, BLOCK, V3(0.75, 0.75, 0.08), CFrame.new(sx * 0.6, 4.3, -1.04), Color3.new(1, 1, 1), nil, "Eye")
 		newPart(model, BLOCK, V3(0.3, 0.3, 0.08), CFrame.new(sx * 0.6, 4.3, -1.08), dark, nil, "Eye")
 		newPart(model, BLOCK, V3(0.12, 0.4, 0.1), CFrame.new(sx * 1.0, 4.9, -1.02) * CFrame.Angles(0, 0, math.rad(-sx * 35)), dark)
 	end
-
-	-- smile
 	newPart(model, BLOCK, V3(0.8, 0.14, 0.1), CFrame.new(0, 3.1, -1.02), dark)
 	for _, sx in ipairs({ -1, 1 }) do
 		newPart(model, BLOCK, V3(0.5, 0.14, 0.1), CFrame.new(sx * 0.6, 3.25, -1.02) * CFrame.Angles(0, 0, math.rad(sx * 30)), dark)
 	end
-
-	-- arm holding the dark club (character's right side)
 	newPart(model, BLOCK, V3(0.6, 2.2, 0.6), CFrame.new(1.7, 0.7, 0) * CFrame.Angles(0, 0, math.rad(15)), shade)
 	newPart(model, CYL, V3(2.6, 0.8, 0.8), CFrame.new(2.3, -0.6, -0.3) * CFrame.Angles(0, 0, PI / 2), dark, Enum.Material.Wood)
 	newPart(model, BALL, V3(0.8, 0.8, 0.8), CFrame.new(2.3, 0.7, -0.3), dark, Enum.Material.Wood)
-
-	-- cape flap on the other side
 	newPart(model, BLOCK, V3(2.2, 0.15, 1.3), CFrame.new(-2.2, 1.5, 0) * CFrame.Angles(0, 0, math.rad(20)), shade)
 	newPart(model, BLOCK, V3(0.9, 0.15, 0.7), CFrame.new(-3.2, 1.1, 0) * CFrame.Angles(0, 0, math.rad(20)), shade)
 end
 
-local customModels = ServerStorage:FindFirstChild("BrainrotModels")
+local BrainrotModels = {}
 
-local function buildBrainrotModel(def, super)
+function BrainrotModels.build(def, super)
+	local customModels = ServerStorage:FindFirstChild("BrainrotModels")
 	local model
 	local template = customModels and customModels:FindFirstChild(def.Name)
 	if template then
@@ -1665,9 +1074,8 @@ local function buildBrainrotModel(def, super)
 		root.CFrame = CFrame.new()
 		root.Parent = model
 		model.PrimaryPart = root
-
-		STYLES[def.Style or "round"](model, def.Color)
-
+		local styleFn = STYLES[def.Style or "round"] or STYLES.round
+		styleFn(model, def.Color)
 		if super then
 			for _, d in ipairs(model:GetChildren()) do
 				if d:IsA("BasePart") and d ~= root and d.Name ~= "Eye" then
@@ -1676,17 +1084,17 @@ local function buildBrainrotModel(def, super)
 				end
 			end
 		end
-		if super or def.Rarity == "Epic" then
+		local rare = def.Rarity == "Epic" or def.Rarity == "Legendary" or def.Rarity == "Mythic"
+		if super or rare then
 			local body = model:FindFirstChild("Body")
 			if body then
 				local sp = Instance.new("Sparkles")
-				sp.SparkleColor = GOLD
+				sp.SparkleColor = Util.rarityColor(def.Rarity)
 				sp.Parent = body
 			end
 		end
 	end
 	model.Name = def.Name
-
 	for _, d in ipairs(model:GetDescendants()) do
 		if d:IsA("BasePart") then
 			d.Anchored = true
@@ -1696,82 +1104,80 @@ local function buildBrainrotModel(def, super)
 	return model
 end
 
--- State -----------------------------------------------------------------
-local bases = {}
-local baseOf = {} -- [player] = base
-local carrying = {} -- [player] = { Slot = slot, Model = model }
-local stealCooldown = {}
-
--- Slots hold { Def = brainrot definition, Super = bool }
-local function slotText(slot)
-	if not slot then return "" end
-	local name = slot.Super and ("SUPER " .. slot.Def.Name) or slot.Def.Name
-	return ("%s\n+%d coins/s"):format(name, incomeOf(slot))
-end
-
-local function updateSign(base)
-	base.SignLabel.Text = base.Owner and (base.Owner.DisplayName .. "'s Base") or ("Base " .. base.Index .. " (free)")
-end
-
-local function countOwned(player)
-	local base = baseOf[player]
-	if not base then return 0 end
-	local n = 0
-	for i = 1, #base.Pedestals do
-		if base.Slots[i] then n += 1 end
+function BrainrotModels.playSpawnPop(model)
+	local root = model and model.PrimaryPart
+	if not root then return end
+	local goal = root.CFrame
+	root.CFrame = goal * CFrame.new(0, 2, 0)
+	for _, d in ipairs(model:GetDescendants()) do
+		if d:IsA("BasePart") and d ~= root then
+			d.Transparency = math.min(d.Transparency + 0.4, 0.85)
+		end
 	end
-	return n
+	task.spawn(function()
+		local tw = TweenService:Create(root, TweenInfo.new(0.35, Enum.EasingStyle.Back, Enum.EasingDirection.Out), { CFrame = goal })
+		tw:Play()
+		tw.Completed:Wait()
+		for _, d in ipairs(model:GetDescendants()) do
+			if d:IsA("BasePart") and d.Name ~= "Root" then
+				TweenService:Create(d, TweenInfo.new(0.2), { Transparency = 0 }):Play()
+			end
+		end
+	end)
 end
 
-local function freeSlots(player)
-	local base = baseOf[player]
-	if not base then return 0 end
-	return #base.Pedestals - countOwned(player)
+function BrainrotModels.startIdleBob(model)
+	local root = model and model.PrimaryPart
+	if not root then return end
+	task.spawn(function()
+		local base = root.CFrame
+		local t0 = os.clock()
+		while model.Parent and root.Parent do
+			local t = os.clock() - t0
+			root.CFrame = base * CFrame.new(0, math.sin(t * 2) * 0.12, 0)
+			task.wait(0.03)
+		end
+	end)
 end
 
-local function firstFreeSlot(base)
-	for i = 1, #base.Pedestals do
-		if not base.Slots[i] then return i end
+return BrainrotModels
+]]></ProtectedString>
+					<string name="Name">BrainrotModels</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX6">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Util = require(script.Parent.Util)
+local BrainrotModels = require(script.Parent.BrainrotModels)
+
+local Carry = {
+	_carrying = {}, -- [player] = { Slot, Model }
+}
+
+function Carry.get(player)
+	return Carry._carrying[player]
+end
+
+function Carry.isCarrying(player)
+	return Carry._carrying[player] ~= nil
+end
+
+function Carry.drop(player)
+	local c = Carry._carrying[player]
+	Carry._carrying[player] = nil
+	if c and c.Model then
+		c.Model:Destroy()
 	end
 end
 
-local function refreshSlot(base, i)
-	local ped = base.Pedestals[i]
-	local slot = base.Slots[i]
-	if ped.Model then
-		ped.Model:Destroy()
-		ped.Model = nil
-	end
-	if slot then
-		local m = buildBrainrotModel(slot.Def, slot.Super)
-		m.Parent = base.Folder
-		m:PivotTo(CFrame.new(ped.Pad.Position + Vector3.new(0, 0.5 + footOf(slot.Def), 0)) * CFrame.Angles(0, -base.FrontDir * PI / 2, 0))
-		ped.Model = m
-		ped.Pick.ObjectText = slot.Def.Name
-	end
-	ped.Pick.Enabled = slot ~= nil
-	ped.Place.Enabled = slot == nil
-	ped.Label.Text = slotText(slot)
-	ped.Label.Parent.Enabled = slot ~= nil -- no text at all when empty
-	if base.Owner then
-		local stat = getStat(base.Owner, "Brainrots")
-		if stat then stat.Value = countOwned(base.Owner) end
-	end
-end
-
--- Carrying ---------------------------------------------------------------
-local function dropCarry(player)
-	local c = carrying[player]
-	carrying[player] = nil
-	if c and c.Model then c.Model:Destroy() end
-end
-
-local function attachCarry(player, slot)
+function Carry.attach(player, slot)
 	local char = player.Character
 	local hrp = char and char:FindFirstChild("HumanoidRootPart")
 	if not hrp then return false end
+	if Carry._carrying[player] then return false end
 
-	local model = buildBrainrotModel(slot.Def, slot.Super)
+	local model = BrainrotModels.build(slot.Def, slot.Super)
 	model.Parent = char
 	model:PivotTo(hrp.CFrame * CFrame.new(0, 5.5, 0))
 
@@ -1794,521 +1200,248 @@ local function attachCarry(player, slot)
 	w.Part1 = primary
 	w.Parent = primary
 
-	makeLabel(primary, slot.Def.Name, UDim2.fromOffset(100, 28), Vector3.new(0, 4.5, 0), 40)
-	carrying[player] = { Slot = slot, Model = model }
-	return true
-end
-
--- if a player dies/leaves while carrying, the brainrot goes into their base (if there's room)
-local function returnCarry(player)
-	local c = carrying[player]
-	if not c then return end
-	local base = baseOf[player]
-	local i = base and firstFreeSlot(base)
-	if i then
-		base.Slots[i] = c.Slot
-		refreshSlot(base, i)
-	end
-	dropCarry(player)
-end
-
-local function pickUpFromPedestal(player, base, i)
-	local slot = base.Slots[i]
-	if not slot then return end
-	if carrying[player] then
-		notify(player, "You're already carrying a brainrot. Place it first!")
-		return
-	end
-	local stealing = base.Owner ~= player
-	if stealing then
-		local left = CONFIG.StealCooldown - (os.clock() - (stealCooldown[player] or -999))
-		if left > 0 then
-			notify(player, ("Steal is on cooldown (%ds)."):format(math.ceil(left)))
-			return
-		end
-	end
-	if not attachCarry(player, slot) then return end
-	base.Slots[i] = nil
-	refreshSlot(base, i)
-	if stealing then
-		stealCooldown[player] = os.clock()
-		if base.Owner then notify(base.Owner, player.DisplayName .. " stole your " .. slot.Def.Name .. "!") end
-		notify(player, "You stole " .. slot.Def.Name .. "! Carry it to your base.")
-	end
-end
-
-local function placeOnPedestal(player, base, i)
-	if base.Owner ~= player then
-		notify(player, "That's not your base.")
-		return
-	end
-	local c = carrying[player]
-	if not c then
-		notify(player, "Pick up a brainrot first.")
-		return
-	end
-	if base.Slots[i] then return end
-	base.Slots[i] = c.Slot
-	dropCarry(player)
-	refreshSlot(base, i)
-end
-
-local function sellCarried(player)
-	local c = carrying[player]
-	if not c then
-		notify(player, "Carry a brainrot to the Trader to sell it.")
-		return
-	end
-	local value = math.floor(c.Slot.Def.Price * (c.Slot.Super and CONFIG.SuperMultiplier or 1) * CONFIG.SellFraction)
-	local coins = getStat(player, "Coins")
-	if coins then coins.Value += value end
-	notify(player, ("Trader bought %s for %d coins."):format(c.Slot.Def.Name, value))
-	dropCarry(player)
-end
-
--- Trader NPC (original blocky character) ---------------------------------
-local function buildTrader(parent, origin)
-	local model = Instance.new("Model")
-	model.Name = "Trader"
-	local skin = Color3.fromRGB(240, 200, 160)
-	local coat = Color3.fromRGB(120, 50, 60)
-	local pants = Color3.fromRGB(50, 50, 70)
-	local hat = Color3.fromRGB(30, 30, 35)
-
-	for _, sx in ipairs({ -1, 1 }) do
-		newPart(model, BLOCK, V3(0.9, 2, 0.9), origin * CFrame.new(sx * 0.55, 1, 0), pants)
-		newPart(model, BLOCK, V3(0.8, 2.2, 0.8), origin * CFrame.new(sx * 1.55, 3.2, 0), coat)
-		newPart(model, BALL, V3(0.9, 0.9, 0.9), origin * CFrame.new(sx * 1.55, 2.0, 0), skin)
-	end
-	newPart(model, BLOCK, V3(2.3, 2.4, 1.3), origin * CFrame.new(0, 3.2, 0), coat)
-	local head = newPart(model, BALL, V3(1.8, 1.8, 1.8), origin * CFrame.new(0, 5.2, 0), skin)
-	for _, sx in ipairs({ -1, 1 }) do
-		newPart(model, BALL, V3(0.3, 0.3, 0.3), origin * CFrame.new(sx * 0.4, 5.4, -0.8), Color3.new(0.05, 0.05, 0.05))
-	end
-	newPart(model, BLOCK, V3(0.9, 0.25, 0.3), origin * CFrame.new(0, 4.9, -0.85), Color3.fromRGB(80, 50, 30)) -- moustache
-	-- top hat
-	newPart(model, CYL, V3(0.25, 2.8, 2.8), origin * CFrame.new(0, 6.1, 0) * CFrame.Angles(0, 0, PI / 2), hat)
-	newPart(model, CYL, V3(1.5, 1.8, 1.8), origin * CFrame.new(0, 6.9, 0) * CFrame.Angles(0, 0, PI / 2), hat)
-	-- coin bag
-	newPart(model, BALL, V3(1.4, 1.4, 1.4), origin * CFrame.new(-1.9, 1.5, -0.6), Color3.fromRGB(140, 100, 50))
-	newPart(model, CYL, V3(0.2, 0.9, 0.9), origin * CFrame.new(-1.9, 2.3, -0.6) * CFrame.Angles(0, 0, PI / 2), GOLD, Enum.Material.Neon)
-
-	model.Parent = parent
-	makeLabel(head, "Trader", UDim2.fromOffset(80, 24), Vector3.new(0, 2.5, 0), 40)
-	return model
-end
-
--- Bases -----------------------------------------------------------------
-local function buildBase(index, placeIndex, pos)
-	local frontDir = (placeIndex == 1) and 1 or -1 -- front faces the track
-	local base = { Index = index, Pos = pos, Owner = nil, Slots = {}, Pedestals = {}, FrontDir = frontDir }
-
-	local folder = Instance.new("Folder")
-	folder.Name = "Base_" .. index
-	folder.Parent = map
-	base.Folder = folder
-
-	local color = (placeIndex == 1) and Color3.fromRGB(255, 120, 120) or Color3.fromRGB(120, 180, 255)
-	makePart("Floor", Vector3.new(CONFIG.BaseSize, 1, CONFIG.BaseSize), pos + Vector3.new(0, 0.5, 0), color, nil, folder)
-
-	-- fence: back + both sides, front stays open
-	local fence = Color3.fromRGB(90, 90, 100)
-	local half = CONFIG.BaseSize / 2
-	makePart("FenceBack", Vector3.new(1, 6, CONFIG.BaseSize), pos + Vector3.new(-frontDir * half, 4, 0), fence, Enum.Material.Metal, folder)
-	makePart("FenceSideA", Vector3.new(CONFIG.BaseSize, 6, 1), pos + Vector3.new(0, 4, half), fence, Enum.Material.Metal, folder)
-	makePart("FenceSideB", Vector3.new(CONFIG.BaseSize, 6, 1), pos + Vector3.new(0, 4, -half), fence, Enum.Material.Metal, folder)
-
-	-- owner sign
-	local signAnchor = makePart("SignAnchor", Vector3.new(1, 1, 1), pos + Vector3.new(0, 14, 0), Color3.new(1, 1, 1), nil, folder)
-	signAnchor.Transparency = 1
-	signAnchor.CanCollide = false
-	base.SignLabel = makeLabel(signAnchor, "", UDim2.fromOffset(140, 28), Vector3.new(0, 0, 0), 50)
-
-	base.SpawnPos = pos + Vector3.new(frontDir * 8, 4, 8)
-
-	-- Trading shop corner (front side of the base) + Trader NPC
-	local counter = makePart("TradingShop", Vector3.new(3, 4, 10), pos + Vector3.new(frontDir * 9.5, 3, -13), Color3.fromRGB(150, 100, 60), Enum.Material.Wood, folder)
-	makeLabel(counter, "Trading Shop", UDim2.fromOffset(110, 28), Vector3.new(0, 3.5, 0), 40)
-	buildTrader(folder, CFrame.new(pos + Vector3.new(frontDir * 14, 1, -13)) * CFrame.Angles(0, frontDir * PI / 2, 0))
-
-	local sell = Instance.new("ProximityPrompt")
-	sell.ObjectText = "Trader"
-	sell.ActionText = "Sell carried brainrot"
-	sell.KeyboardKeyCode = Enum.KeyCode.E
-	sell.HoldDuration = 0
-	sell.MaxActivationDistance = 10
-	sell.Parent = counter
-	sell.Triggered:Connect(sellCarried)
-
-	local tradeWith = Instance.new("ProximityPrompt")
-	tradeWith.ObjectText = "Trader"
-	tradeWith.ActionText = "Trade with players"
-	tradeWith.KeyboardKeyCode = Enum.KeyCode.F
-	tradeWith.HoldDuration = 0
-	tradeWith.MaxActivationDistance = 10
-	tradeWith.UIOffset = Vector2.new(0, 80)
-	tradeWith.Parent = counter
-	tradeWith.Triggered:Connect(function(player)
-		local ev = ReplicatedStorage:FindFirstChild("TradeEvent")
-		if ev then ev:FireClient(player, "OpenTrade") end
-	end)
-
-	-- 8 pedestals in the back half of the base (2 columns x 4 rows)
-	for col = 1, 2 do
-		for row = 1, 4 do
-			local lx = frontDir * (col == 1 and -8 or -16)
-			local lz = (row - 2.5) * 8
-			local pad = makePart("Pedestal", Vector3.new(6, 1, 6), pos + Vector3.new(lx, 1.5, lz), Color3.fromRGB(60, 60, 70), Enum.Material.Slate, folder)
-
-			local label = makeLabel(pad, "", UDim2.fromOffset(120, 36), Vector3.new(0, 7, 0), 40)
-			label.Parent.Enabled = false
-
-			local place = Instance.new("ProximityPrompt")
-			place.ObjectText = "Pedestal"
-			place.ActionText = "Place brainrot"
-			place.KeyboardKeyCode = Enum.KeyCode.E
-			place.HoldDuration = 0
-			place.MaxActivationDistance = 7
-			place.Parent = pad
-
-			local pick = Instance.new("ProximityPrompt")
-			pick.ActionText = "Pick up"
-			pick.KeyboardKeyCode = Enum.KeyCode.E
-			pick.HoldDuration = CONFIG.PickupHold
-			pick.MaxActivationDistance = 7
-			pick.Enabled = false
-			pick.Parent = pad
-
-			local i = #base.Pedestals + 1
-			base.Pedestals[i] = { Pad = pad, Label = label, Place = place, Pick = pick }
-
-			place.Triggered:Connect(function(player) placeOnPedestal(player, base, i) end)
-			pick.Triggered:Connect(function(player) pickUpFromPedestal(player, base, i) end)
-		end
-	end
-
-	updateSign(base)
-	bases[index] = base
-	return base
-end
-
--- Move n of a player's cheapest brainrots to another player (used by trading)
-local function transfer(from, to, n)
-	local fromBase, toBase = baseOf[from], baseOf[to]
-	if not (fromBase and toBase) then return false end
-	if countOwned(from) < n or freeSlots(to) < n then return false end
-
-	local owned = {}
-	for i = 1, #fromBase.Pedestals do
-		if fromBase.Slots[i] then table.insert(owned, i) end
-	end
-	table.sort(owned, function(a, b)
-		return incomeOf(fromBase.Slots[a]) < incomeOf(fromBase.Slots[b])
-	end)
-
-	for k = 1, n do
-		local i = owned[k]
-		local slot = fromBase.Slots[i]
-		local freeIndex = firstFreeSlot(toBase)
-		fromBase.Slots[i] = nil
-		toBase.Slots[freeIndex] = slot
-		refreshSlot(fromBase, i)
-		refreshSlot(toBase, freeIndex)
+	Util.makeLabel(primary, slot.Def.Name, UDim2.fromOffset(100, 28), Vector3.new(0, 4.5, 0), 40, Util.rarityColor(slot.Def.Rarity))
+	Carry._carrying[player] = { Slot = slot, Model = model }
+	local remotes = require(ReplicatedStorage.Shared.Remotes)
+	if remotes.GameEvent then
+		remotes.GameEvent:FireClient(player, "Carry", slot.Def.Name)
 	end
 	return true
 end
 
--- Upgrade the player's best non-super brainrot to Super
-local function upgradeBest(player)
-	local base = baseOf[player]
-	if not base then return false end
-	local best, bestIncome
-	for i = 1, #base.Pedestals do
-		local slot = base.Slots[i]
-		if slot and not slot.Super and (not bestIncome or slot.Def.Income > bestIncome) then
-			best, bestIncome = i, slot.Def.Income
-		end
-	end
-	if not best then return false end
-	base.Slots[best].Super = true
-	refreshSlot(base, best)
-	return true
+function Carry.clear(player)
+	Carry.drop(player)
 end
 
--- API for the trading script
-local api = Instance.new("BindableFunction")
-api.Name = "BaseApi"
-api.OnInvoke = function(action, a, b, c)
-	if action == "Count" then return countOwned(a) end
-	if action == "Free" then return freeSlots(a) end
-	if action == "Transfer" then return transfer(a, b, c) end
-end
-api.Parent = ServerStorage
+return Carry
+]]></ProtectedString>
+					<string name="Name">Carry</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX7">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local DataStoreService = game:GetService("DataStoreService")
+local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Config = require(ReplicatedStorage.Shared.Config)
 
--- World -----------------------------------------------------------------
-makePart("Ground", Vector3.new(400, 1, 220), Vector3.new(0, -0.5, 0), Color3.fromRGB(90, 140, 80), Enum.Material.Grass)
+local DataService = {
+	profiles = {}, -- [player] = data table
+	_store = nil,
+	_loadFailed = {}, -- [userId] = true — never overwrite on failed load
+}
 
-local spawn = Instance.new("SpawnLocation")
-spawn.Position = Vector3.new(0, 1, 75)
-spawn.Size = Vector3.new(12, 1, 12)
-spawn.Anchored = true
-spawn.Neutral = true
-spawn.Parent = map
+local DEFAULT = {
+	Coins = Config.StartCoins,
+	Rebirths = 0,
+	LuckLevel = 0,
+	LastDaily = 0,
+	Slots = {}, -- { {Id=, Super=} , ... } indexed by pedestal
+}
 
-local count = 0
-for placeIndex, offset in ipairs(CONFIG.PlaceOffsets) do
-	for i = 1, CONFIG.BasesPerPlace do
-		count += 1
-		buildBase(count, placeIndex, offset + Vector3.new(0, 0, (i - 2) * CONFIG.BaseSpacing))
-	end
-end
-
--- Wall
-local wallColor = Color3.fromRGB(110, 110, 120)
-local H, T = 20, 2
-local halfX, halfZ = 190, 110
-makePart("Wall_N", Vector3.new(halfX * 2, H, T), Vector3.new(0, H / 2, -halfZ), wallColor, Enum.Material.Concrete)
-makePart("Wall_S", Vector3.new(halfX * 2, H, T), Vector3.new(0, H / 2, halfZ), wallColor, Enum.Material.Concrete)
-makePart("Wall_W", Vector3.new(T, H, halfZ * 2), Vector3.new(-halfX, H / 2, 0), wallColor, Enum.Material.Concrete)
-makePart("Wall_E", Vector3.new(T, H, halfZ * 2), Vector3.new(halfX, H / 2, 0), wallColor, Enum.Material.Concrete)
-
--- Track
-local L = CONFIG.TrackHalfLength
-makePart("Track", Vector3.new(L * 2, 0.4, 8), Vector3.new(0, 0.2, 0), Color3.fromRGB(40, 40, 45), Enum.Material.Metal)
-
--- Brainrots on the track ------------------------------------------------
-local function pickBrainrot()
-	local total = 0
-	for _, d in ipairs(BRAINROTS) do total += d.Weight end
-	local r = math.random() * total
-	for _, d in ipairs(BRAINROTS) do
-		r -= d.Weight
-		if r <= 0 then return d end
-	end
-	return BRAINROTS[1]
-end
-
-local function spawnRunner()
-	local def = pickBrainrot()
-	local model = buildBrainrotModel(def, false)
-	model.Parent = map
-	local face = CFrame.Angles(0, -PI / 2, 0) -- face the direction of travel (+X)
-	local trackY = 0.4 + footOf(def)
-	model:PivotTo(CFrame.new(-L, trackY, 0) * face)
-
-	local root = model.PrimaryPart
-	makeLabel(root, ("%s\n%d coins | +%d/s"):format(def.Name, def.Price, def.Income), UDim2.fromOffset(120, 36), Vector3.new(0, 5, 0), 28)
-
-	local buy = Instance.new("ProximityPrompt")
-	buy.ObjectText = def.Name
-	buy.ActionText = ("Buy & carry (%d coins)"):format(def.Price)
-	buy.KeyboardKeyCode = Enum.KeyCode.E
-	buy.HoldDuration = 0
-	buy.MaxActivationDistance = 10
-	buy.Parent = root
-
-	local sold = false
-	buy.Triggered:Connect(function(player)
-		if sold then return end
-		local coins = getStat(player, "Coins")
-		if not coins then return end
-		if not baseOf[player] then
-			notify(player, "You don't have a base.")
-			return
-		end
-		if carrying[player] then
-			notify(player, "You're already carrying a brainrot. Place it in your base first!")
-			return
-		end
-		if coins.Value < def.Price then
-			notify(player, "Not enough coins.")
-			return
-		end
-		if not attachCarry(player, { Def = def, Super = false }) then return end
-		sold = true
-		coins.Value -= def.Price
-		notify(player, "Bought " .. def.Name .. "! Carry it to a pedestal in your base.")
-		model:Destroy()
-	end)
-
-	task.spawn(function()
-		local duration = (L * 2) / CONFIG.TrackSpeed
-		local t = 0
-		while model.Parent and t < duration do
-			t += RunService.Heartbeat:Wait()
-			if model.Parent then
-				model:PivotTo(CFrame.new(-L + (L * 2) * math.min(t / duration, 1), trackY, 0) * face)
-			end
-		end
-		if model.Parent then model:Destroy() end
-	end)
-end
-
--- Showcase near spawn so the new Tralalero / Patapim models are visible immediately
-local function buildShowcase()
-	local folder = Instance.new("Folder")
-	folder.Name = "BrainrotShowcase"
-	folder.Parent = map
-
-	local platform = makePart("ShowcasePad", Vector3.new(28, 1, 10), Vector3.new(0, 0.5, 55), Color3.fromRGB(45, 45, 55), Enum.Material.Slate, folder)
-	makeLabel(platform, "Showcase", UDim2.fromOffset(100, 24), Vector3.new(0, 5, 0), 30)
-
-	for i, def in ipairs(BRAINROTS) do
-		local x = (i - 2) * 8
-		local ped = makePart("Showcase_" .. def.Name, Vector3.new(5, 1, 5), Vector3.new(x, 1.5, 55), Color3.fromRGB(70, 70, 80), Enum.Material.Slate, folder)
-		local m = buildBrainrotModel(def, false)
-		m.Parent = folder
-		m:PivotTo(CFrame.new(ped.Position + Vector3.new(0, 0.5 + footOf(def), 0)) * CFrame.Angles(0, PI, 0))
-		makeLabel(m.PrimaryPart, def.Name .. "\n" .. def.Rarity, UDim2.fromOffset(100, 32), Vector3.new(0, 5, 0), 25)
-	end
-
-	-- Free coins pad for testing when you're broke
-	local coinPad = makePart("FreeCoins", Vector3.new(6, 1.5, 6), Vector3.new(0, 1.25, 48), GOLD, Enum.Material.Neon, folder)
-	makeLabel(coinPad, "FREE COINS\nE = +500", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
-	local freeCoins = Instance.new("ProximityPrompt")
-	freeCoins.ObjectText = "Free Coins"
-	freeCoins.ActionText = "Claim +500 coins"
-	freeCoins.KeyboardKeyCode = Enum.KeyCode.E
-	freeCoins.HoldDuration = 0
-	freeCoins.MaxActivationDistance = 12
-	freeCoins.Parent = coinPad
-	freeCoins.Triggered:Connect(function(player)
-		local coins = getStat(player, "Coins")
-		if coins then
-			coins.Value += 500
-			notify(player, "Claimed +500 coins!")
-		end
-	end)
-end
-buildShowcase()
-
-task.spawn(function()
-	while true do
-		spawnRunner()
-		task.wait(CONFIG.SpawnInterval)
-	end
-end)
-
--- Income: coins are added automatically every second (nothing to collect)
-task.spawn(function()
-	while true do
-		task.wait(1)
-		for _, base in ipairs(bases) do
-			local owner = base.Owner
-			if owner then
-				local total = 0
-				for i = 1, #base.Pedestals do
-					local slot = base.Slots[i]
-					if slot then total += incomeOf(slot) end
-				end
-				local coins = getStat(owner, "Coins")
-				if coins and total > 0 then coins.Value += total end
-			end
-		end
-	end
-end)
-
--- Robux stand: Super Upgrade Brainrot -------------------------------------
-local stand = makePart("SuperUpgradeStand", Vector3.new(10, 5, 3), Vector3.new(0, 2.5, 60), GOLD, Enum.Material.Neon)
-makeLabel(stand, ("Super Upgrade\nR$ %d"):format(CONFIG.SuperUpgradePriceRobux), UDim2.fromOffset(110, 32), Vector3.new(0, 4, 0), 30)
-
-local superPrompt = Instance.new("ProximityPrompt")
-superPrompt.ObjectText = "Super Upgrade Brainrot"
-superPrompt.ActionText = ("Buy for %d Robux"):format(CONFIG.SuperUpgradePriceRobux)
-superPrompt.KeyboardKeyCode = Enum.KeyCode.E
-superPrompt.HoldDuration = 0
-superPrompt.MaxActivationDistance = 12
-superPrompt.Parent = stand
-
-superPrompt.Triggered:Connect(function(player)
-	local base = baseOf[player]
-	local hasOne = false
-	if base then
-		for i = 1, #base.Pedestals do
-			if base.Slots[i] and not base.Slots[i].Super then hasOne = true end
-		end
-	end
-	if not hasOne then
-		notify(player, "Place a brainrot in your base first - the upgrade applies to your best one!")
-		return
-	end
-
-	-- No Developer Product yet: grant free in Studio / local play so testing works.
-	-- For a live game, set CONFIG.SuperUpgradeProductId to your Creator Hub product ID.
-	if CONFIG.SuperUpgradeProductId == 0 then
-		if upgradeBest(player) then
-			notify(player, ("Super Upgrade! Your best brainrot now earns x%d! (Studio free test)"):format(CONFIG.SuperMultiplier))
-		else
-			notify(player, "No brainrot to upgrade yet.")
-		end
-		return
-	end
-
-	MarketplaceService:PromptProductPurchase(player, CONFIG.SuperUpgradeProductId)
-end)
-
--- GetDataStore throws on an unpublished place; never let that stop the rest of the script
-local okStore, receipts = pcall(function()
-	return DataStoreService:GetDataStore("SuperUpgradeReceipts")
-end)
-if not okStore then
-	warn("[GameSetup] DataStore unavailable (publish the place to enable receipts): " .. tostring(receipts))
-	receipts = {
-		GetAsync = function() error("DataStore unavailable") end,
-		SetAsync = function() error("DataStore unavailable") end,
+local function cloneDefault()
+	local t = {
+		Coins = Config.IsStudio and Config.StartCoins or 100,
+		Rebirths = 0,
+		LuckLevel = 0,
+		LastDaily = 0,
+		Slots = {},
 	}
+	return t
 end
 
-MarketplaceService.ProcessReceipt = function(info)
-	if info.ProductId ~= CONFIG.SuperUpgradeProductId then
-		return Enum.ProductPurchaseDecision.NotProcessedYet
+function DataService.init()
+	local ok, store = pcall(function()
+		return DataStoreService:GetDataStore(Config.DataStoreName)
+	end)
+	if ok then
+		DataService._store = store
+	else
+		warn("[DataService] DataStore unavailable: " .. tostring(store))
+		DataService._store = nil
 	end
-	local player = Players:GetPlayerByUserId(info.PlayerId)
-	if not player then
-		return Enum.ProductPurchaseDecision.NotProcessedYet
-	end
-
-	local key = info.PlayerId .. "_" .. info.PurchaseId
-	local ok, already = pcall(function() return receipts:GetAsync(key) end)
-	if ok and already then
-		return Enum.ProductPurchaseDecision.PurchaseGranted
-	end
-	-- if the DataStore is unavailable, only continue while testing in Studio
-	if not ok and not RunService:IsStudio() then
-		return Enum.ProductPurchaseDecision.NotProcessedYet
-	end
-
-	if not upgradeBest(player) then
-		notify(player, "No brainrot to upgrade yet. We'll retry when you have one.")
-		return Enum.ProductPurchaseDecision.NotProcessedYet
-	end
-
-	pcall(function() receipts:SetAsync(key, true) end)
-	notify(player, ("Super Upgrade! Your best brainrot now earns x%d!"):format(CONFIG.SuperMultiplier))
-	return Enum.ProductPurchaseDecision.PurchaseGranted
 end
 
--- Players -----------------------------------------------------------------
+local function keyFor(userId)
+	return "p_" .. tostring(userId)
+end
+
+function DataService.load(player)
+	local data = cloneDefault()
+	if not DataService._store then
+		DataService.profiles[player] = data
+		return data, true
+	end
+
+	local ok, result
+	for attempt = 1, 3 do
+		ok, result = pcall(function()
+			return DataService._store:GetAsync(keyFor(player.UserId))
+		end)
+		if ok then break end
+		task.wait(0.5 * attempt)
+	end
+
+	if not ok then
+		warn("[DataService] Load failed for " .. player.Name .. ": " .. tostring(result))
+		DataService._loadFailed[player.UserId] = true
+		DataService.profiles[player] = data
+		return data, false
+	end
+
+	if typeof(result) == "table" then
+		data.Coins = tonumber(result.Coins) or data.Coins
+		data.Rebirths = tonumber(result.Rebirths) or 0
+		data.LuckLevel = tonumber(result.LuckLevel) or 0
+		data.LastDaily = tonumber(result.LastDaily) or 0
+		data.Slots = typeof(result.Slots) == "table" and result.Slots or {}
+	end
+	DataService.profiles[player] = data
+	DataService._loadFailed[player.UserId] = nil
+	return data, true
+end
+
+function DataService.get(player)
+	return DataService.profiles[player]
+end
+
+function DataService.save(player)
+	local data = DataService.profiles[player]
+	if not data then return false end
+	if DataService._loadFailed[player.UserId] then
+		warn("[DataService] Skipping save for " .. player.Name .. " (previous load failed)")
+		return false
+	end
+	if not DataService._store then
+		return true -- Studio / unpublished: treat as ok
+	end
+	local ok, err = pcall(function()
+		DataService._store:SetAsync(keyFor(player.UserId), data)
+	end)
+	if not ok then
+		warn("[DataService] Save failed for " .. player.Name .. ": " .. tostring(err))
+	end
+	return ok
+end
+
+function DataService.release(player)
+	DataService.save(player)
+	DataService.profiles[player] = nil
+	DataService._loadFailed[player.UserId] = nil
+end
+
+function DataService.startAutosave()
+	task.spawn(function()
+		while true do
+			task.wait(Config.AutosaveSeconds)
+			for _, player in ipairs(Players:GetPlayers()) do
+				pcall(function() DataService.save(player) end)
+			end
+		end
+	end)
+end
+
+function DataService.bindToClose()
+	game:BindToClose(function()
+		for _, player in ipairs(Players:GetPlayers()) do
+			pcall(function() DataService.save(player) end)
+		end
+		task.wait(2)
+	end)
+end
+
+return DataService
+]]></ProtectedString>
+					<string name="Name">DataService</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX8">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Util = require(script.Parent.Util)
+local Bases = require(script.Parent.Bases)
+local DataService = require(script.Parent.DataService)
+
+local Economy = {}
+
+function Economy.startIncomeLoop()
+	local remotes = require(ReplicatedStorage.Shared.Remotes)
+	task.spawn(function()
+		while true do
+			task.wait(1)
+			for _, base in ipairs(Bases.list) do
+				local owner = base.Owner
+				if owner then
+					local total = Bases.totalIncome(owner)
+					if total > 0 then
+						local coins = Util.getStat(owner, "Coins")
+						if coins then
+							coins.Value += total
+							local data = DataService.get(owner)
+							if data then data.Coins = coins.Value end
+						end
+						local incomeStat = Util.getStat(owner, "Income")
+						if incomeStat then incomeStat.Value = total end
+						if remotes.IncomeUpdate then
+							remotes.IncomeUpdate:FireClient(owner, total)
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+
+return Economy
+]]></ProtectedString>
+					<string name="Name">Economy</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX9">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Config = require(ReplicatedStorage.Shared.Config)
+local BrainrotDefs = require(ReplicatedStorage.Shared.BrainrotDefs)
+local Util = require(script.Parent.Util)
+local Bases = require(script.Parent.Bases)
+local Carry = require(script.Parent.Carry)
+local DataService = require(script.Parent.DataService)
+local RateLimit = require(script.Parent.RateLimit)
+
+local PlayersService = {}
+
 local function teleportToBase(player, char)
-	local base = baseOf[player]
+	local base = Bases.baseOf[player]
 	if not base then return end
 	char:WaitForChild("HumanoidRootPart", 5)
 	task.wait()
-	char:PivotTo(CFrame.new(base.SpawnPos))
+	pcall(function()
+		char:PivotTo(CFrame.new(base.SpawnPos))
+	end)
 end
 
-local function setupPlayer(player)
-	-- Studio can fire PlayerAdded and also already have the player in GetPlayers()
+local function syncProfileFromLive(player)
+	local data = DataService.get(player)
+	if not data then return end
+	local coins = Util.getStat(player, "Coins")
+	if coins then data.Coins = coins.Value end
+	data.Slots = Bases.serializeSlots(player)
+end
+
+function PlayersService.setup(player)
 	if player:FindFirstChild("leaderstats") then
 		return
 	end
+
+	local data, loadedOk = DataService.load(player)
 
 	local stats = Instance.new("Folder")
 	stats.Name = "leaderstats"
 
 	local coins = Instance.new("IntValue")
 	coins.Name = "Coins"
-	coins.Value = CONFIG.StartCoins
+	coins.Value = data.Coins or Config.StartCoins
 	coins.Parent = stats
 
 	local brainrots = Instance.new("IntValue")
@@ -2316,433 +1449,886 @@ local function setupPlayer(player)
 	brainrots.Value = 0
 	brainrots.Parent = stats
 
+	local income = Instance.new("IntValue")
+	income.Name = "Income"
+	income.Value = 0
+	income.Parent = stats
+
+	local rebirths = Instance.new("IntValue")
+	rebirths.Name = "Rebirths"
+	rebirths.Value = data.Rebirths or 0
+	rebirths.Parent = stats
+
 	stats.Parent = player
 
-	-- assign the first free base + free starter brainrot so Super Upgrade can be tested immediately
-	for _, base in ipairs(bases) do
-		if not base.Owner then
-			base.Owner = player
-			baseOf[player] = base
-			updateSign(base)
-			base.Slots[1] = { Def = BRAINROTS[1], Super = false }
-			refreshSlot(base, 1)
-			break
-		end
+	coins:GetPropertyChangedSignal("Value"):Connect(function()
+		local d = DataService.get(player)
+		if d then d.Coins = coins.Value end
+	end)
+
+	local base = Bases.assign(player)
+	if not base then
+		Util.notify(player, "Server is full - no free base!")
+		return
 	end
-	if not baseOf[player] then
-		notify(player, "Server is full - no free base!")
-	else
-		notify(player, ("Welcome! %d coins + a free Tung Tung in your base."):format(CONFIG.StartCoins))
+
+	Bases.applySavedSlots(player, data.Slots)
+
+	local hasAny = Bases.countOwned(player) > 0
+	if not hasAny and Config.StudioGiveStarterBrainrot then
+		base.Slots[1] = { Def = BrainrotDefs[1], Super = false }
+		Bases.refreshSlot(base, 1)
+	end
+
+	Bases.onChanged = Bases.onChanged or function(p)
+		syncProfileFromLive(p)
 	end
 
 	player.CharacterAdded:Connect(function(char)
 		teleportToBase(player, char)
 	end)
 	player.CharacterRemoving:Connect(function()
-		returnCarry(player)
+		Bases.returnCarry(player)
+		syncProfileFromLive(player)
 	end)
 	if player.Character then
 		task.spawn(teleportToBase, player, player.Character)
 	end
-end
 
-Players.PlayerAdded:Connect(setupPlayer)
-for _, p in ipairs(Players:GetPlayers()) do
-	task.spawn(setupPlayer, p)
-end
-
-Players.PlayerRemoving:Connect(function(player)
-	dropCarry(player)
-	local base = baseOf[player]
-	if base then
-		for i = 1, #base.Pedestals do
-			base.Slots[i] = nil
-		end
-		base.Owner = nil
-		baseOf[player] = nil
-		for i = 1, #base.Pedestals do
-			refreshSlot(base, i)
-		end
-		updateSign(base)
+	local msg = ("Welcome! %d coins"):format(coins.Value)
+	if (data.Rebirths or 0) > 0 then
+		msg ..= (" | Rebirths: %d"):format(data.Rebirths)
 	end
-	stealCooldown[player] = nil
-end)
+	if not loadedOk then
+		msg ..= " (save load failed — progress may not persist this session)"
+	end
+	Util.notify(player, msg)
+end
 
-print("World built: 6 bases with trading shops + traders, track, wall, brainrots, Robux stand.")
+function PlayersService.remove(player)
+	syncProfileFromLive(player)
+	DataService.release(player)
+	Bases.release(player)
+	RateLimit.clear(player)
+	Carry.clear(player)
+end
+
+function PlayersService.start()
+	Bases.onChanged = function(player)
+		syncProfileFromLive(player)
+	end
+
+	Players.PlayerAdded:Connect(function(player)
+		Util.safe("setupPlayer " .. player.Name, function()
+			PlayersService.setup(player)
+		end)
+	end)
+	for _, p in ipairs(Players:GetPlayers()) do
+		task.spawn(function()
+			Util.safe("setupPlayer " .. p.Name, function()
+				PlayersService.setup(p)
+			end)
+		end)
+	end
+	Players.PlayerRemoving:Connect(function(player)
+		Util.safe("removePlayer " .. player.Name, function()
+			PlayersService.remove(player)
+		end)
+	end)
+end
+
+return PlayersService
 ]]></ProtectedString>
-				<bool name="Disabled">false</bool>
-				<Content name="LinkedSource"><null></null></Content>
-				<token name="RunContext">0</token>
-				<string name="ScriptGuid">{1c94593c-5d8c-4d9d-8731-a3e6878f3184}</string>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">GameSetup</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003de</UniqueId>
-			</Properties>
-		</Item>
-		<Item class="Script" referent="RBX1">
-			<Properties>
-				<ProtectedString name="Source"><![CDATA[-- TradeServer (Script) -> put in ServerScriptService   (REPLACES the old TradeServer)
--- Player-to-player trading: one player offers N brainrots and asks for Coins.
--- The offering player's cheapest brainrots (by income) are the ones that move.
+					<string name="Name">PlayersService</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX10">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Config = require(ReplicatedStorage.Shared.Config)
+local Util = require(script.Parent.Util)
+local Bases = require(script.Parent.Bases)
+local Carry = require(script.Parent.Carry)
+local DataService = require(script.Parent.DataService)
+local RateLimit = require(script.Parent.RateLimit)
 
+local Progress = {}
+
+local DAY = 86400
+
+function Progress.claimDaily(player)
+	if not RateLimit.allow(player, "daily", 1) then return end
+	local data = DataService.get(player)
+	if not data then return end
+	local now = os.time()
+	if data.LastDaily > 0 and (now - data.LastDaily) < DAY then
+		local left = DAY - (now - data.LastDaily)
+		Util.notify(player, ("Daily already claimed. Come back in %dh."):format(math.ceil(left / 3600)))
+		return
+	end
+	data.LastDaily = now
+	local coins = Util.getStat(player, "Coins")
+	if coins then
+		coins.Value += Config.DailyBonusCoins
+		data.Coins = coins.Value
+	end
+	Util.notify(player, ("Daily bonus! +%d coins"):format(Config.DailyBonusCoins))
+end
+
+function Progress.tryRebirth(player)
+	if not RateLimit.allow(player, "rebirth", 2) then return end
+	if Carry.isCarrying(player) then
+		Util.notify(player, "Place your carried brainrot before rebirthing.")
+		return
+	end
+	local data = DataService.get(player)
+	if not data then return end
+	local income = Bases.totalIncome(player)
+	if income < Config.RebirthMinIncome then
+		Util.notify(player, ("Need %d income/s to rebirth (you have %d)."):format(Config.RebirthMinIncome, income))
+		return
+	end
+	Bases.clearAllSlots(player)
+	local coins = Util.getStat(player, "Coins")
+	if coins then
+		coins.Value = Config.IsStudio and Config.StartCoins or 100
+		data.Coins = coins.Value
+	end
+	data.Rebirths = (data.Rebirths or 0) + 1
+	data.LuckLevel = (data.LuckLevel or 0) + 1
+	data.Slots = {}
+	local rebirthStat = Util.getStat(player, "Rebirths")
+	if rebirthStat then rebirthStat.Value = data.Rebirths end
+	local pct = math.floor(Config.RebirthIncomeBonus * 100 * data.Rebirths)
+	Util.notify(player, ("Rebirth #%d! Permanent +%d%% income. Luck +1."):format(data.Rebirths, pct))
+	DataService.save(player)
+end
+
+return Progress
+]]></ProtectedString>
+					<string name="Name">Progress</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX11">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Config = require(ReplicatedStorage.Shared.Config)
+
+local last = {} -- [player] = {[key]=clock}
+
+local RateLimit = {}
+
+function RateLimit.allow(player, key, seconds)
+	seconds = seconds or Config.RemoteRateLimitSeconds
+	if not player then return false end
+	last[player] = last[player] or {}
+	local t = os.clock()
+	local prev = last[player][key] or -999
+	if t - prev < seconds then
+		return false
+	end
+	last[player][key] = t
+	return true
+end
+
+function RateLimit.clear(player)
+	last[player] = nil
+end
+
+return RateLimit
+]]></ProtectedString>
+					<string name="Name">RateLimit</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX12">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local MarketplaceService = game:GetService("MarketplaceService")
+local DataStoreService = game:GetService("DataStoreService")
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Config = require(ReplicatedStorage.Shared.Config)
+local BrainrotDefs = require(ReplicatedStorage.Shared.BrainrotDefs)
+local Util = require(script.Parent.Util)
+local Bases = require(script.Parent.Bases)
+local RateLimit = require(script.Parent.RateLimit)
+
+local Shop = {}
+
+function Shop.buildShowcase(map)
+	local folder = Instance.new("Folder")
+	folder.Name = "BrainrotShowcase"
+	folder.Parent = map
+
+	local platform = Util.makePart("ShowcasePad", Vector3.new(36, 1, 10), Vector3.new(0, 0.5, 55), Color3.fromRGB(45, 45, 55), Enum.Material.Slate, folder)
+	Util.makeLabel(platform, "Showcase", UDim2.fromOffset(100, 24), Vector3.new(0, 5, 0), 30)
+
+	-- Show first 6 brainrots so the pad isn't overcrowded
+	local BrainrotModels = require(script.Parent.BrainrotModels)
+	for i = 1, math.min(6, #BrainrotDefs) do
+		local def = BrainrotDefs[i]
+		local x = (i - 3.5) * 5.5
+		local ped = Util.makePart("Showcase_" .. def.Id, Vector3.new(4, 1, 4), Vector3.new(x, 1.5, 55), Color3.fromRGB(70, 70, 80), Enum.Material.Slate, folder)
+		local m = BrainrotModels.build(def, false)
+		m.Parent = folder
+		m:PivotTo(CFrame.new(ped.Position + Vector3.new(0, 0.5 + Util.footOf(def), 0)) * CFrame.Angles(0, Util.PI, 0))
+		Util.makeLabel(m.PrimaryPart, def.Name .. "\n" .. def.Rarity, UDim2.fromOffset(100, 32), Vector3.new(0, 5, 0), 25, Util.rarityColor(def.Rarity))
+	end
+
+	if Config.StudioFreeCoinsPad then
+		local coinPad = Util.makePart("FreeCoins", Vector3.new(6, 1.5, 6), Vector3.new(0, 1.25, 48), Util.GOLD, Enum.Material.Neon, folder)
+		Util.makeLabel(coinPad, "STUDIO\n+500 coins", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
+		local freeCoins = Instance.new("ProximityPrompt")
+		freeCoins.ObjectText = "Studio Coins"
+		freeCoins.ActionText = "Claim +500"
+		freeCoins.KeyboardKeyCode = Enum.KeyCode.E
+		freeCoins.HoldDuration = 0
+		freeCoins.MaxActivationDistance = 12
+		freeCoins.Parent = coinPad
+		freeCoins.Triggered:Connect(function(player)
+			if not Config.IsStudio then return end
+			if not RateLimit.allow(player, "freecoins", 1) then return end
+			local coins = Util.getStat(player, "Coins")
+			if coins then
+				coins.Value += 500
+				Util.notify(player, "Studio: +500 coins")
+			end
+		end)
+	end
+end
+
+function Shop.buildSuperStand(map)
+	local stand = Util.makePart("SuperUpgradeStand", Vector3.new(10, 5, 3), Vector3.new(0, 2.5, 60), Util.GOLD, Enum.Material.Neon, map)
+	Util.makeLabel(stand, ("Super Upgrade\nR$ %d"):format(Config.SuperUpgradePriceRobux), UDim2.fromOffset(110, 32), Vector3.new(0, 4, 0), 30)
+
+	local superPrompt = Instance.new("ProximityPrompt")
+	superPrompt.ObjectText = "Super Upgrade Brainrot"
+	superPrompt.ActionText = ("Buy for %d Robux"):format(Config.SuperUpgradePriceRobux)
+	superPrompt.KeyboardKeyCode = Enum.KeyCode.E
+	superPrompt.HoldDuration = 0
+	superPrompt.MaxActivationDistance = 12
+	superPrompt.Parent = stand
+
+	superPrompt.Triggered:Connect(function(player)
+		if not RateLimit.allow(player, "super", 1) then return end
+		local base = Bases.baseOf[player]
+		local hasOne = false
+		if base then
+			for i = 1, #base.Pedestals do
+				if base.Slots[i] and not base.Slots[i].Super then hasOne = true end
+			end
+		end
+		if not hasOne then
+			Util.notify(player, "Place a brainrot in your base first - upgrade applies to your best one!")
+			return
+		end
+
+		if Config.SuperUpgradeProductId == 0 then
+			if Config.StudioFreeSuperUpgrade and Config.IsStudio then
+				if Bases.upgradeBest(player) then
+					Util.notify(player, ("Super Upgrade! x%d income (Studio test)"):format(Config.SuperMultiplier))
+				end
+			else
+				Util.notify(player, "Robux shop not configured yet. Set SuperUpgradeProductId in Config.")
+			end
+			return
+		end
+
+		MarketplaceService:PromptProductPurchase(player, Config.SuperUpgradeProductId)
+	end)
+
+	local okStore, receipts = pcall(function()
+		return DataStoreService:GetDataStore(Config.ReceiptStoreName)
+	end)
+	if not okStore then
+		warn("[Shop] Receipt store unavailable: " .. tostring(receipts))
+		receipts = {
+			GetAsync = function() error("unavailable") end,
+			SetAsync = function() error("unavailable") end,
+		}
+	end
+
+	MarketplaceService.ProcessReceipt = function(info)
+		if info.ProductId ~= Config.SuperUpgradeProductId or Config.SuperUpgradeProductId == 0 then
+			return Enum.ProductPurchaseDecision.NotProcessedYet
+		end
+		local player = Players:GetPlayerByUserId(info.PlayerId)
+		if not player then
+			return Enum.ProductPurchaseDecision.NotProcessedYet
+		end
+		local key = info.PlayerId .. "_" .. info.PurchaseId
+		local ok, already = pcall(function() return receipts:GetAsync(key) end)
+		if ok and already then
+			return Enum.ProductPurchaseDecision.PurchaseGranted
+		end
+		if not ok and not RunService:IsStudio() then
+			return Enum.ProductPurchaseDecision.NotProcessedYet
+		end
+		if not Bases.upgradeBest(player) then
+			Util.notify(player, "No brainrot to upgrade yet. We'll retry when you have one.")
+			return Enum.ProductPurchaseDecision.NotProcessedYet
+		end
+		pcall(function() receipts:SetAsync(key, true) end)
+		Util.notify(player, ("Super Upgrade! Your best brainrot now earns x%d!"):format(Config.SuperMultiplier))
+		return Enum.ProductPurchaseDecision.PurchaseGranted
+	end
+end
+
+function Shop.buildDailyPad(map)
+	local pad = Util.makePart("DailyBonus", Vector3.new(6, 1.5, 6), Vector3.new(12, 1.25, 48), Color3.fromRGB(80, 200, 120), Enum.Material.Neon, map)
+	Util.makeLabel(pad, "Daily Bonus\nE = claim", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
+	local prompt = Instance.new("ProximityPrompt")
+	prompt.ObjectText = "Daily Bonus"
+	prompt.ActionText = ("Claim +%d coins"):format(Config.DailyBonusCoins)
+	prompt.KeyboardKeyCode = Enum.KeyCode.E
+	prompt.HoldDuration = 0
+	prompt.MaxActivationDistance = 12
+	prompt.Parent = pad
+	prompt.Triggered:Connect(function(player)
+		local Progress = require(script.Parent.Progress)
+		Progress.claimDaily(player)
+	end)
+end
+
+function Shop.buildRebirthPad(map)
+	local pad = Util.makePart("RebirthPad", Vector3.new(6, 1.5, 6), Vector3.new(-12, 1.25, 48), Color3.fromRGB(200, 80, 220), Enum.Material.Neon, map)
+	Util.makeLabel(pad, "REBIRTH\nE = reset+", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
+	local prompt = Instance.new("ProximityPrompt")
+	prompt.ObjectText = "Rebirth"
+	prompt.ActionText = "Rebirth for income bonus"
+	prompt.KeyboardKeyCode = Enum.KeyCode.E
+	prompt.HoldDuration = 1
+	prompt.MaxActivationDistance = 12
+	prompt.Parent = pad
+	prompt.Triggered:Connect(function(player)
+		local Progress = require(script.Parent.Progress)
+		Progress.tryRebirth(player)
+	end)
+end
+
+return Shop
+]]></ProtectedString>
+					<string name="Name">Shop</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX13">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local RunService = game:GetService("RunService")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Config = require(ReplicatedStorage.Shared.Config)
+local BrainrotDefs = require(ReplicatedStorage.Shared.BrainrotDefs)
+local Util = require(script.Parent.Util)
+local BrainrotModels = require(script.Parent.BrainrotModels)
+local Carry = require(script.Parent.Carry)
+local Bases = require(script.Parent.Bases)
+local DataService = require(script.Parent.DataService)
+local RateLimit = require(script.Parent.RateLimit)
+
+local Track = {}
+
+function Track.start(map)
+	local L = Config.TrackHalfLength
+	Util.makePart("Track", Vector3.new(L * 2, 0.4, 8), Vector3.new(0, 0.2, 0), Color3.fromRGB(40, 40, 45), Enum.Material.Metal, map)
+
+	local function spawnRunner()
+		local luck = 0
+		-- average luck of online players slightly affects spawn (simple)
+		local DataService = require(script.Parent.DataService)
+		local n = 0
+		for _, plr in ipairs(game:GetService("Players"):GetPlayers()) do
+			local d = DataService.get(plr)
+			if d then
+				luck += (d.LuckLevel or 0)
+				n += 1
+			end
+		end
+		if n > 0 then luck = luck / n * 0.15 end
+
+		local def = BrainrotDefs.PickWeighted(luck)
+		local model = BrainrotModels.build(def, false)
+		model.Parent = map
+		local face = CFrame.Angles(0, -Util.PI / 2, 0)
+		local trackY = 0.4 + Util.footOf(def)
+		model:PivotTo(CFrame.new(-L, trackY, 0) * face)
+		BrainrotModels.startIdleBob(model)
+
+		local root = model.PrimaryPart
+		local color = Util.rarityColor(def.Rarity)
+		Util.makeLabel(root, ("%s\n%d | +%d/s"):format(def.Name, def.Price, def.Income), UDim2.fromOffset(120, 36), Vector3.new(0, 5, 0), 28, color)
+
+		local buy = Instance.new("ProximityPrompt")
+		buy.ObjectText = def.Name
+		buy.ActionText = ("Buy & carry (%d)"):format(def.Price)
+		buy.KeyboardKeyCode = Enum.KeyCode.E
+		buy.HoldDuration = 0
+		buy.MaxActivationDistance = 10
+		buy.Parent = root
+
+		local sold = false
+		buy.Triggered:Connect(function(player)
+			if sold then return end
+			if not RateLimit.allow(player, "buy", 0.4) then return end
+			local coins = Util.getStat(player, "Coins")
+			if not coins then return end
+			if not Bases.baseOf[player] then
+				Util.notify(player, "You don't have a base.")
+				return
+			end
+			if Carry.isCarrying(player) then
+				Util.notify(player, "You're already carrying a brainrot.")
+				return
+			end
+			if coins.Value < def.Price then
+				Util.notify(player, "Not enough coins.")
+				return
+			end
+			if not Carry.attach(player, { Def = def, Super = false }) then return end
+			sold = true
+			coins.Value -= def.Price
+			local data = DataService.get(player)
+			if data then data.Coins = coins.Value end
+			Util.notify(player, "Bought " .. def.Name .. "! Carry it to a pedestal.")
+			model:Destroy()
+		end)
+
+		task.spawn(function()
+			local duration = (L * 2) / Config.TrackSpeed
+			local t = 0
+			while model.Parent and t < duration do
+				t += RunService.Heartbeat:Wait()
+				if model.Parent then
+					model:PivotTo(CFrame.new(-L + (L * 2) * math.min(t / duration, 1), trackY, 0) * face)
+				end
+			end
+			if model.Parent then model:Destroy() end
+		end)
+	end
+
+	task.spawn(function()
+		while true do
+			Util.safe("spawnRunner", spawnRunner)
+			task.wait(Config.SpawnInterval)
+		end
+	end)
+end
+
+return Track
+]]></ProtectedString>
+					<string name="Name">Track</string>
+				</Properties>
+			</Item>
+			<Item class="ModuleScript" referent="RBX14">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[local Players = game:GetService("Players")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local Config = require(ReplicatedStorage.Shared.Config)
+
+local Util = {}
+Util.GOLD = Color3.fromRGB(255, 200, 40)
+Util.PI = math.pi
+Util.DEFAULT_FOOT = 1.9
+
+function Util.safe(label, fn)
+	local ok, err = pcall(fn)
+	if not ok then
+		warn("[TradeBrainrot] " .. tostring(label) .. ": " .. tostring(err))
+	end
+	return ok, err
+end
+
+function Util.footOf(def)
+	return (def and def.Foot) or Util.DEFAULT_FOOT
+end
+
+function Util.makePart(name, size, position, color, material, parent)
+	local p = Instance.new("Part")
+	p.Name = name
+	p.Size = size
+	p.Position = position
+	p.Anchored = true
+	p.Color = color
+	p.Material = material or Enum.Material.SmoothPlastic
+	p.TopSurface = Enum.SurfaceType.Smooth
+	p.BottomSurface = Enum.SurfaceType.Smooth
+	p.Parent = parent
+	return p
+end
+
+function Util.makeLabel(parent, text, size, offset, maxDistance, textColor)
+	local gui = Instance.new("BillboardGui")
+	gui.Size = size or UDim2.fromOffset(110, 32)
+	gui.StudsOffset = offset or Vector3.new(0, 3, 0)
+	gui.AlwaysOnTop = false
+	gui.MaxDistance = maxDistance or 35
+	gui.Parent = parent
+	local label = Instance.new("TextLabel")
+	label.Size = UDim2.fromScale(1, 1)
+	label.BackgroundTransparency = 1
+	label.TextScaled = true
+	label.Font = Enum.Font.GothamBold
+	label.TextColor3 = textColor or Color3.new(1, 1, 1)
+	label.TextStrokeTransparency = 0.2
+	label.Text = text
+	label.Parent = gui
+	local cap = Instance.new("UITextSizeConstraint")
+	cap.MaxTextSize = 14
+	cap.MinTextSize = 8
+	cap.Parent = label
+	return label
+end
+
+function Util.getStat(player, name)
+	local stats = player and player:FindFirstChild("leaderstats")
+	return stats and stats:FindFirstChild(name)
+end
+
+function Util.notify(player, message)
+	local ev = ReplicatedStorage:FindFirstChild("TradeEvent")
+	if ev and player and player.Parent == Players then
+		ev:FireClient(player, "Message", message)
+	end
+end
+
+function Util.incomeOf(slot, rebirths)
+	if not slot or not slot.Def then return 0 end
+	local mult = (slot.Super and Config.SuperMultiplier or 1)
+	local rebirthMult = 1 + (rebirths or 0) * Config.RebirthIncomeBonus
+	return math.floor(slot.Def.Income * mult * rebirthMult)
+end
+
+function Util.rarityColor(rarity)
+	return Config.RarityColors[rarity] or Color3.new(1, 1, 1)
+end
+
+return Util
+]]></ProtectedString>
+					<string name="Name">Util</string>
+				</Properties>
+			</Item>
+			</Item>
+	</Item>
+	<Item class="ServerStorage" referent="RBX23">
+		<Properties>
+			<string name="Name">ServerStorage</string>
+		</Properties>
+	</Item>
+	<Item class="StarterPlayer" referent="RBX24">
+		<Properties>
+			<string name="Name">StarterPlayer</string>
+		</Properties>
+		<Item class="StarterPlayerScripts" referent="RBX25">
+			<Properties>
+				<string name="Name">StarterPlayerScripts</string>
+			</Properties>
+			<Item class="LocalScript" referent="RBX19">
+				<Properties>
+					<ProtectedString name="Source"><![CDATA[-- Client HUD: coins, income, carry status, trade UI (responsive + mobile-friendly)
 local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
-local ServerStorage = game:GetService("ServerStorage")
+local UserInputService = game:GetService("UserInputService")
 
-local event = Instance.new("RemoteEvent")
-event.Name = "TradeEvent"
-event.Parent = ReplicatedStorage
+local player = Players.LocalPlayer
+local event = ReplicatedStorage:WaitForChild("TradeEvent")
+local remotesFolder = ReplicatedStorage:WaitForChild("GameRemotes", 10)
+local incomeEvent = remotesFolder and remotesFolder:FindFirstChild("IncomeUpdate")
+local gameEvent = remotesFolder and remotesFolder:FindFirstChild("GameEvent")
 
-local api = ServerStorage:WaitForChild("BaseApi") -- created by GameSetup
+local gui = Instance.new("ScreenGui")
+gui.Name = "TradeGui"
+gui.ResetOnSpawn = false
+gui.IgnoreGuiInset = true
+gui.Parent = player:WaitForChild("PlayerGui")
 
-local pending = {} -- [targetUserId] = { from = player, give = n, want = n }
-
-local function coinsOf(player)
-	local stats = player:FindFirstChild("leaderstats")
-	return stats and stats:FindFirstChild("Coins")
+local scale = Instance.new("UIScale")
+scale.Parent = gui
+local function refreshScale()
+	local cam = workspace.CurrentCamera
+	local size = cam and cam.ViewportSize or Vector2.new(1280, 720)
+	local isMobile = UserInputService.TouchEnabled and not UserInputService.KeyboardEnabled
+	local s = math.clamp(math.min(size.X, size.Y) / 900, 0.75, 1.25)
+	if isMobile then s = math.clamp(s * 1.1, 0.85, 1.35) end
+	scale.Scale = s
+end
+refreshScale()
+if workspace.CurrentCamera then
+	workspace.CurrentCamera:GetPropertyChangedSignal("ViewportSize"):Connect(refreshScale)
 end
 
-local function notify(player, message)
-	event:FireClient(player, "Message", message)
+local function make(class, props, parent)
+	local obj = Instance.new(class)
+	for k, v in pairs(props) do obj[k] = v end
+	obj.Parent = parent
+	return obj
 end
 
-event.OnServerEvent:Connect(function(player, action, a, b, c)
-	if action == "Offer" then
-		local target = Players:GetPlayerByUserId(tonumber(a) or 0)
-		local give, want = math.floor(tonumber(b) or 0), math.floor(tonumber(c) or 0)
+local function corner(obj, r)
+	make("UICorner", { CornerRadius = UDim.new(0, r or 8) }, obj)
+end
 
-		if not target or target == player then return end
-		if give < 1 or want < 0 or give > 8 or want > 100000 then
-			notify(player, "Invalid offer.")
-			return
-		end
+-- Top HUD panel
+local hud = make("Frame", {
+	Size = UDim2.fromOffset(260, 96),
+	Position = UDim2.new(0.5, -130, 0, 12),
+	BackgroundColor3 = Color3.fromRGB(25, 25, 35),
+	BackgroundTransparency = 0.15,
+}, gui)
+corner(hud, 12)
+make("UIStroke", { Color = Color3.fromRGB(255, 200, 60), Thickness = 1.5, Transparency = 0.4 }, hud)
 
-		if api:Invoke("Count", player) < give then
-			notify(player, "You don't have that many brainrots.")
-			return
-		end
+local coinsBar = make("TextLabel", {
+	Size = UDim2.new(1, -16, 0, 32), Position = UDim2.fromOffset(8, 8),
+	BackgroundTransparency = 1, TextColor3 = Color3.fromRGB(255, 215, 70),
+	Font = Enum.Font.GothamBold, TextSize = 22, Text = "Coins: …", TextXAlignment = Enum.TextXAlignment.Left,
+}, hud)
 
-		pending[target.UserId] = { from = player, give = give, want = want }
-		notify(player, "Offer sent to " .. target.Name)
-		event:FireClient(target, "Incoming", player.UserId, player.Name, give, want)
+local incomeBar = make("TextLabel", {
+	Size = UDim2.new(1, -16, 0, 24), Position = UDim2.fromOffset(8, 40),
+	BackgroundTransparency = 1, TextColor3 = Color3.fromRGB(140, 255, 160),
+	Font = Enum.Font.GothamMedium, TextSize = 16, Text = "Income: 0/s", TextXAlignment = Enum.TextXAlignment.Left,
+}, hud)
 
-	elseif action == "Respond" then
-		local offer = pending[player.UserId]
-		pending[player.UserId] = nil
-		if not offer then return end
+local carryBar = make("TextLabel", {
+	Size = UDim2.new(1, -16, 0, 22), Position = UDim2.fromOffset(8, 66),
+	BackgroundTransparency = 1, TextColor3 = Color3.fromRGB(180, 200, 255),
+	Font = Enum.Font.Gotham, TextSize = 14, Text = "Carrying: none", TextXAlignment = Enum.TextXAlignment.Left,
+}, hud)
 
-		local from = offer.from
-		if not from or from.Parent ~= Players then return end
-
-		if not a then
-			notify(from, player.Name .. " declined your trade.")
-			return
-		end
-
-		local fromCoins, toCoins = coinsOf(from), coinsOf(player)
-		if not (fromCoins and toCoins) then return end
-
-		-- re-check everything at the moment of the trade
-		if api:Invoke("Count", from) < offer.give then
-			notify(player, "Trade failed: they no longer have the brainrots.")
-			notify(from, "Trade failed: not enough brainrots.")
-			return
-		end
-		if api:Invoke("Free", player) < offer.give then
-			notify(player, "Trade failed: your base doesn't have enough free pedestals.")
-			notify(from, "Trade failed: " .. player.Name .. "'s base is full.")
-			return
-		end
-		if toCoins.Value < offer.want then
-			notify(player, "Trade failed: you don't have enough Coins.")
-			notify(from, "Trade failed: " .. player.Name .. " doesn't have enough Coins.")
-			return
-		end
-
-		if not api:Invoke("Transfer", from, player, offer.give) then
-			notify(from, "Trade failed.")
-			notify(player, "Trade failed.")
-			return
-		end
-		toCoins.Value -= offer.want
-		fromCoins.Value += offer.want
-
-		notify(from, ("Trade done! You gave %d brainrots and got %d Coins."):format(offer.give, offer.want))
-		notify(player, ("Trade done! You got %d brainrots and paid %d Coins."):format(offer.give, offer.want))
+task.spawn(function()
+	local stats = player:WaitForChild("leaderstats", 30)
+	if not stats then
+		coinsBar.Text = "Coins: (waiting…)"
+		return
 	end
+	local coins = stats:WaitForChild("Coins", 10)
+	local income = stats:FindFirstChild("Income") or stats:WaitForChild("Income", 5)
+	local function updateCoins()
+		if coins then coinsBar.Text = "Coins: " .. tostring(coins.Value) end
+	end
+	local function updateIncome()
+		if income then incomeBar.Text = "Income: " .. tostring(income.Value) .. "/s" end
+	end
+	updateCoins()
+	updateIncome()
+	if coins then coins:GetPropertyChangedSignal("Value"):Connect(updateCoins) end
+	if income then income:GetPropertyChangedSignal("Value"):Connect(updateIncome) end
 end)
 
-Players.PlayerRemoving:Connect(function(p)
-	pending[p.UserId] = nil
-	for id, offer in pairs(pending) do
-		if offer.from == p then pending[id] = nil end
+if incomeEvent then
+	incomeEvent.OnClientEvent:Connect(function(total)
+		incomeBar.Text = "Income: " .. tostring(total) .. "/s"
+	end)
+end
+if gameEvent then
+	gameEvent.OnClientEvent:Connect(function(action, a)
+		if action == "Carry" then
+			carryBar.Text = a and ("Carrying: " .. tostring(a)) or "Carrying: none"
+		end
+	end)
+end
+
+-- Trade button
+local openBtn = make("TextButton", {
+	Size = UDim2.fromOffset(110, 44), Position = UDim2.new(0, 12, 0.5, -22),
+	Text = "Trade", Font = Enum.Font.GothamBold, TextSize = 18,
+	BackgroundColor3 = Color3.fromRGB(60, 120, 220), TextColor3 = Color3.new(1, 1, 1),
+	AutoButtonColor = true,
+}, gui)
+corner(openBtn, 10)
+
+local frame = make("Frame", {
+	Size = UDim2.fromOffset(300, 380), Position = UDim2.new(0, 130, 0.5, -120),
+	BackgroundColor3 = Color3.fromRGB(30, 30, 42), Visible = false,
+}, gui)
+corner(frame, 12)
+
+make("TextLabel", {
+	Size = UDim2.new(1, 0, 0, 32), BackgroundTransparency = 1, Text = "Trade with a player",
+	Font = Enum.Font.GothamBold, TextSize = 16, TextColor3 = Color3.new(1, 1, 1),
+}, frame)
+
+local giveBox = make("TextBox", {
+	Size = UDim2.fromOffset(130, 32), Position = UDim2.fromOffset(12, 40),
+	PlaceholderText = "Brainrots to give", Text = "1", Font = Enum.Font.Gotham, TextSize = 14,
+	BackgroundColor3 = Color3.fromRGB(55, 55, 70), TextColor3 = Color3.new(1, 1, 1),
+}, frame)
+corner(giveBox)
+
+local wantBox = make("TextBox", {
+	Size = UDim2.fromOffset(130, 32), Position = UDim2.fromOffset(158, 40),
+	PlaceholderText = "Coins you want", Text = "10", Font = Enum.Font.Gotham, TextSize = 14,
+	BackgroundColor3 = Color3.fromRGB(55, 55, 70), TextColor3 = Color3.new(1, 1, 1),
+}, frame)
+corner(wantBox)
+
+local hint = make("TextLabel", {
+	Size = UDim2.new(1, -20, 0, 36), Position = UDim2.fromOffset(10, 76),
+	BackgroundTransparency = 1, Text = "Offers expire in 30s. Cheapest brainrots transfer unless you select slots below.",
+	Font = Enum.Font.Gotham, TextSize = 11, TextWrapped = true, TextColor3 = Color3.fromRGB(180, 180, 200),
+}, frame)
+
+local slotList = make("ScrollingFrame", {
+	Size = UDim2.new(1, -20, 0, 80), Position = UDim2.fromOffset(10, 112),
+	BackgroundColor3 = Color3.fromRGB(40, 40, 55), BorderSizePixel = 0,
+	CanvasSize = UDim2.new(), AutomaticCanvasSize = Enum.AutomaticSize.Y, ScrollBarThickness = 5,
+}, frame)
+corner(slotList)
+make("UIListLayout", { Padding = UDim.new(0, 3) }, slotList)
+
+local selected = {} -- [index]=true
+
+local function refreshSlots(list)
+	for _, child in ipairs(slotList:GetChildren()) do
+		if child:IsA("TextButton") then child:Destroy() end
+	end
+	selected = {}
+	if typeof(list) ~= "table" then return end
+	for _, info in ipairs(list) do
+		local btn = make("TextButton", {
+			Size = UDim2.new(1, -6, 0, 26),
+			Text = string.format("[%d] %s%s  +%d/s", info.Index, info.Name, info.Super and " ★" or "", info.Income or 0),
+			Font = Enum.Font.Gotham, TextSize = 12,
+			BackgroundColor3 = Color3.fromRGB(60, 60, 80), TextColor3 = Color3.new(1, 1, 1),
+			TextXAlignment = Enum.TextXAlignment.Left,
+		}, slotList)
+		corner(btn, 6)
+		local pad = make("UIPadding", {}, btn)
+		pad.PaddingLeft = UDim.new(0, 6)
+		btn.MouseButton1Click:Connect(function()
+			if selected[info.Index] then
+				selected[info.Index] = nil
+				btn.BackgroundColor3 = Color3.fromRGB(60, 60, 80)
+			else
+				selected[info.Index] = true
+				btn.BackgroundColor3 = Color3.fromRGB(80, 140, 90)
+			end
+		end)
+	end
+end
+
+local list = make("ScrollingFrame", {
+	Size = UDim2.new(1, -20, 1, -210), Position = UDim2.fromOffset(10, 200),
+	BackgroundColor3 = Color3.fromRGB(40, 40, 55), BorderSizePixel = 0,
+	CanvasSize = UDim2.new(), AutomaticCanvasSize = Enum.AutomaticSize.Y, ScrollBarThickness = 6,
+}, frame)
+corner(list)
+make("UIListLayout", { Padding = UDim.new(0, 4) }, list)
+
+local function selectedIndices()
+	local out = {}
+	for idx in pairs(selected) do table.insert(out, idx) end
+	table.sort(out)
+	return out
+end
+
+local function refreshList()
+	for _, child in ipairs(list:GetChildren()) do
+		if child:IsA("TextButton") then child:Destroy() end
+	end
+	for _, other in ipairs(Players:GetPlayers()) do
+		if other ~= player then
+			local btn = make("TextButton", {
+				Size = UDim2.new(1, -6, 0, 34), Text = "Offer to " .. other.DisplayName,
+				Font = Enum.Font.GothamBold, TextSize = 14,
+				BackgroundColor3 = Color3.fromRGB(70, 150, 85), TextColor3 = Color3.new(1, 1, 1),
+			}, list)
+			corner(btn)
+			btn.MouseButton1Click:Connect(function()
+				local idxs = selectedIndices()
+				local give = tonumber(giveBox.Text) or 1
+				if #idxs > 0 then give = #idxs end
+				event:FireServer("Offer", other.UserId, give, tonumber(wantBox.Text), #idxs > 0 and idxs or nil)
+			end)
+		end
+	end
+end
+
+openBtn.MouseButton1Click:Connect(function()
+	frame.Visible = not frame.Visible
+	if frame.Visible then
+		refreshList()
+		event:FireServer("ListMySlots")
+	end
+end)
+Players.PlayerAdded:Connect(function() if frame.Visible then refreshList() end end)
+Players.PlayerRemoving:Connect(function() task.defer(function() if frame.Visible then refreshList() end end) end)
+
+local popup = make("Frame", {
+	Size = UDim2.fromOffset(320, 140), Position = UDim2.new(0.5, -160, 0, 120),
+	BackgroundColor3 = Color3.fromRGB(30, 30, 42), Visible = false,
+}, gui)
+corner(popup, 12)
+
+local popupText = make("TextLabel", {
+	Size = UDim2.new(1, -20, 0, 70), Position = UDim2.fromOffset(10, 8), BackgroundTransparency = 1,
+	Font = Enum.Font.Gotham, TextSize = 15, TextWrapped = true, TextColor3 = Color3.new(1, 1, 1), Text = "",
+}, popup)
+
+local acceptBtn = make("TextButton", {
+	Size = UDim2.fromOffset(140, 40), Position = UDim2.fromOffset(12, 88), Text = "Accept",
+	Font = Enum.Font.GothamBold, TextSize = 16,
+	BackgroundColor3 = Color3.fromRGB(80, 170, 90), TextColor3 = Color3.new(1, 1, 1),
+}, popup)
+corner(acceptBtn)
+
+local declineBtn = make("TextButton", {
+	Size = UDim2.fromOffset(140, 40), Position = UDim2.fromOffset(168, 88), Text = "Decline",
+	Font = Enum.Font.GothamBold, TextSize = 16,
+	BackgroundColor3 = Color3.fromRGB(190, 70, 70), TextColor3 = Color3.new(1, 1, 1),
+}, popup)
+corner(declineBtn)
+
+acceptBtn.MouseButton1Click:Connect(function()
+	popup.Visible = false
+	event:FireServer("Respond", true)
+end)
+declineBtn.MouseButton1Click:Connect(function()
+	popup.Visible = false
+	event:FireServer("Respond", false)
+end)
+
+local toast = make("TextLabel", {
+	Size = UDim2.fromOffset(380, 40), Position = UDim2.new(0.5, -190, 1, -70),
+	BackgroundColor3 = Color3.fromRGB(30, 30, 42), Font = Enum.Font.Gotham, TextSize = 15,
+	TextColor3 = Color3.new(1, 1, 1), Text = "", Visible = false,
+}, gui)
+corner(toast)
+
+local toastId = 0
+local function showToast(msg)
+	toastId += 1
+	local id = toastId
+	toast.Text = msg
+	toast.Visible = true
+	task.delay(4, function()
+		if id == toastId then toast.Visible = false end
+	end)
+end
+
+event.OnClientEvent:Connect(function(action, a, b, c, d, e)
+	if action == "Incoming" then
+		popupText.Text = ("%s offers %d brainrots for %d Coins.\nAccept within 30s."):format(b, c, d)
+		popup.Visible = true
+	elseif action == "TradeExpired" then
+		popup.Visible = false
+		showToast("Trade offer expired.")
+	elseif action == "OpenTrade" then
+		frame.Visible = true
+		refreshList()
+		event:FireServer("ListMySlots")
+	elseif action == "MySlots" then
+		refreshSlots(a)
+	elseif action == "Message" then
+		showToast(a)
+		if typeof(a) == "string" and a:find("Placed") then
+			carryBar.Text = "Carrying: none"
+		end
 	end
 end)
 ]]></ProtectedString>
-				<bool name="Disabled">false</bool>
-				<Content name="LinkedSource"><null></null></Content>
-				<token name="RunContext">0</token>
-				<string name="ScriptGuid">{ab53f8c8-38f1-43ec-bb43-6896c684e003}</string>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">TradeServer</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e0</UniqueId>
-			</Properties>
+					<bool name="Disabled">false</bool>
+					<string name="Name">TradeClient</string>
+				</Properties>
+			</Item>
 		</Item>
 	</Item>
-	<Item class="ServerStorage" referent="RBX8">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">ServerStorage</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003c1</UniqueId>
-		</Properties>
-		<Item class="Folder" referent="RBX7">
-			<Properties>
-				<Color3 name="IconTint">
-					<R>0</R>
-					<G>0</G>
-					<B>0</B>
-				</Color3>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">BrainrotModels</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">6dc8a060727499360b010392000003e3</UniqueId>
-			</Properties>
-		</Item>
-	</Item>
-	<Item class="ServiceVisibilityService" referent="RBXdef7e4848e0849b49a611a82fe9c53e7">
-		<Properties>
-			<BinaryString name="HiddenServices">AAAAAA==</BinaryString>
-			<BinaryString name="VisibleServices">AAAAAA==</BinaryString>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">ServiceVisibilityService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003c7</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="VideoService" referent="RBX33854819fb3a421f980e1c06552d92bd">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">VideoService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003da</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="HttpService" referent="RBX262ac91335524cdf8e87ae187217ee62">
-		<Properties>
-			<bool name="HttpEnabled">false</bool>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">HttpService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003db</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="Lighting" referent="RBXa279faca41cf4ce28d05a6d237ce1b81">
-		<Properties>
-			<Color3 name="Ambient">
-				<R>0.5</R>
-				<G>0.5</G>
-				<B>0.5</B>
-			</Color3>
-			<float name="Brightness">1.98124921</float>
-			<Color3 name="ColorShift_Bottom">
-				<R>0</R>
-				<G>0</G>
-				<B>0</B>
-			</Color3>
-			<Color3 name="ColorShift_Top">
-				<R>0</R>
-				<G>0</G>
-				<B>0</B>
-			</Color3>
-			<float name="EnvironmentDiffuseScale">0</float>
-			<float name="EnvironmentSpecularScale">0</float>
-			<float name="ExposureCompensation">0</float>
-			<token name="ExtendLightRangeTo120">0</token>
-			<Color3 name="FogColor">
-				<R>0.75</R>
-				<G>0.75</G>
-				<B>0.75</B>
-			</Color3>
-			<float name="FogEnd">100000</float>
-			<float name="FogStart">0</float>
-			<float name="GeographicLatitude">41.7332993</float>
-			<bool name="GlobalShadows">false</bool>
-			<token name="LightingStyle">1</token>
-			<Color3 name="OutdoorAmbient">
-				<R>0.5</R>
-				<G>0.5</G>
-				<B>0.5</B>
-			</Color3>
-			<bool name="Outlines">true</bool>
-			<bool name="PrioritizeLightingQuality">false</bool>
-			<float name="ShadowSoftness">0.5</float>
-			<token name="Technology">1</token>
-			<string name="TimeOfDay">14:00:00</string>
-			<BinaryString name="AttributesSerialize"><![CDATA[BQAAABQAAABSQlhfQmFja3VwQnJpZ2h0bmVzcwUAAIA/HgAAAFJCWF9CYWNrdXBFeHBvc3Vy
-ZUNvbXBlbnNhdGlvbgUAAAAAIQAAAFJCWF9MaWdodGluZ0NvbXBhdGliaWxpdHlNaWdyYXRl
-ZAMBJgAAAFJCWF9MaWdodGluZ1RlY2hub2xvZ3lVbmlmaWVkTWlncmF0aW9uAwEgAAAAUkJY
-X09yaWdpbmFsVGVjaG5vbG9neU9uRmlsZUxvYWQEAgAAAA==]]></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">Lighting</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003fa</UniqueId>
-		</Properties>
-		<Item class="ColorGradingEffect" referent="RBX4ffe446854f947409378a30e33866c8e">
-			<Properties>
-				<token name="TonemapperPreset">1</token>
-				<bool name="Enabled">true</bool>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">ColorGrading</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">1d453d45f7d1746c0b0104220000041e</UniqueId>
-			</Properties>
-		</Item>
-		<Item class="BloomEffect" referent="RBX7417aadabd9b4a408f73dcd105e8a6e2">
-			<Properties>
-				<float name="Intensity">0</float>
-				<float name="Size">24</float>
-				<float name="Threshold">0.949999988</float>
-				<bool name="Enabled">true</bool>
-				<BinaryString name="AttributesSerialize"></BinaryString>
-				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-				<bool name="DefinesCapabilities">false</bool>
-				<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-				<string name="Name">Bloom</string>
-				<BinaryString name="SerializedOverrides"></BinaryString>
-				<int64 name="SourceAssetId">-1</int64>
-				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-				<UniqueId name="UniqueId">1d453d45f7d1746c0b0104220000041f</UniqueId>
-			</Properties>
-		</Item>
-	</Item>
-	<Item class="LodDataService" referent="RBX88c55bb3bcd447f88d27faba9944a8de">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">LodDataService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003fd</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="VideoScreenCaptureService" referent="RBXbaee3d080025410185f358052002d016">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">VideoScreenCaptureService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000003ff</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="TestService" referent="RBXf79f8ccaaa3a4075b67d7bf7b3401e83">
-		<Properties>
-			<bool name="AutoRuns">true</bool>
-			<string name="Description"></string>
-			<bool name="ExecuteWithStudioRun">false</bool>
-			<bool name="IsPhysicsEnvironmentalThrottled">true</bool>
-			<bool name="IsSleepAllowed">true</bool>
-			<int name="NumberOfPlayers">0</int>
-			<double name="SimulateSecondsLag">0</double>
-			<bool name="ThrottlePhysicsToRealtime">true</bool>
-			<double name="Timeout">10</double>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">TestService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b010392000004c0</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="VirtualInputManager" referent="RBXe31269edcc234475908a40f041d670f8">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">VirtualInputManager</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000537</UniqueId>
-		</Properties>
-	</Item>
-	<Item class="SerializationService" referent="RBX915af26c902a40428faf465ce7a75976">
-		<Properties>
-			<BinaryString name="AttributesSerialize"></BinaryString>
-			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
-			<bool name="DefinesCapabilities">false</bool>
-			<UniqueId name="HistoryId">00000000000000000000000000000000</UniqueId>
-			<string name="Name">SerializationService</string>
-			<BinaryString name="SerializedOverrides"></BinaryString>
-			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
-			<UniqueId name="UniqueId">6dc8a060727499360b01039200000546</UniqueId>
-		</Properties>
-	</Item>
-	<SharedStrings>
-		<SharedString md5="leDEa27wHRPaBssaK0OoqQ==">AQAAABUAAAACAAAAan8/AAUAAAAAAAADAAAAP39rIAMAAAAAAAAEAAAAf2Y/MAMAAAAAAAAF
-AAAAilY+UAMAAAAAAAAGAAAAj35fEAUAAAAAAAAHAAAAi21PEAIAAAAAAAAIAAAAZmxvgAMA
-AAAAAAAJAAAAZbDqEAYAAAAAAAAKAAAAw8faMAUAAAAAAAALAAAAiVpHkAMAAAAAAAAMAAAA
-Oi4kQAUAAAAAAAANAAAAHh4lFAMAAAAAAAAOAAAAZlw7UAUAAAAAAAAPAAAA6JxKJAMAAAAA
-AAAQAAAAc3trYAUAAAAAAAARAAAAhHtacAMAAAAAAAASAAAAgcLgAAYAAAAAAAATAAAAc4RK
-BAUAAAAAAAAUAAAAxr21cAUAAAAAAAAVAAAAzq2UNAMAAAAAAAAWAAAAlJSMRAMAAAAAAAA=</SharedString>
-		<SharedString md5="yuZpQdnvvUBOTYh1jqZ2cA=="></SharedString>
-	</SharedStrings>
 </roblox>
