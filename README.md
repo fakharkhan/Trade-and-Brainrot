@@ -1,11 +1,22 @@
-# Roblox Game Icon
+# Trade and Brainrot
 
-Square game icon for a Roblox game — bright cartoon 3D style.
+Roblox trading / collection game. Brainrots ride a track — buy them, carry them to your base, earn coins.
+
+## Play locally
+
+1. Open [`TradeAndBrainrot.rbxlx`](TradeAndBrainrot.rbxlx) in Roblox Studio
+2. Press **Play** (F5)
+3. Look near the Super Upgrade stand for the **Brainrot Showcase** (Tralalero + Patapim + Sahur standing models)
+4. Watch the center track — the new models also spawn as buyable runners
+
+If Studio already had the place open when scripts changed, close the place and reopen the `.rbxlx` so it reloads from disk.
 
 ## Assets
 
 - [`assets/roblox-game-icon.jpg`](assets/roblox-game-icon.jpg) — 1:1 square icon
 - [`assets/roblox-game-thumbnail.jpg`](assets/roblox-game-thumbnail.jpg) — 16:9 game thumbnail
+- [`assets/brainrot-capsule-creature.jpg`](assets/brainrot-capsule-creature.jpg) — sketch → Tralalero-style brainrot (capsule body, blue sneakers)
+- [`assets/brainrot-blocky-dude.jpg`](assets/brainrot-blocky-dude.jpg) — sketch → Patapim-style brainrot (moss + wood limbs)
 
 ### Icon
 
