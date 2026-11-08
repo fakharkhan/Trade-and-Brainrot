@@ -16,7 +16,7 @@ Use this before making the experience public on Roblox.
 - [ ] Confirm Studio helpers are off on live (`Config.IsStudio` is false on servers).
 - [ ] Play on a published test server: join twice and verify coins/brainrots persist.
 - [ ] Verify Super Upgrade prompts Robux (not free grant).
-- [ ] Verify Daily Bonus and Rebirth pads work.
+- [ ] Verify Level Up buttons (+1, +10, Max), selling to the Trader, and the Rebirth pad.
 - [ ] Test steal cooldown + 15s protect window with 2 players.
 - [ ] Test trade offer expiry (~30s) and decline/accept.
 - [ ] Confirm free-coins Studio pad is **absent** on the live server.

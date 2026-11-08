@@ -10,7 +10,7 @@ Roblox trading / collection game. Brainrots ride a track — buy them, carry the
    **or** run `python3 tools/sync_place.py` then open `TradeAndBrainrot.rbxlx`
 2. Press **Play**
 3. You spawn at your base with coins (and a starter brainrot in Studio)
-4. Buy from the track, place on pedestals, claim Daily Bonus / Rebirth near the showcase
+4. Buy from the track, place on pedestals, sell extras to the Trader for coins, and spend coins on Levels (top of the screen)
 
 ## Features
 
@@ -18,7 +18,8 @@ Roblox trading / collection game. Brainrots ride a track — buy them, carry the
 - Auto income, carry/steal/place, Trader sell
 - Player trading with offer expiry and optional slot selection
 - Super Upgrade (Robux Developer Product; free in Studio when product ID unset)
-- Daily bonus + Rebirth progression
+- Player Levels 1 to 1000 (spend coins, +5% income per level) + Rebirth progression
+- Sell brainrots to the Trader for coins (70% of price)
 - DataStore persistence (after the place is published)
 - Studio-only test helpers gated by `Config.IsStudio`
 

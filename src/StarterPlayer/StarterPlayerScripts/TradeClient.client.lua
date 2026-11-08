@@ -6,8 +6,8 @@ local UserInputService = game:GetService("UserInputService")
 local player = Players.LocalPlayer
 local event = ReplicatedStorage:WaitForChild("TradeEvent")
 local remotesFolder = ReplicatedStorage:WaitForChild("GameRemotes", 10)
-local incomeEvent = remotesFolder and remotesFolder:FindFirstChild("IncomeUpdate")
-local gameEvent = remotesFolder and remotesFolder:FindFirstChild("GameEvent")
+local incomeEvent = remotesFolder and remotesFolder:WaitForChild("IncomeUpdate", 10)
+local gameEvent = remotesFolder and remotesFolder:WaitForChild("GameEvent", 10)
 
 local gui = Instance.new("ScreenGui")
 gui.Name = "TradeGui"
@@ -42,9 +42,11 @@ local function corner(obj, r)
 end
 
 -- Top HUD panel
+local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
+
 local hud = make("Frame", {
-	Size = UDim2.fromOffset(260, 96),
-	Position = UDim2.new(0.5, -130, 0, 12),
+	Size = UDim2.fromOffset(280, 156),
+	Position = UDim2.new(0.5, -140, 0, 12),
 	BackgroundColor3 = Color3.fromRGB(25, 25, 35),
 	BackgroundTransparency = 0.15,
 }, gui)
@@ -69,6 +71,29 @@ local carryBar = make("TextLabel", {
 	Font = Enum.Font.Gotham, TextSize = 14, Text = "Carrying: none", TextXAlignment = Enum.TextXAlignment.Left,
 }, hud)
 
+local levelBar = make("TextLabel", {
+	Size = UDim2.new(1, -16, 0, 22), Position = UDim2.fromOffset(8, 88),
+	BackgroundTransparency = 1, TextColor3 = Color3.fromRGB(255, 190, 255),
+	Font = Enum.Font.GothamBold, TextSize = 14, Text = "Level 1 / " .. Config.MaxLevel,
+	TextXAlignment = Enum.TextXAlignment.Left,
+}, hud)
+
+local function makeUpgradeButton(text, xOffset, width, amount)
+	local btn = make("TextButton", {
+		Size = UDim2.fromOffset(width, 30), Position = UDim2.fromOffset(xOffset, 116),
+		Text = text, Font = Enum.Font.GothamBold, TextSize = 13,
+		BackgroundColor3 = Color3.fromRGB(150, 80, 210), TextColor3 = Color3.new(1, 1, 1),
+	}, hud)
+	corner(btn, 8)
+	btn.MouseButton1Click:Connect(function()
+		if gameEvent then gameEvent:FireServer("UpgradeLevel", amount) end
+	end)
+	return btn
+end
+local upgrade1 = makeUpgradeButton("Level Up", 8, 112, 1)
+makeUpgradeButton("+10", 126, 62, 10)
+makeUpgradeButton("Max", 194, 78, "max")
+
 task.spawn(function()
 	local stats = player:WaitForChild("leaderstats", 30)
 	if not stats then
@@ -77,16 +102,30 @@ task.spawn(function()
 	end
 	local coins = stats:WaitForChild("Coins", 10)
 	local income = stats:FindFirstChild("Income") or stats:WaitForChild("Income", 5)
+	local level = stats:FindFirstChild("Level") or stats:WaitForChild("Level", 5)
 	local function updateCoins()
 		if coins then coinsBar.Text = "Coins: " .. tostring(coins.Value) end
 	end
 	local function updateIncome()
 		if income then incomeBar.Text = "Income: " .. tostring(income.Value) .. "/s" end
 	end
+	local function updateLevel()
+		if not level then return end
+		local lv = level.Value
+		if lv >= Config.MaxLevel then
+			levelBar.Text = "Level " .. lv .. " / " .. Config.MaxLevel .. " (MAX)"
+			upgrade1.Text = "MAX"
+		else
+			levelBar.Text = ("Level %d / %d  |  next: %d"):format(lv, Config.MaxLevel, Config.LevelCost(lv))
+			upgrade1.Text = "Level Up"
+		end
+	end
 	updateCoins()
 	updateIncome()
+	updateLevel()
 	if coins then coins:GetPropertyChangedSignal("Value"):Connect(updateCoins) end
 	if income then income:GetPropertyChangedSignal("Value"):Connect(updateIncome) end
+	if level then level:GetPropertyChangedSignal("Value"):Connect(updateLevel) end
 end)
 
 if incomeEvent then

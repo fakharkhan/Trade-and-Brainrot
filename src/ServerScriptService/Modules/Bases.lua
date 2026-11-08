@@ -22,7 +22,7 @@ local function incomeOf(slot, player)
 	if ok and DataService then
 		data = DataService.get(player)
 	end
-	return Util.incomeOf(slot, data and data.Rebirths or 0)
+	return Util.incomeOf(slot, data and data.Rebirths or 0, data and data.Level or 1)
 end
 
 function Bases.slotText(slot, player)
@@ -99,6 +99,20 @@ function Bases.refreshSlot(base, i)
 			Bases.onChanged(base.Owner)
 		end
 	end
+end
+
+-- Update pedestal labels and income stat without rebuilding models (used after level-ups)
+function Bases.refreshLabels(player)
+	local base = Bases.baseOf[player]
+	if not base then return end
+	for i = 1, #base.Pedestals do
+		local slot = base.Slots[i]
+		if slot then
+			base.Pedestals[i].Label.Text = Bases.slotText(slot, player)
+		end
+	end
+	local incomeStat = Util.getStat(player, "Income")
+	if incomeStat then incomeStat.Value = Bases.totalIncome(player) end
 end
 
 function Bases.returnCarry(player)

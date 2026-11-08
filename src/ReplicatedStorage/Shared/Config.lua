@@ -15,17 +15,20 @@ local Config = {
 	-- Live start coins; Studio gets a higher amount for testing
 	StartCoins = IS_STUDIO and 2000 or 100,
 	StudioGiveStarterBrainrot = IS_STUDIO,
-	StudioFreeCoinsPad = IS_STUDIO,
 	StudioFreeSuperUpgrade = IS_STUDIO,
 
-	SpawnInterval = 8, -- seconds between brainrots on the track
-	TrackSpeed = 4, -- studs per second (was 10; slower so players can catch them)
+	SpawnInterval = 10, -- seconds between brainrots on the track
+	TrackSpeed = 2.5, -- studs per second (slow so players can catch them)
 	TrackHalfLength = 80,
 
 	PickupHold = 0.7,
 	StealCooldown = 30,
 	StealProtectSeconds = 15,
-	SellFraction = 0.5,
+	SellFraction = 0.7, -- Trader pays this share of price when you sell a brainrot
+
+	-- Player levels: spend coins to level up for a permanent income bonus
+	MaxLevel = 1000,
+	LevelIncomeBonus = 0.05, -- +5% income per level above 1
 
 	SuperMultiplier = 5,
 	-- Set after creating the Developer Product in Creator Hub
@@ -41,7 +44,6 @@ local Config = {
 
 	RebirthMinIncome = 50, -- total income/s required to rebirth
 	RebirthIncomeBonus = 0.25, -- +25% income per rebirth
-	DailyBonusCoins = 250,
 
 	RarityColors = {
 		Common = Color3.fromRGB(200, 200, 200),
@@ -51,5 +53,15 @@ local Config = {
 		Mythic = Color3.fromRGB(255, 70, 120),
 	},
 }
+
+-- Coins needed to go from `level` to `level + 1` (1 -> 2 costs 50, 999 -> 1000 costs millions)
+function Config.LevelCost(level)
+	return math.floor(50 * (level ^ 1.7))
+end
+
+function Config.LevelIncomeMultiplier(level)
+	level = math.clamp(level or 1, 1, Config.MaxLevel)
+	return 1 + (level - 1) * Config.LevelIncomeBonus
+end
 
 return Config

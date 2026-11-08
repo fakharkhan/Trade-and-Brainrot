@@ -100,17 +100,20 @@ local Config = {
 	-- Live start coins; Studio gets a higher amount for testing
 	StartCoins = IS_STUDIO and 2000 or 100,
 	StudioGiveStarterBrainrot = IS_STUDIO,
-	StudioFreeCoinsPad = IS_STUDIO,
 	StudioFreeSuperUpgrade = IS_STUDIO,
 
-	SpawnInterval = 8, -- seconds between brainrots on the track
-	TrackSpeed = 4, -- studs per second (was 10; slower so players can catch them)
+	SpawnInterval = 10, -- seconds between brainrots on the track
+	TrackSpeed = 2.5, -- studs per second (slow so players can catch them)
 	TrackHalfLength = 80,
 
 	PickupHold = 0.7,
 	StealCooldown = 30,
 	StealProtectSeconds = 15,
-	SellFraction = 0.5,
+	SellFraction = 0.7, -- Trader pays this share of price when you sell a brainrot
+
+	-- Player levels: spend coins to level up for a permanent income bonus
+	MaxLevel = 1000,
+	LevelIncomeBonus = 0.05, -- +5% income per level above 1
 
 	SuperMultiplier = 5,
 	-- Set after creating the Developer Product in Creator Hub
@@ -126,7 +129,6 @@ local Config = {
 
 	RebirthMinIncome = 50, -- total income/s required to rebirth
 	RebirthIncomeBonus = 0.25, -- +25% income per rebirth
-	DailyBonusCoins = 250,
 
 	RarityColors = {
 		Common = Color3.fromRGB(200, 200, 200),
@@ -136,6 +138,16 @@ local Config = {
 		Mythic = Color3.fromRGB(255, 70, 120),
 	},
 }
+
+-- Coins needed to go from `level` to `level + 1` (1 -> 2 costs 50, 999 -> 1000 costs millions)
+function Config.LevelCost(level)
+	return math.floor(50 * (level ^ 1.7))
+end
+
+function Config.LevelIncomeMultiplier(level)
+	level = math.clamp(level or 1, 1, Config.MaxLevel)
+	return 1 + (level - 1) * Config.LevelIncomeBonus
+end
 
 return Config
 ]]></ProtectedString>
@@ -253,8 +265,8 @@ local function boot()
 	Util.safe("Track.start", function() Track.start(map) end)
 	Util.safe("Shop.showcase", function() Shop.buildShowcase(map) end)
 	Util.safe("Shop.super", function() Shop.buildSuperStand(map) end)
-	Util.safe("Shop.daily", function() Shop.buildDailyPad(map) end)
 	Util.safe("Shop.rebirth", function() Shop.buildRebirthPad(map) end)
+	Util.safe("Progress", function() require(script.Parent.Modules.Progress).start() end)
 	Util.safe("Economy", function() Economy.startIncomeLoop() end)
 	Util.safe("PlayersService", function() PlayersService.start() end)
 
@@ -489,7 +501,7 @@ local function incomeOf(slot, player)
 	if ok and DataService then
 		data = DataService.get(player)
 	end
-	return Util.incomeOf(slot, data and data.Rebirths or 0)
+	return Util.incomeOf(slot, data and data.Rebirths or 0, data and data.Level or 1)
 end
 
 function Bases.slotText(slot, player)
@@ -566,6 +578,20 @@ function Bases.refreshSlot(base, i)
 			Bases.onChanged(base.Owner)
 		end
 	end
+end
+
+-- Update pedestal labels and income stat without rebuilding models (used after level-ups)
+function Bases.refreshLabels(player)
+	local base = Bases.baseOf[player]
+	if not base then return end
+	for i = 1, #base.Pedestals do
+		local slot = base.Slots[i]
+		if slot then
+			base.Pedestals[i].Label.Text = Bases.slotText(slot, player)
+		end
+	end
+	local incomeStat = Util.getStat(player, "Income")
+	if incomeStat then incomeStat.Value = Bases.totalIncome(player) end
 end
 
 function Bases.returnCarry(player)
@@ -1330,20 +1356,12 @@ local DataService = {
 	_loadFailed = {}, -- [userId] = true — never overwrite on failed load
 }
 
-local DEFAULT = {
-	Coins = Config.StartCoins,
-	Rebirths = 0,
-	LuckLevel = 0,
-	LastDaily = 0,
-	Slots = {}, -- { {Id=, Super=} , ... } indexed by pedestal
-}
-
 local function cloneDefault()
 	local t = {
 		Coins = Config.IsStudio and Config.StartCoins or 100,
 		Rebirths = 0,
 		LuckLevel = 0,
-		LastDaily = 0,
+		Level = 1,
 		Slots = {},
 	}
 	return t
@@ -1392,7 +1410,7 @@ function DataService.load(player)
 		data.Coins = tonumber(result.Coins) or data.Coins
 		data.Rebirths = tonumber(result.Rebirths) or 0
 		data.LuckLevel = tonumber(result.LuckLevel) or 0
-		data.LastDaily = tonumber(result.LastDaily) or 0
+		data.Level = math.clamp(math.floor(tonumber(result.Level) or 1), 1, Config.MaxLevel)
 		data.Slots = typeof(result.Slots) == "table" and result.Slots or {}
 	end
 	DataService.profiles[player] = data
@@ -1553,6 +1571,11 @@ function PlayersService.setup(player)
 	income.Value = 0
 	income.Parent = stats
 
+	local level = Instance.new("IntValue")
+	level.Name = "Level"
+	level.Value = data.Level or 1
+	level.Parent = stats
+
 	local rebirths = Instance.new("IntValue")
 	rebirths.Name = "Rebirths"
 	rebirths.Value = data.Rebirths or 0
@@ -1594,7 +1617,7 @@ function PlayersService.setup(player)
 		task.spawn(teleportToBase, player, player.Character)
 	end
 
-	local msg = ("Welcome! %d coins"):format(coins.Value)
+	local msg = ("Welcome! %d coins | Level %d"):format(coins.Value, data.Level or 1)
 	if (data.Rebirths or 0) > 0 then
 		msg ..= (" | Rebirths: %d"):format(data.Rebirths)
 	end
@@ -1653,25 +1676,49 @@ local RateLimit = require(script.Parent.RateLimit)
 
 local Progress = {}
 
-local DAY = 86400
-
-function Progress.claimDaily(player)
-	if not RateLimit.allow(player, "daily", 1) then return end
+-- Spend coins to raise the player level (1 to Config.MaxLevel).
+-- amount: a number of levels to buy, or "max" to buy as many as affordable.
+function Progress.upgradeLevel(player, amount)
+	if not RateLimit.allow(player, "level", 0.1) then return end
 	local data = DataService.get(player)
-	if not data then return end
-	local now = os.time()
-	if data.LastDaily > 0 and (now - data.LastDaily) < DAY then
-		local left = DAY - (now - data.LastDaily)
-		Util.notify(player, ("Daily already claimed. Come back in %dh."):format(math.ceil(left / 3600)))
+	local coins = Util.getStat(player, "Coins")
+	if not (data and coins) then return end
+
+	if amount == "max" then
+		amount = Config.MaxLevel
+	elseif typeof(amount) == "number" then
+		amount = math.clamp(math.floor(amount), 1, 100)
+	else
 		return
 	end
-	data.LastDaily = now
-	local coins = Util.getStat(player, "Coins")
-	if coins then
-		coins.Value += Config.DailyBonusCoins
-		data.Coins = coins.Value
+
+	local level = data.Level or 1
+	if level >= Config.MaxLevel then
+		Util.notify(player, "You are already at max level (" .. Config.MaxLevel .. ").")
+		return
 	end
-	Util.notify(player, ("Daily bonus! +%d coins"):format(Config.DailyBonusCoins))
+
+	local target = math.min(Config.MaxLevel, level + amount)
+	local newLevel, spent = level, 0
+	while newLevel < target do
+		local cost = Config.LevelCost(newLevel)
+		if coins.Value - spent < cost then break end
+		spent += cost
+		newLevel += 1
+	end
+
+	if newLevel == level then
+		Util.notify(player, ("Not enough coins. Level %d costs %d."):format(level + 1, Config.LevelCost(level)))
+		return
+	end
+
+	coins.Value -= spent
+	data.Coins = coins.Value
+	data.Level = newLevel
+	local levelStat = Util.getStat(player, "Level")
+	if levelStat then levelStat.Value = newLevel end
+	Bases.refreshLabels(player)
+	Util.notify(player, ("Level %d! Income x%.2f"):format(newLevel, Config.LevelIncomeMultiplier(newLevel)))
 end
 
 function Progress.tryRebirth(player)
@@ -1701,6 +1748,17 @@ function Progress.tryRebirth(player)
 	local pct = math.floor(Config.RebirthIncomeBonus * 100 * data.Rebirths)
 	Util.notify(player, ("Rebirth #%d! Permanent +%d%% income. Luck +1."):format(data.Rebirths, pct))
 	DataService.save(player)
+end
+
+function Progress.start()
+	local remotes = require(ReplicatedStorage.Shared.Remotes)
+	if remotes.GameEvent then
+		remotes.GameEvent.OnServerEvent:Connect(function(player, action, a)
+			if action == "UpgradeLevel" then
+				Progress.upgradeLevel(player, a)
+			end
+		end)
+	end
 end
 
 return Progress
@@ -1775,26 +1833,6 @@ function Shop.buildShowcase(map)
 		Util.makeLabel(m.PrimaryPart, def.Name .. "\n" .. def.Rarity, UDim2.fromOffset(100, 32), Vector3.new(0, 5, 0), 25, Util.rarityColor(def.Rarity))
 	end
 
-	if Config.StudioFreeCoinsPad then
-		local coinPad = Util.makePart("FreeCoins", Vector3.new(6, 1.5, 6), Vector3.new(0, 1.25, 48), Util.GOLD, Enum.Material.Neon, folder)
-		Util.makeLabel(coinPad, "STUDIO\n+500 coins", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
-		local freeCoins = Instance.new("ProximityPrompt")
-		freeCoins.ObjectText = "Studio Coins"
-		freeCoins.ActionText = "Claim +500"
-		freeCoins.KeyboardKeyCode = Enum.KeyCode.E
-		freeCoins.HoldDuration = 0
-		freeCoins.MaxActivationDistance = 12
-		freeCoins.Parent = coinPad
-		freeCoins.Triggered:Connect(function(player)
-			if not Config.IsStudio then return end
-			if not RateLimit.allow(player, "freecoins", 1) then return end
-			local coins = Util.getStat(player, "Coins")
-			if coins then
-				coins.Value += 500
-				Util.notify(player, "Studio: +500 coins")
-			end
-		end)
-	end
 end
 
 function Shop.buildSuperStand(map)
@@ -1872,22 +1910,6 @@ function Shop.buildSuperStand(map)
 		Util.notify(player, ("Super Upgrade! Your best brainrot now earns x%d!"):format(Config.SuperMultiplier))
 		return Enum.ProductPurchaseDecision.PurchaseGranted
 	end
-end
-
-function Shop.buildDailyPad(map)
-	local pad = Util.makePart("DailyBonus", Vector3.new(6, 1.5, 6), Vector3.new(12, 1.25, 48), Color3.fromRGB(80, 200, 120), Enum.Material.Neon, map)
-	Util.makeLabel(pad, "Daily Bonus\nE = claim", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
-	local prompt = Instance.new("ProximityPrompt")
-	prompt.ObjectText = "Daily Bonus"
-	prompt.ActionText = ("Claim +%d coins"):format(Config.DailyBonusCoins)
-	prompt.KeyboardKeyCode = Enum.KeyCode.E
-	prompt.HoldDuration = 0
-	prompt.MaxActivationDistance = 12
-	prompt.Parent = pad
-	prompt.Triggered:Connect(function(player)
-		local Progress = require(script.Parent.Progress)
-		Progress.claimDaily(player)
-	end)
 end
 
 function Shop.buildRebirthPad(map)
@@ -2089,11 +2111,12 @@ function Util.notify(player, message)
 	end
 end
 
-function Util.incomeOf(slot, rebirths)
+function Util.incomeOf(slot, rebirths, level)
 	if not slot or not slot.Def then return 0 end
 	local mult = (slot.Super and Config.SuperMultiplier or 1)
 	local rebirthMult = 1 + (rebirths or 0) * Config.RebirthIncomeBonus
-	return math.floor(slot.Def.Income * mult * rebirthMult)
+	local levelMult = Config.LevelIncomeMultiplier(level or 1)
+	return math.max(1, math.floor(slot.Def.Income * mult * rebirthMult * levelMult))
 end
 
 function Util.rarityColor(rarity)
@@ -2130,8 +2153,8 @@ local UserInputService = game:GetService("UserInputService")
 local player = Players.LocalPlayer
 local event = ReplicatedStorage:WaitForChild("TradeEvent")
 local remotesFolder = ReplicatedStorage:WaitForChild("GameRemotes", 10)
-local incomeEvent = remotesFolder and remotesFolder:FindFirstChild("IncomeUpdate")
-local gameEvent = remotesFolder and remotesFolder:FindFirstChild("GameEvent")
+local incomeEvent = remotesFolder and remotesFolder:WaitForChild("IncomeUpdate", 10)
+local gameEvent = remotesFolder and remotesFolder:WaitForChild("GameEvent", 10)
 
 local gui = Instance.new("ScreenGui")
 gui.Name = "TradeGui"
@@ -2166,9 +2189,11 @@ local function corner(obj, r)
 end
 
 -- Top HUD panel
+local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
+
 local hud = make("Frame", {
-	Size = UDim2.fromOffset(260, 96),
-	Position = UDim2.new(0.5, -130, 0, 12),
+	Size = UDim2.fromOffset(280, 156),
+	Position = UDim2.new(0.5, -140, 0, 12),
 	BackgroundColor3 = Color3.fromRGB(25, 25, 35),
 	BackgroundTransparency = 0.15,
 }, gui)
@@ -2193,6 +2218,29 @@ local carryBar = make("TextLabel", {
 	Font = Enum.Font.Gotham, TextSize = 14, Text = "Carrying: none", TextXAlignment = Enum.TextXAlignment.Left,
 }, hud)
 
+local levelBar = make("TextLabel", {
+	Size = UDim2.new(1, -16, 0, 22), Position = UDim2.fromOffset(8, 88),
+	BackgroundTransparency = 1, TextColor3 = Color3.fromRGB(255, 190, 255),
+	Font = Enum.Font.GothamBold, TextSize = 14, Text = "Level 1 / " .. Config.MaxLevel,
+	TextXAlignment = Enum.TextXAlignment.Left,
+}, hud)
+
+local function makeUpgradeButton(text, xOffset, width, amount)
+	local btn = make("TextButton", {
+		Size = UDim2.fromOffset(width, 30), Position = UDim2.fromOffset(xOffset, 116),
+		Text = text, Font = Enum.Font.GothamBold, TextSize = 13,
+		BackgroundColor3 = Color3.fromRGB(150, 80, 210), TextColor3 = Color3.new(1, 1, 1),
+	}, hud)
+	corner(btn, 8)
+	btn.MouseButton1Click:Connect(function()
+		if gameEvent then gameEvent:FireServer("UpgradeLevel", amount) end
+	end)
+	return btn
+end
+local upgrade1 = makeUpgradeButton("Level Up", 8, 112, 1)
+makeUpgradeButton("+10", 126, 62, 10)
+makeUpgradeButton("Max", 194, 78, "max")
+
 task.spawn(function()
 	local stats = player:WaitForChild("leaderstats", 30)
 	if not stats then
@@ -2201,16 +2249,30 @@ task.spawn(function()
 	end
 	local coins = stats:WaitForChild("Coins", 10)
 	local income = stats:FindFirstChild("Income") or stats:WaitForChild("Income", 5)
+	local level = stats:FindFirstChild("Level") or stats:WaitForChild("Level", 5)
 	local function updateCoins()
 		if coins then coinsBar.Text = "Coins: " .. tostring(coins.Value) end
 	end
 	local function updateIncome()
 		if income then incomeBar.Text = "Income: " .. tostring(income.Value) .. "/s" end
 	end
+	local function updateLevel()
+		if not level then return end
+		local lv = level.Value
+		if lv >= Config.MaxLevel then
+			levelBar.Text = "Level " .. lv .. " / " .. Config.MaxLevel .. " (MAX)"
+			upgrade1.Text = "MAX"
+		else
+			levelBar.Text = ("Level %d / %d  |  next: %d"):format(lv, Config.MaxLevel, Config.LevelCost(lv))
+			upgrade1.Text = "Level Up"
+		end
+	end
 	updateCoins()
 	updateIncome()
+	updateLevel()
 	if coins then coins:GetPropertyChangedSignal("Value"):Connect(updateCoins) end
 	if income then income:GetPropertyChangedSignal("Value"):Connect(updateIncome) end
+	if level then level:GetPropertyChangedSignal("Value"):Connect(updateLevel) end
 end)
 
 if incomeEvent then

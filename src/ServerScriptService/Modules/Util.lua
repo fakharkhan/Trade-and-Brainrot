@@ -68,11 +68,12 @@ function Util.notify(player, message)
 	end
 end
 
-function Util.incomeOf(slot, rebirths)
+function Util.incomeOf(slot, rebirths, level)
 	if not slot or not slot.Def then return 0 end
 	local mult = (slot.Super and Config.SuperMultiplier or 1)
 	local rebirthMult = 1 + (rebirths or 0) * Config.RebirthIncomeBonus
-	return math.floor(slot.Def.Income * mult * rebirthMult)
+	local levelMult = Config.LevelIncomeMultiplier(level or 1)
+	return math.max(1, math.floor(slot.Def.Income * mult * rebirthMult * levelMult))
 end
 
 function Util.rarityColor(rarity)

@@ -32,26 +32,6 @@ function Shop.buildShowcase(map)
 		Util.makeLabel(m.PrimaryPart, def.Name .. "\n" .. def.Rarity, UDim2.fromOffset(100, 32), Vector3.new(0, 5, 0), 25, Util.rarityColor(def.Rarity))
 	end
 
-	if Config.StudioFreeCoinsPad then
-		local coinPad = Util.makePart("FreeCoins", Vector3.new(6, 1.5, 6), Vector3.new(0, 1.25, 48), Util.GOLD, Enum.Material.Neon, folder)
-		Util.makeLabel(coinPad, "STUDIO\n+500 coins", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
-		local freeCoins = Instance.new("ProximityPrompt")
-		freeCoins.ObjectText = "Studio Coins"
-		freeCoins.ActionText = "Claim +500"
-		freeCoins.KeyboardKeyCode = Enum.KeyCode.E
-		freeCoins.HoldDuration = 0
-		freeCoins.MaxActivationDistance = 12
-		freeCoins.Parent = coinPad
-		freeCoins.Triggered:Connect(function(player)
-			if not Config.IsStudio then return end
-			if not RateLimit.allow(player, "freecoins", 1) then return end
-			local coins = Util.getStat(player, "Coins")
-			if coins then
-				coins.Value += 500
-				Util.notify(player, "Studio: +500 coins")
-			end
-		end)
-	end
 end
 
 function Shop.buildSuperStand(map)
@@ -129,22 +109,6 @@ function Shop.buildSuperStand(map)
 		Util.notify(player, ("Super Upgrade! Your best brainrot now earns x%d!"):format(Config.SuperMultiplier))
 		return Enum.ProductPurchaseDecision.PurchaseGranted
 	end
-end
-
-function Shop.buildDailyPad(map)
-	local pad = Util.makePart("DailyBonus", Vector3.new(6, 1.5, 6), Vector3.new(12, 1.25, 48), Color3.fromRGB(80, 200, 120), Enum.Material.Neon, map)
-	Util.makeLabel(pad, "Daily Bonus\nE = claim", UDim2.fromOffset(100, 32), Vector3.new(0, 3, 0), 30)
-	local prompt = Instance.new("ProximityPrompt")
-	prompt.ObjectText = "Daily Bonus"
-	prompt.ActionText = ("Claim +%d coins"):format(Config.DailyBonusCoins)
-	prompt.KeyboardKeyCode = Enum.KeyCode.E
-	prompt.HoldDuration = 0
-	prompt.MaxActivationDistance = 12
-	prompt.Parent = pad
-	prompt.Triggered:Connect(function(player)
-		local Progress = require(script.Parent.Progress)
-		Progress.claimDaily(player)
-	end)
 end
 
 function Shop.buildRebirthPad(map)

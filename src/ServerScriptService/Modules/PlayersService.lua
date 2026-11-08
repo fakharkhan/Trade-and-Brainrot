@@ -53,6 +53,11 @@ function PlayersService.setup(player)
 	income.Value = 0
 	income.Parent = stats
 
+	local level = Instance.new("IntValue")
+	level.Name = "Level"
+	level.Value = data.Level or 1
+	level.Parent = stats
+
 	local rebirths = Instance.new("IntValue")
 	rebirths.Name = "Rebirths"
 	rebirths.Value = data.Rebirths or 0
@@ -94,7 +99,7 @@ function PlayersService.setup(player)
 		task.spawn(teleportToBase, player, player.Character)
 	end
 
-	local msg = ("Welcome! %d coins"):format(coins.Value)
+	local msg = ("Welcome! %d coins | Level %d"):format(coins.Value, data.Level or 1)
 	if (data.Rebirths or 0) > 0 then
 		msg ..= (" | Rebirths: %d"):format(data.Rebirths)
 	end

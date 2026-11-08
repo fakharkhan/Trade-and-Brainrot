@@ -9,20 +9,12 @@ local DataService = {
 	_loadFailed = {}, -- [userId] = true — never overwrite on failed load
 }
 
-local DEFAULT = {
-	Coins = Config.StartCoins,
-	Rebirths = 0,
-	LuckLevel = 0,
-	LastDaily = 0,
-	Slots = {}, -- { {Id=, Super=} , ... } indexed by pedestal
-}
-
 local function cloneDefault()
 	local t = {
 		Coins = Config.IsStudio and Config.StartCoins or 100,
 		Rebirths = 0,
 		LuckLevel = 0,
-		LastDaily = 0,
+		Level = 1,
 		Slots = {},
 	}
 	return t
@@ -71,7 +63,7 @@ function DataService.load(player)
 		data.Coins = tonumber(result.Coins) or data.Coins
 		data.Rebirths = tonumber(result.Rebirths) or 0
 		data.LuckLevel = tonumber(result.LuckLevel) or 0
-		data.LastDaily = tonumber(result.LastDaily) or 0
+		data.Level = math.clamp(math.floor(tonumber(result.Level) or 1), 1, Config.MaxLevel)
 		data.Slots = typeof(result.Slots) == "table" and result.Slots or {}
 	end
 	DataService.profiles[player] = data
