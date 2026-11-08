@@ -18,7 +18,7 @@ local Config = {
 	StudioFreeSuperUpgrade = IS_STUDIO,
 
 	SpawnInterval = 10, -- seconds between brainrots on the track
-	TrackSpeed = 2.5, -- studs per second (slow so players can catch them)
+	TrackSpeed = 1.5, -- studs per second (slow so players can catch them; ~107s to cross)
 	TrackHalfLength = 80,
 
 	PickupHold = 0.7,

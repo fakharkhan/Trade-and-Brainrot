@@ -35,7 +35,6 @@ function Track.start(map)
 		local face = CFrame.Angles(0, -Util.PI / 2, 0)
 		local trackY = 0.4 + Util.footOf(def)
 		model:PivotTo(CFrame.new(-L, trackY, 0) * face)
-		BrainrotModels.startIdleBob(model)
 
 		local root = model.PrimaryPart
 		local color = Util.rarityColor(def.Rarity)
@@ -82,7 +81,10 @@ function Track.start(map)
 			while model.Parent and t < duration do
 				t += RunService.Heartbeat:Wait()
 				if model.Parent then
-					model:PivotTo(CFrame.new(-L + (L * 2) * math.min(t / duration, 1), trackY, 0) * face)
+					-- single writer for position (bob is folded in here so it can't fight the movement)
+					local x = -L + (L * 2) * math.min(t / duration, 1)
+					local bob = math.sin(t * 2) * 0.12
+					model:PivotTo(CFrame.new(x, trackY + bob, 0) * face)
 				end
 			end
 			if model.Parent then model:Destroy() end
