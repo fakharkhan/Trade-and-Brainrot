@@ -32,7 +32,54 @@ function Bases.slotText(slot, player)
 end
 
 function Bases.updateSign(base)
-	base.SignLabel.Text = base.Owner and (base.Owner.DisplayName .. "'s Base") or ("Base " .. base.Index .. " (free)")
+	local text = base.Owner and (base.Owner.DisplayName .. "'s Base") or ("Base " .. base.Index .. " (free)")
+	for _, label in ipairs(base.SignLabels or {}) do
+		label.Text = text
+		label.TextColor3 = base.Owner and Color3.fromRGB(255, 220, 90) or Color3.fromRGB(200, 200, 200)
+	end
+end
+
+-- Physical sign board standing at the open front of the base. The name is shown
+-- on both faces so it can be read from the track and from inside the base.
+local function buildSignBoard(base, pos, frontDir, folder)
+	local half = Config.BaseSize / 2
+	local wood = Color3.fromRGB(110, 75, 45)
+	local frontX = pos.X + frontDir * half
+	local postOffsetZ = 9
+
+	for _, side in ipairs({ -1, 1 }) do
+		Util.makePart("SignPost", Vector3.new(1, 7, 1), Vector3.new(frontX, 4.5, pos.Z + side * postOffsetZ), wood, Enum.Material.Wood, folder)
+	end
+
+	local board = Util.makePart("SignBoard", Vector3.new(0.6, 5, postOffsetZ * 2 + 2), Vector3.new(frontX, 9, pos.Z), Color3.fromRGB(45, 35, 30), Enum.Material.Wood, folder)
+	base.SignLabels = {}
+	for _, face in ipairs({ Enum.NormalId.Right, Enum.NormalId.Left }) do
+		local gui = Instance.new("SurfaceGui")
+		gui.Face = face
+		gui.SizingMode = Enum.SurfaceGuiSizingMode.PixelsPerStud
+		gui.PixelsPerStud = 40
+		gui.LightInfluence = 0
+		gui.Parent = board
+
+		local label = Instance.new("TextLabel")
+		label.Size = UDim2.fromScale(1, 1)
+		label.BackgroundTransparency = 1
+		label.TextScaled = true
+		label.Font = Enum.Font.GothamBlack
+		label.TextColor3 = Color3.fromRGB(255, 220, 90)
+		label.TextStrokeTransparency = 0.3
+		label.Text = ""
+		label.Parent = gui
+
+		local pad = Instance.new("UIPadding")
+		pad.PaddingTop = UDim.new(0, 12)
+		pad.PaddingBottom = UDim.new(0, 12)
+		pad.PaddingLeft = UDim.new(0, 16)
+		pad.PaddingRight = UDim.new(0, 16)
+		pad.Parent = label
+
+		table.insert(base.SignLabels, label)
+	end
 end
 
 function Bases.countOwned(player)
@@ -252,10 +299,7 @@ function Bases.buildOne(index, placeIndex, pos, map)
 	Util.makePart("FenceSideA", Vector3.new(Config.BaseSize, 6, 1), pos + Vector3.new(0, 4, half), fence, Enum.Material.Metal, folder)
 	Util.makePart("FenceSideB", Vector3.new(Config.BaseSize, 6, 1), pos + Vector3.new(0, 4, -half), fence, Enum.Material.Metal, folder)
 
-	local signAnchor = Util.makePart("SignAnchor", Vector3.new(1, 1, 1), pos + Vector3.new(0, 14, 0), Color3.new(1, 1, 1), nil, folder)
-	signAnchor.Transparency = 1
-	signAnchor.CanCollide = false
-	base.SignLabel = Util.makeLabel(signAnchor, "", UDim2.fromOffset(140, 28), Vector3.new(0, 0, 0), 50)
+	buildSignBoard(base, pos, frontDir, folder)
 
 	base.SpawnPos = pos + Vector3.new(frontDir * 8, 4, 8)
 
