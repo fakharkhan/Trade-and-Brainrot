@@ -110,8 +110,6 @@ local Config = {
 	PickupHold = 0.7,
 	StealCooldown = 30,
 	StealProtectSeconds = 15,
-	SellFraction = 0.7, -- Trader pays this share of price when you sell a brainrot
-
 	-- Player levels: spend coins to level up for a permanent income bonus
 	MaxLevel = 1000,
 	LevelIncomeBonus = 0.05, -- +5% income per level above 1
@@ -706,21 +704,6 @@ function Bases.place(player, base, i)
 	Util.notify(player, "Placed " .. base.Slots[i].Def.Name .. "!")
 end
 
-function Bases.sellCarried(player)
-	if not RateLimit.allow(player, "sell", 0.3) then return end
-	local c = Carry.get(player)
-	if not c then
-		Util.notify(player, "Carry a brainrot to the Trader to sell it.")
-		return
-	end
-	local value = math.floor(c.Slot.Def.Price * (c.Slot.Super and Config.SuperMultiplier or 1) * Config.SellFraction)
-	local coins = Util.getStat(player, "Coins")
-	if coins then coins.Value += value end
-	Util.notify(player, ("Trader bought %s for %d coins."):format(c.Slot.Def.Name, value))
-	Carry.drop(player)
-	if Bases.onChanged then Bases.onChanged(player) end
-end
-
 local function buildTrader(parent, origin)
 	local model = Instance.new("Model")
 	model.Name = "Trader"
@@ -787,14 +770,18 @@ function Bases.buildOne(index, placeIndex, pos, map)
 	Util.makeLabel(counter, "Trading Shop", UDim2.fromOffset(110, 28), Vector3.new(0, 3.5, 0), 40)
 	buildTrader(folder, CFrame.new(pos + Vector3.new(frontDir * 14, 1, -13)) * CFrame.Angles(0, frontDir * Util.PI / 2, 0))
 
-	local sell = Instance.new("ProximityPrompt")
-	sell.ObjectText = "Trader"
-	sell.ActionText = "Sell carried brainrot"
-	sell.KeyboardKeyCode = Enum.KeyCode.E
-	sell.HoldDuration = 0
-	sell.MaxActivationDistance = 10
-	sell.Parent = counter
-	sell.Triggered:Connect(function(player) Bases.sellCarried(player) end)
+	local levelUp = Instance.new("ProximityPrompt")
+	levelUp.ObjectText = "Trader"
+	levelUp.ActionText = "Level Up"
+	levelUp.KeyboardKeyCode = Enum.KeyCode.E
+	levelUp.HoldDuration = 0
+	levelUp.MaxActivationDistance = 10
+	levelUp.RequiresLineOfSight = false
+	levelUp.Parent = counter
+	levelUp.Triggered:Connect(function(player)
+		-- required lazily: Progress requires Bases, so a top-level require would be circular
+		require(script.Parent.Progress).upgradeLevel(player, 1)
+	end)
 
 	local tradeWith = Instance.new("ProximityPrompt")
 	tradeWith.ObjectText = "Trader"
@@ -2254,7 +2241,7 @@ end
 local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
 
 local hud = make("Frame", {
-	Size = UDim2.fromOffset(280, 156),
+	Size = UDim2.fromOffset(280, 134),
 	Position = UDim2.new(0.5, -140, 0, 12),
 	BackgroundColor3 = Color3.fromRGB(25, 25, 35),
 	BackgroundTransparency = 0.15,
@@ -2287,21 +2274,12 @@ local levelBar = make("TextLabel", {
 	TextXAlignment = Enum.TextXAlignment.Left,
 }, hud)
 
-local function makeUpgradeButton(text, xOffset, width, amount)
-	local btn = make("TextButton", {
-		Size = UDim2.fromOffset(width, 30), Position = UDim2.fromOffset(xOffset, 116),
-		Text = text, Font = Enum.Font.GothamBold, TextSize = 13,
-		BackgroundColor3 = Color3.fromRGB(150, 80, 210), TextColor3 = Color3.new(1, 1, 1),
-	}, hud)
-	corner(btn, 8)
-	btn.MouseButton1Click:Connect(function()
-		if gameEvent then gameEvent:FireServer("UpgradeLevel", amount) end
-	end)
-	return btn
-end
-local upgrade1 = makeUpgradeButton("Level Up", 8, 112, 1)
-makeUpgradeButton("+10", 126, 62, 10)
-makeUpgradeButton("Max", 194, 78, "max")
+make("TextLabel", {
+	Size = UDim2.new(1, -16, 0, 18), Position = UDim2.fromOffset(8, 110),
+	BackgroundTransparency = 1, TextColor3 = Color3.fromRGB(170, 170, 190),
+	Font = Enum.Font.Gotham, TextSize = 12, Text = "Level up at the Trader in your base",
+	TextXAlignment = Enum.TextXAlignment.Left,
+}, hud)
 
 task.spawn(function()
 	local stats = player:WaitForChild("leaderstats", 30)
@@ -2323,10 +2301,8 @@ task.spawn(function()
 		local lv = level.Value
 		if lv >= Config.MaxLevel then
 			levelBar.Text = "Level " .. lv .. " / " .. Config.MaxLevel .. " (MAX)"
-			upgrade1.Text = "MAX"
 		else
 			levelBar.Text = ("Level %d / %d  |  next: %d"):format(lv, Config.MaxLevel, Config.LevelCost(lv))
-			upgrade1.Text = "Level Up"
 		end
 	end
 	updateCoins()

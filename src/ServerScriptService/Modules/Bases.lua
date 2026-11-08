@@ -226,21 +226,6 @@ function Bases.place(player, base, i)
 	Util.notify(player, "Placed " .. base.Slots[i].Def.Name .. "!")
 end
 
-function Bases.sellCarried(player)
-	if not RateLimit.allow(player, "sell", 0.3) then return end
-	local c = Carry.get(player)
-	if not c then
-		Util.notify(player, "Carry a brainrot to the Trader to sell it.")
-		return
-	end
-	local value = math.floor(c.Slot.Def.Price * (c.Slot.Super and Config.SuperMultiplier or 1) * Config.SellFraction)
-	local coins = Util.getStat(player, "Coins")
-	if coins then coins.Value += value end
-	Util.notify(player, ("Trader bought %s for %d coins."):format(c.Slot.Def.Name, value))
-	Carry.drop(player)
-	if Bases.onChanged then Bases.onChanged(player) end
-end
-
 local function buildTrader(parent, origin)
 	local model = Instance.new("Model")
 	model.Name = "Trader"
@@ -307,14 +292,18 @@ function Bases.buildOne(index, placeIndex, pos, map)
 	Util.makeLabel(counter, "Trading Shop", UDim2.fromOffset(110, 28), Vector3.new(0, 3.5, 0), 40)
 	buildTrader(folder, CFrame.new(pos + Vector3.new(frontDir * 14, 1, -13)) * CFrame.Angles(0, frontDir * Util.PI / 2, 0))
 
-	local sell = Instance.new("ProximityPrompt")
-	sell.ObjectText = "Trader"
-	sell.ActionText = "Sell carried brainrot"
-	sell.KeyboardKeyCode = Enum.KeyCode.E
-	sell.HoldDuration = 0
-	sell.MaxActivationDistance = 10
-	sell.Parent = counter
-	sell.Triggered:Connect(function(player) Bases.sellCarried(player) end)
+	local levelUp = Instance.new("ProximityPrompt")
+	levelUp.ObjectText = "Trader"
+	levelUp.ActionText = "Level Up"
+	levelUp.KeyboardKeyCode = Enum.KeyCode.E
+	levelUp.HoldDuration = 0
+	levelUp.MaxActivationDistance = 10
+	levelUp.RequiresLineOfSight = false
+	levelUp.Parent = counter
+	levelUp.Triggered:Connect(function(player)
+		-- required lazily: Progress requires Bases, so a top-level require would be circular
+		require(script.Parent.Progress).upgradeLevel(player, 1)
+	end)
 
 	local tradeWith = Instance.new("ProximityPrompt")
 	tradeWith.ObjectText = "Trader"

@@ -45,7 +45,7 @@ end
 local Config = require(ReplicatedStorage:WaitForChild("Shared"):WaitForChild("Config"))
 
 local hud = make("Frame", {
-	Size = UDim2.fromOffset(280, 156),
+	Size = UDim2.fromOffset(280, 134),
 	Position = UDim2.new(0.5, -140, 0, 12),
 	BackgroundColor3 = Color3.fromRGB(25, 25, 35),
 	BackgroundTransparency = 0.15,
@@ -78,21 +78,12 @@ local levelBar = make("TextLabel", {
 	TextXAlignment = Enum.TextXAlignment.Left,
 }, hud)
 
-local function makeUpgradeButton(text, xOffset, width, amount)
-	local btn = make("TextButton", {
-		Size = UDim2.fromOffset(width, 30), Position = UDim2.fromOffset(xOffset, 116),
-		Text = text, Font = Enum.Font.GothamBold, TextSize = 13,
-		BackgroundColor3 = Color3.fromRGB(150, 80, 210), TextColor3 = Color3.new(1, 1, 1),
-	}, hud)
-	corner(btn, 8)
-	btn.MouseButton1Click:Connect(function()
-		if gameEvent then gameEvent:FireServer("UpgradeLevel", amount) end
-	end)
-	return btn
-end
-local upgrade1 = makeUpgradeButton("Level Up", 8, 112, 1)
-makeUpgradeButton("+10", 126, 62, 10)
-makeUpgradeButton("Max", 194, 78, "max")
+make("TextLabel", {
+	Size = UDim2.new(1, -16, 0, 18), Position = UDim2.fromOffset(8, 110),
+	BackgroundTransparency = 1, TextColor3 = Color3.fromRGB(170, 170, 190),
+	Font = Enum.Font.Gotham, TextSize = 12, Text = "Level up at the Trader in your base",
+	TextXAlignment = Enum.TextXAlignment.Left,
+}, hud)
 
 task.spawn(function()
 	local stats = player:WaitForChild("leaderstats", 30)
@@ -114,10 +105,8 @@ task.spawn(function()
 		local lv = level.Value
 		if lv >= Config.MaxLevel then
 			levelBar.Text = "Level " .. lv .. " / " .. Config.MaxLevel .. " (MAX)"
-			upgrade1.Text = "MAX"
 		else
 			levelBar.Text = ("Level %d / %d  |  next: %d"):format(lv, Config.MaxLevel, Config.LevelCost(lv))
-			upgrade1.Text = "Level Up"
 		end
 	end
 	updateCoins()

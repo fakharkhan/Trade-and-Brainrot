@@ -25,8 +25,6 @@ local Config = {
 	PickupHold = 0.7,
 	StealCooldown = 30,
 	StealProtectSeconds = 15,
-	SellFraction = 0.7, -- Trader pays this share of price when you sell a brainrot
-
 	-- Player levels: spend coins to level up for a permanent income bonus
 	MaxLevel = 1000,
 	LevelIncomeBonus = 0.05, -- +5% income per level above 1
