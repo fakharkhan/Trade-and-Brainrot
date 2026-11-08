@@ -20,6 +20,7 @@ local Config = {
 	SpawnInterval = 10, -- seconds between brainrots on the track
 	TrackSpeed = 1.5, -- studs per second (slow so players can catch them; ~107s to cross)
 	TrackHalfLength = 80,
+	CarryScale = 0.3, -- size of a brainrot while held (placed ones return to full size)
 
 	PickupHold = 0.7,
 	StealCooldown = 30,
