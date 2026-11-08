@@ -9,7 +9,7 @@ Use this before making the experience public on Roblox.
 - [ ] Paste the product ID into `Config.SuperUpgradeProductId` in [`src/ReplicatedStorage/Shared/Config.lua`](../src/ReplicatedStorage/Shared/Config.lua).
 - [ ] Re-sync / Rojo sync, then **Publish to Roblox** again.
 - [ ] Set experience **Public** (Audience / Access).
-- [ ] Upload icon + thumbnail from `assets/` (include Tralalero / Patapim art).
+- [ ] Upload `assets/store/game-icon-512.png` (Icon) and `assets/store/game-thumbnail-1920x1080.png` (Thumbnails) in Creator Hub > Experience > Places > Icon / Thumbnails.
 
 ## Safety
 
