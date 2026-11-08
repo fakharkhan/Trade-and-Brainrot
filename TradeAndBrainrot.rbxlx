@@ -2028,13 +2028,22 @@ function Track.start(map)
 		local color = Util.rarityColor(def.Rarity)
 		Util.makeLabel(root, ("%s\n%d | +%d/s"):format(def.Name, def.Price, def.Income), UDim2.fromOffset(120, 36), Vector3.new(0, 5, 0), 28, color)
 
+		-- Attach above the body so the prompt is easy to see/trigger. Line of
+		-- sight is off because the brainrot's own parts would otherwise block it.
+		local attach = Instance.new("Attachment")
+		attach.Name = "BuyPrompt"
+		attach.Position = Vector3.new(0, 3.5, 0)
+		attach.Parent = root
+
 		local buy = Instance.new("ProximityPrompt")
 		buy.ObjectText = def.Name
 		buy.ActionText = ("Buy & carry (%d)"):format(def.Price)
 		buy.KeyboardKeyCode = Enum.KeyCode.E
 		buy.HoldDuration = 0
-		buy.MaxActivationDistance = 10
-		buy.Parent = root
+		buy.MaxActivationDistance = 14
+		buy.RequiresLineOfSight = false
+		buy.UIOffset = Vector2.new(0, -40)
+		buy.Parent = attach
 
 		local sold = false
 		buy.Triggered:Connect(function(player)
